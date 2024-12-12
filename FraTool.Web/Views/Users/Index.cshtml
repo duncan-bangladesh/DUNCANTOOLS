@@ -1,0 +1,110 @@
+﻿@model dSecurity.Model.Users
+@{
+    ViewData["Title"] = "Users";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row rowtop">
+    <div class="col-md-12">
+        <div class="card card-info card-outline collapsed-card" id="entry-ui">
+            <div class="card-header">
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                        <i class="fas fa-plus"></i> &nbsp;&nbsp; Add New User
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <form asp-action="Create" class="form-horizontal">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <input id="UserId" hidden type="text" />
+                            <div class="form-group row">
+                                <label asp-for="FullName" class="control-label text-md-right text-sm-left col-md-4"></label>
+                                <div class="col-md-8">
+                                    <input asp-for="FullName" autocomplete="off" class="form-control" placeholder="full name" />
+                                    <span asp-validation-for="FullName" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label asp-for="EmailAddress" class="control-label text-md-right text-sm-left col-md-4"></label>
+                                <div class="col-md-8">
+                                    <input asp-for="EmailAddress" autocomplete="off" class="form-control" placeholder="email address" />
+                                    <span asp-validation-for="EmailAddress" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label asp-for="MobileNumber" class="control-label text-md-right text-sm-left col-md-4"></label>
+                                <div class="col-md-8">
+                                    <input asp-for="MobileNumber" autocomplete="off" class="form-control" placeholder="mobile number" />
+                                    <span asp-validation-for="MobileNumber" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group row">
+                                <label asp-for="CompanyId" class="control-label text-md-right text-sm-left col-md-4"></label>
+                                <div class="col-md-8">
+                                    <select id="CompanyId" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="-1" aria-hidden="true">
+                                        <option value="0">--Select--</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row" id="divU">
+                                <label asp-for="UserName" class="control-label text-md-right text-sm-left col-md-4"></label>
+                                <div class="col-md-8">
+                                    <input asp-for="UserName" autocomplete="off" class="form-control" placeholder="user name" />
+                                    <span asp-validation-for="UserName" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="form-group row" id="divP">
+                                <label asp-for="Password" class="control-label text-md-right text-sm-left col-md-4"></label>
+                                <div class="col-md-8">
+                                    <input asp-for="Password" class="form-control" min="8" placeholder="password" />
+                                    <span asp-validation-for="Password" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <div class="form-group row">
+                                <div class="offset-md-4 col-md-8">
+                                    <input type="button" id="btnSubmit" value="Save" class="btn btn-success" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row rowtop">
+    <div class="col-md-12">
+        <div class="card card-success card-outline">
+            <div class="card-header">
+                <h3 class="card-title">User lists</h3>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered table-hover" id="userTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Mobile</th>
+                            <th>Company</th>
+                            <th>User Name</th>
+                            @*<th>Active Password</th>*@
+                            <th>Status</th>
+                            <th data-orderable="false"></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <script src="~/js/security/users.js"></script>
+    <script></script>
+}

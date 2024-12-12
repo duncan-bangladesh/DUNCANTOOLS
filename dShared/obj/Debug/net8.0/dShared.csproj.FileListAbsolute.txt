@@ -1,0 +1,17 @@
+D:\Source Control\FraTool\dShared\bin\Debug\net8.0\dShared.deps.json
+D:\Source Control\FraTool\dShared\bin\Debug\net8.0\dShared.dll
+D:\Source Control\FraTool\dShared\bin\Debug\net8.0\dShared.pdb
+D:\Source Control\FraTool\dShared\bin\Debug\net8.0\dCommon.dll
+D:\Source Control\FraTool\dShared\bin\Debug\net8.0\dDataAccess.dll
+D:\Source Control\FraTool\dShared\bin\Debug\net8.0\dCommon.pdb
+D:\Source Control\FraTool\dShared\bin\Debug\net8.0\dDataAccess.pdb
+D:\Source Control\FraTool\dShared\obj\Debug\net8.0\dShared.csproj.AssemblyReference.cache
+D:\Source Control\FraTool\dShared\obj\Debug\net8.0\dShared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Source Control\FraTool\dShared\obj\Debug\net8.0\dShared.AssemblyInfoInputs.cache
+D:\Source Control\FraTool\dShared\obj\Debug\net8.0\dShared.AssemblyInfo.cs
+D:\Source Control\FraTool\dShared\obj\Debug\net8.0\dShared.csproj.CoreCompileInputs.cache
+D:\Source Control\FraTool\dShared\obj\Debug\net8.0\dShared.csproj.Up2Date
+D:\Source Control\FraTool\dShared\obj\Debug\net8.0\dShared.dll
+D:\Source Control\FraTool\dShared\obj\Debug\net8.0\refint\dShared.dll
+D:\Source Control\FraTool\dShared\obj\Debug\net8.0\dShared.pdb
+D:\Source Control\FraTool\dShared\obj\Debug\net8.0\ref\dShared.dll

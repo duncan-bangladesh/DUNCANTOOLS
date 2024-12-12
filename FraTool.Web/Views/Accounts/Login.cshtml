@@ -1,0 +1,57 @@
+﻿@model dSecurity.Model.UserLogin
+@{
+    ViewData["Title"] = "FraTool";
+    Layout = "~/Views/Shared/_Logins.cshtml";
+}
+<div id="login-box">
+    <div class="card card-outline card-success">
+        <div class="card-header text-center">
+            <p class="h3 text-center"></p>
+            <img class="animation__shake img-circle img-size-60" src="~/dist/img/app_logo.jpg" alt="AppLogo" height="92" width="100">
+            <p class="h3 text-center"></p>
+        </div>
+        <div class="card-body">
+
+            <p class="login-box-msg"><b>Sign in to start your work!!</b></p>
+            <form asp-action="Login">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="input-group mb-3">
+                    <input asp-for="UserName" class="form-control" autocomplete="off" placeholder="User Name" />
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-user"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <input asp-for="Password" class="form-control" placeholder="Password" />
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-lock"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-success btn-block" id="btnSubmit">Sign In</button>
+                    </div>
+                </div>
+            </form>
+            <br />
+            @if (ViewBag.Message != null)
+            {
+                <div class="mb-0 text-danger">
+                    <b class="">Invalid username and or password</b>
+                    <br />
+                    Input your credentials or contact with system admin.
+                </div>
+                <br />
+            }
+            <br />
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script src="~/js/security/login.js"></script>
+    <script></script>
+}

@@ -1,0 +1,12 @@
+D:\Source Control\FraTool\dDataAccess\bin\Release\net8.0\dDataAccess.deps.json
+D:\Source Control\FraTool\dDataAccess\bin\Release\net8.0\dDataAccess.dll
+D:\Source Control\FraTool\dDataAccess\bin\Release\net8.0\dDataAccess.pdb
+D:\Source Control\FraTool\dDataAccess\obj\Release\net8.0\dDataAccess.csproj.AssemblyReference.cache
+D:\Source Control\FraTool\dDataAccess\obj\Release\net8.0\dDataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Source Control\FraTool\dDataAccess\obj\Release\net8.0\dDataAccess.AssemblyInfoInputs.cache
+D:\Source Control\FraTool\dDataAccess\obj\Release\net8.0\dDataAccess.AssemblyInfo.cs
+D:\Source Control\FraTool\dDataAccess\obj\Release\net8.0\dDataAccess.csproj.CoreCompileInputs.cache
+D:\Source Control\FraTool\dDataAccess\obj\Release\net8.0\dDataAccess.dll
+D:\Source Control\FraTool\dDataAccess\obj\Release\net8.0\refint\dDataAccess.dll
+D:\Source Control\FraTool\dDataAccess\obj\Release\net8.0\dDataAccess.pdb
+D:\Source Control\FraTool\dDataAccess\obj\Release\net8.0\ref\dDataAccess.dll

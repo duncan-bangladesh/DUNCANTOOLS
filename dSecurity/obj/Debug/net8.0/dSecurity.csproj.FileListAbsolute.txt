@@ -1,0 +1,17 @@
+D:\Source Control\FraTool\dSecurity\bin\Debug\net8.0\dSecurity.deps.json
+D:\Source Control\FraTool\dSecurity\bin\Debug\net8.0\dSecurity.dll
+D:\Source Control\FraTool\dSecurity\bin\Debug\net8.0\dSecurity.pdb
+D:\Source Control\FraTool\dSecurity\bin\Debug\net8.0\dCommon.dll
+D:\Source Control\FraTool\dSecurity\bin\Debug\net8.0\dDataAccess.dll
+D:\Source Control\FraTool\dSecurity\bin\Debug\net8.0\dCommon.pdb
+D:\Source Control\FraTool\dSecurity\bin\Debug\net8.0\dDataAccess.pdb
+D:\Source Control\FraTool\dSecurity\obj\Debug\net8.0\dSecurity.csproj.AssemblyReference.cache
+D:\Source Control\FraTool\dSecurity\obj\Debug\net8.0\dSecurity.GeneratedMSBuildEditorConfig.editorconfig
+D:\Source Control\FraTool\dSecurity\obj\Debug\net8.0\dSecurity.AssemblyInfoInputs.cache
+D:\Source Control\FraTool\dSecurity\obj\Debug\net8.0\dSecurity.AssemblyInfo.cs
+D:\Source Control\FraTool\dSecurity\obj\Debug\net8.0\dSecurity.csproj.CoreCompileInputs.cache
+D:\Source Control\FraTool\dSecurity\obj\Debug\net8.0\dSecurity.csproj.Up2Date
+D:\Source Control\FraTool\dSecurity\obj\Debug\net8.0\dSecurity.dll
+D:\Source Control\FraTool\dSecurity\obj\Debug\net8.0\refint\dSecurity.dll
+D:\Source Control\FraTool\dSecurity\obj\Debug\net8.0\dSecurity.pdb
+D:\Source Control\FraTool\dSecurity\obj\Debug\net8.0\ref\dSecurity.dll

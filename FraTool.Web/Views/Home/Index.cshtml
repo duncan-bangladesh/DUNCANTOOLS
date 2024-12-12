@@ -1,0 +1,23 @@
+﻿@* @using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor accessor *@
+@{
+    ViewData["Title"] = "Home Page";
+    // int roleId = int.Parse(accessor.HttpContext!.Session!.GetString("RoleId")!);
+}
+@* @if (roleId == 3)
+{
+    <partial name="_EstatePartial" />
+}
+else if (roleId == 1)
+{
+    <partial name="_AdminPartial" />
+}
+else if (roleId == 0)
+{
+    <partial name="_ErrorPartial"/>
+} *@
+@section Scripts{
+    <script src="~/js/home/home.js"></script>
+    <script></script>
+}
+

@@ -1,0 +1,12 @@
+D:\Source Control\FraTool\dVoucher\bin\Release\net8.0\dVoucher.deps.json
+D:\Source Control\FraTool\dVoucher\bin\Release\net8.0\dVoucher.dll
+D:\Source Control\FraTool\dVoucher\bin\Release\net8.0\dVoucher.pdb
+D:\Source Control\FraTool\dVoucher\obj\Release\net8.0\dVoucher.csproj.AssemblyReference.cache
+D:\Source Control\FraTool\dVoucher\obj\Release\net8.0\dVoucher.GeneratedMSBuildEditorConfig.editorconfig
+D:\Source Control\FraTool\dVoucher\obj\Release\net8.0\dVoucher.AssemblyInfoInputs.cache
+D:\Source Control\FraTool\dVoucher\obj\Release\net8.0\dVoucher.AssemblyInfo.cs
+D:\Source Control\FraTool\dVoucher\obj\Release\net8.0\dVoucher.csproj.CoreCompileInputs.cache
+D:\Source Control\FraTool\dVoucher\obj\Release\net8.0\dVoucher.dll
+D:\Source Control\FraTool\dVoucher\obj\Release\net8.0\refint\dVoucher.dll
+D:\Source Control\FraTool\dVoucher\obj\Release\net8.0\dVoucher.pdb
+D:\Source Control\FraTool\dVoucher\obj\Release\net8.0\ref\dVoucher.dll
