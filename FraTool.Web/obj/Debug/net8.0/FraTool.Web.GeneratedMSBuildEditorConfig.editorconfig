@@ -17,85 +17,93 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FraTool.Web
 build_property.RootNamespace = FraTool.Web
-build_property.ProjectDir = D:\Source Control\FraTool\FraTool.Web\
+build_property.ProjectDir = D:\Source Control\BitBucket\FraTool\FraTool.Web\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Source Control\FraTool\FraTool.Web
+build_property.MSBuildProjectDirectory = D:\Source Control\BitBucket\FraTool\FraTool.Web
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/Source Control/FraTool/FraTool.Web/Views/Accounts/Login.cshtml]
+[D:/Source Control/BitBucket/FraTool/FraTool.Web/Views/Accounts/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Source Control/FraTool/FraTool.Web/Views/Company/Index.cshtml]
+[D:/Source Control/BitBucket/FraTool/FraTool.Web/Views/Company/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Source Control/FraTool/FraTool.Web/Views/Home/Index.cshtml]
+[D:/Source Control/BitBucket/FraTool/FraTool.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Source Control/FraTool/FraTool.Web/Views/Menus/Index.cshtml]
+[D:/Source Control/BitBucket/FraTool/FraTool.Web/Views/Menus/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Source Control/FraTool/FraTool.Web/Views/Roles/Index.cshtml]
+[D:/Source Control/BitBucket/FraTool/FraTool.Web/Views/Roles/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Source Control/FraTool/FraTool.Web/Views/Roles/RoleWiseMenu.cshtml]
+[D:/Source Control/BitBucket/FraTool/FraTool.Web/Views/Roles/RoleWiseMenu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcUm9sZVdpc2VNZW51LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Source Control/FraTool/FraTool.Web/Views/Roles/RoleWiseUser.cshtml]
+[D:/Source Control/BitBucket/FraTool/FraTool.Web/Views/Roles/RoleWiseUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZXNcUm9sZVdpc2VVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Source Control/FraTool/FraTool.Web/Views/Shared/Error.cshtml]
+[D:/Source Control/BitBucket/FraTool/FraTool.Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Source Control/FraTool/FraTool.Web/Views/Shared/_AdminPartial.cshtml]
+[D:/Source Control/BitBucket/FraTool/FraTool.Web/Views/Shared/_AdminPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Source Control/FraTool/FraTool.Web/Views/Shared/_ErrorPartial.cshtml]
+[D:/Source Control/BitBucket/FraTool/FraTool.Web/Views/Shared/_ErrorPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9FcnJvclBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Source Control/FraTool/FraTool.Web/Views/Shared/_Logins.cshtml]
+[D:/Source Control/BitBucket/FraTool/FraTool.Web/Views/Shared/_Logins.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Source Control/FraTool/FraTool.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Source Control/BitBucket/FraTool/FraTool.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Source Control/FraTool/FraTool.Web/Views/Users/Index.cshtml]
+[D:/Source Control/BitBucket/FraTool/FraTool.Web/Views/Transfer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNmZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Source Control/BitBucket/FraTool/FraTool.Web/Views/Users/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Source Control/FraTool/FraTool.Web/Views/Users/ResetPassword.cshtml]
+[D:/Source Control/BitBucket/FraTool/FraTool.Web/Views/Users/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcUmVzZXRQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Source Control/FraTool/FraTool.Web/Views/Voucher/Index.cshtml]
+[D:/Source Control/BitBucket/FraTool/FraTool.Web/Views/Voucher/ErrorLog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm91Y2hlclxFcnJvckxvZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Source Control/BitBucket/FraTool/FraTool.Web/Views/Voucher/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVm91Y2hlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Source Control/FraTool/FraTool.Web/Views/_ViewImports.cshtml]
+[D:/Source Control/BitBucket/FraTool/FraTool.Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Source Control/FraTool/FraTool.Web/Views/_ViewStart.cshtml]
+[D:/Source Control/BitBucket/FraTool/FraTool.Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Source Control/FraTool/FraTool.Web/Views/Shared/_Layout.cshtml]
+[D:/Source Control/BitBucket/FraTool/FraTool.Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-duar4mq4m2

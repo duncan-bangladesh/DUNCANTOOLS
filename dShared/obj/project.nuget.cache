@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "isBalbAuGT0=",
+  "dgSpecHash": "PkQpddFJLZw=",
   "success": true,
-  "projectFilePath": "D:\\Source Control\\FraTool\\dShared\\dShared.csproj",
+  "projectFilePath": "D:\\Source Control\\BitBucket\\FraTool\\dShared\\dShared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mdmah\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\mdmah\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",

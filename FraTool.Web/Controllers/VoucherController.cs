@@ -1,5 +1,6 @@
 ﻿using dVoucher.Biz;
 using dVoucher.Model;
+using FraTool.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.Blazor;
 using System.Text;
@@ -42,10 +43,11 @@ namespace FraTool.Web.Controllers
                 if (response != null)
                 {
                     var divisionCode = HttpContext.Session.GetString("FraDivisionCode");
+                    var userName = HttpContext.Session.GetString("UserName");
                     var responseContent = await response.Content.ReadAsStringAsync();
                     var postResponse = JsonSerializer.Deserialize<VoucherMaster>(responseContent);
                     VoucherMaster vouchers = postResponse!;
-                    result = voucherBiz.SaveVoucherMaster(vouchers, divisionCode!);
+                    result = voucherBiz.InsertVoucherToFRATool(vouchers, divisionCode!,userName!);
                 }
                 return Json(result);
             }
@@ -102,22 +104,18 @@ namespace FraTool.Web.Controllers
         [HttpPost]
         public IActionResult ConfirmVoucher(long MasterId)
         {
-            try
+            int result = 0;
+            if (MasterId > 0)
             {
-                int result = 0;
-                if (MasterId > 0)
-                {
-                    var FraDivisionCode = HttpContext.Session.GetString("FraDivisionCode");
-                    result = sentVoucherBiz.VoucherSentToCharms(MasterId, FraDivisionCode!);
-                }
-                return Json(data: result);
+                ConHelper helper = new ConHelper();
+                var FraDivisionCode = HttpContext.Session.GetString("FraDivisionCode");
+                var EstateCode = HttpContext.Session.GetString("EstateCode");
+                string? conString = helper.ConStrings(EstateCode);
+                result = sentVoucherBiz.VoucherSentToCharms(MasterId, FraDivisionCode!, conString.ToString()!);
             }
-            catch (Exception)
-            {
-                throw;
-            }
+            return Json(data: result);
         }
-        public IActionResult Test()
+        public IActionResult ErrorLog()
         {
             return View();
         }

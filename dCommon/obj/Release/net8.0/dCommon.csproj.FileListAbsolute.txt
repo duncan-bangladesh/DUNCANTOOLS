@@ -9,3 +9,15 @@ D:\Source Control\FraTool\dCommon\obj\Release\net8.0\dCommon.dll
 D:\Source Control\FraTool\dCommon\obj\Release\net8.0\refint\dCommon.dll
 D:\Source Control\FraTool\dCommon\obj\Release\net8.0\dCommon.pdb
 D:\Source Control\FraTool\dCommon\obj\Release\net8.0\ref\dCommon.dll
+D:\Source Control\BitBucket\FraTool\dCommon\bin\Release\net8.0\dCommon.deps.json
+D:\Source Control\BitBucket\FraTool\dCommon\bin\Release\net8.0\dCommon.dll
+D:\Source Control\BitBucket\FraTool\dCommon\bin\Release\net8.0\dCommon.pdb
+D:\Source Control\BitBucket\FraTool\dCommon\obj\Release\net8.0\dCommon.GeneratedMSBuildEditorConfig.editorconfig
+D:\Source Control\BitBucket\FraTool\dCommon\obj\Release\net8.0\dCommon.AssemblyInfoInputs.cache
+D:\Source Control\BitBucket\FraTool\dCommon\obj\Release\net8.0\dCommon.AssemblyInfo.cs
+D:\Source Control\BitBucket\FraTool\dCommon\obj\Release\net8.0\dCommon.csproj.CoreCompileInputs.cache
+D:\Source Control\BitBucket\FraTool\dCommon\obj\Release\net8.0\dCommon.sourcelink.json
+D:\Source Control\BitBucket\FraTool\dCommon\obj\Release\net8.0\dCommon.dll
+D:\Source Control\BitBucket\FraTool\dCommon\obj\Release\net8.0\refint\dCommon.dll
+D:\Source Control\BitBucket\FraTool\dCommon\obj\Release\net8.0\dCommon.pdb
+D:\Source Control\BitBucket\FraTool\dCommon\obj\Release\net8.0\ref\dCommon.dll

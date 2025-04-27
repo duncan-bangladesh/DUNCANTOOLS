@@ -188,9 +188,11 @@ namespace dSecurity.Biz
                             info.UserFullName = reader["FullName"].ToString();
                             info.LoginCompanyId =Convert.ToInt64(reader["CompanyId"]);
                             info.FraCompanyCode = reader["FraCompanyCode"].ToString();
+                            info.EstateCode = reader["EstateCode"].ToString();
                             info.FraCompanyName = reader["FraCompanyName"].ToString();
                             info.FraDivisionCode = reader["FraDivisionCode"].ToString();
                             info.FraDivisionName = reader["FraDivisionName"].ToString();
+                            info.OnLocationId = Convert.ToInt32(reader["OnLocationId"]);
                             result = info;
                         }
                         reader.Close();

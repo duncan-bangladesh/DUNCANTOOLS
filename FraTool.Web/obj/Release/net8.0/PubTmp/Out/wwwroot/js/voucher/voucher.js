@@ -6,18 +6,24 @@
     $('#btnGetVoucher').click(function () {
         var VoucherDate = $("#VoucherDate").val();
         $.post("/Voucher/UpData", { VoucherDate: VoucherDate }, function (data) {
-            if (data == 1) {
-                toastr.success('Successfully received the voucher.');
-                setTimeout(function () {
-                    location.reload();
-                }, 2000);
+            if (data == 99) {
+                toastr.error('FRA voucher may have some incorrect GL/Subsidiary code, please recheck.');
+                location.href = '/Voucher/errorlog';
             }
             else {
-                if (data == 2) {
-                    toastr.error('You have already received this voucher, Please try for other one.');
+                if (data == 1) {
+                    toastr.success('Successfully received the voucher.');
+                    setTimeout(function () {
+                        location.reload();
+                    }, 2000);
                 }
                 else {
-                    toastr.error('Something went wrong, Please try again later.');
+                    if (data == 2) {
+                        toastr.error('You have already received this voucher, Please try for other one.');
+                    }
+                    else {
+                        toastr.error('Something went wrong, Please try again later.');
+                    }
                 }
             }
         });

@@ -370,7 +370,7 @@ Begin
 	If @UserName Is Not Null
 	Begin
 		Select 
-		u.FullName, u.CompanyId, c.FraCompanyCode, c.FraCompanyName, c.FraDivisionCode, c.FraDivisionName
+		u.FullName, u.CompanyId, c.FraCompanyCode, c.EstateCode, c.FraCompanyName, c.FraDivisionCode, c.FraDivisionName, c.OnLocationId
 		From [Security].Users u 
 		Inner Join [Shared].FraLoginCompanies c
 		On c.LoginEstateId = u.CompanyId
@@ -1202,6 +1202,7 @@ Begin
 	Return @voucher
 End
 GO
+/*
 Create Function fn_GetBatchSerialNo()
 Returns int
 As
@@ -1224,11 +1225,34 @@ Begin
 	Return @SerialNo
 End
 GO
+*/
+Create Proc Pr_GetBatchSerialNo
+As
+Begin
+	declare @SerialNo int
+	Select @SerialNo = (count(*) + 1)  from TranMaster Where EntryDate between 
+	DATEADD(DAY, DATEDIFF(DAY, '19000101', GETDATE()), '19000101')
+	AND DATEADD(DAY, DATEDIFF(DAY, '18991231', GETDATE()), '19000101')	
+	Select @SerialNo SerialNo
+End
+GO
+Create Proc Pr_GetVoucherSerialNo
+As
+Begin
+	declare @SerialNo int
+	Select @SerialNo = ISNULL(max(VoucherSerialNo),0) + 1 from TranMaster 
+	Where TranDate between (dateadd(yy, datediff(yy, 0, GETDATE()), 0)) and GETDATE()
+	AND VoucherNo like '%AM-JT-0%'OR VoucherNo like '%AM-JR-0%'	
+	Select @SerialNo SerialNo
+End
+GO
 --Confirm Check / Sent data to CHARMS database : based on login estates
 Create Procedure Voucher.GetSentVoucherByMasterId
 (
 	@MasterId bigint = 0,
-	@FraDivisionCode nvarchar(255) = null
+	@FraDivisionCode nvarchar(255) = null,
+	@BatchSerialNo int,
+	@VoucherSerialNo int
 )
 As
 Begin
@@ -1239,10 +1263,10 @@ Begin
 		VoucherDescription Narration,
 		fc.CompanyCode CompanyCode,
 		fc.EstateCode EstateCode,
-		AMTE.dbo.fn_GetBatchSerialNo() SerialNo,
-		('J/' +fc.CompanyCode +'/' + fc.EstateCode + '/' + (CONVERT(nvarchar(20), GETDATE(),23)) + '/' + Convert(nvarchar(10), AMTE.dbo.fn_GetBatchSerialNo())) BatchNo,
-		AMTE.dbo.fn_GetVoucherSerialNo() VoucherSerialNo,
-		dbo.fn_GenVoucherNo (AMTE.dbo.fn_GetVoucherSerialNo(), fc.EstateCode, (Case When VoucherType = 'TEA' Then 'JT' Else 'JR' End)) VoucherNo
+		@BatchSerialNo SerialNo,
+		('J/' +fc.CompanyCode +'/' + fc.EstateCode + '/' + (CONVERT(nvarchar(20), GETDATE(),23)) + '/' + Convert(nvarchar(10), 
+		@BatchSerialNo)) BatchNo, @VoucherSerialNo VoucherSerialNo,
+		dbo.fn_GenVoucherNo (@VoucherSerialNo, fc.EstateCode, (Case When VoucherType = 'TEA' Then 'JT' Else 'JR' End)) VoucherNo
 		from Voucher.VoucherMaster m
 		Inner Join Shared.FraLoginCompanies fc on m.FraDivisionCode = fc.FraDivisionCode
 		Where m.RecordId = @masterId and fc.FraDivisionCode = @FraDivisionCode
@@ -1259,6 +1283,7 @@ Create Proc InsertTranMaster_FraTool_Confirmation
 	@Narration nvarchar(300),
 	@EntryUserID int,
 	@VoucherSerialNo int,
+	@OnLocationId int,
 	@TranId bigint out
 )
 As
@@ -1266,13 +1291,18 @@ Begin
 	Declare @id bigint;
 	Select @id = ISNULL(Max(TranID),0) + 1 from TranMaster
 	Insert Into TranMaster
-	(TranID, TranDate, TranType, BatchNo, SerialNo, VoucherNo, Narration, ChequeNo, EntryUserID, EntryDate, UpdateUserID, UpdateDate, 
-	IsAuthenticate, TranStatus, OnLocationID, ForLocationID, ChequeDate, SourceBatchNo, VoucherSerialNo, IsCanceled, EntryMethod, VoucherType, IsForigenCurency,
-	CurrencyID, ConversionRate)
+	(
+		TranID, TranDate, TranType, BatchNo, SerialNo, VoucherNo, Narration, ChequeNo, EntryUserID, 
+		EntryDate, UpdateUserID, UpdateDate, 
+		IsAuthenticate, TranStatus, OnLocationID, ForLocationID, ChequeDate, SourceBatchNo, 
+		VoucherSerialNo, IsCanceled, EntryMethod, VoucherType, IsForigenCurency,
+		CurrencyID, ConversionRate
+	)
 	Values
 	(
-		@id, @TranDate, @TranType, @BatchNo, @SerialNo, @VoucherNo, @Narration, '', @EntryUserID, Getdate(), null, null,
-		1, 0, 2, 2, null, null, @VoucherSerialNo, 0, 1, 3, 0, null, null
+		@id, @TranDate, @TranType, @BatchNo, @SerialNo, @VoucherNo, @Narration, '', @EntryUserID, 
+		Getdate(), null, null,
+		1, 0, @OnLocationId, @OnLocationId, null, null, @VoucherSerialNo, 0, 1, 3, 0, null, null
 	)
 	If @@ROWCOUNT > 0
 		Set @TranId = @id
@@ -1376,3 +1406,199 @@ Begin
 End
 GO
 
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+-----------------------------------GL & User Record from CHARMS to FRA-Tool------------------------------------------
+CREATE TABLE CharmsGL
+(
+    GLID INT,
+    Code NVARCHAR(50),
+    Title NVARCHAR(350),
+    GlType INT
+
+)
+GO
+CREATE TABLE CharmsUserRecord
+(
+    RecordID INT,
+    ObjectID INT,
+    Code NVARCHAR(50),
+    Title NVARCHAR(350)
+)
+GO
+CREATE PROC Voucher.IsValidGLCode
+(
+    @AccCode NVARCHAR(50) = NULL
+)
+AS
+BEGIN
+    IF @AccCode IS NOT NULL
+    SELECT COUNT(*) IsExist FROM CharmsGL
+    WHERE Code = @AccCode
+END
+GO
+CREATE PROC Voucher.IsValidAccCode
+(
+    @AccCode NVARCHAR(50) = NULL
+)
+AS
+BEGIN
+    IF @AccCode IS NOT NULL
+    SELECT COUNT(*) IsExist FROM CharmsUserRecord
+    WHERE Code = @AccCode
+END
+GO
+CREATE TABLE FraGetVoucherErrorLog(
+    RecordId BIGINT PRIMARY KEY,
+    LogId BIGINT,
+    GlCode NVARCHAR(50),
+    GlDescription NVARCHAR(MAX),
+    AccCode NVARCHAR(50),
+    AccDescription NVARCHAR(MAX),
+    Amount decimal(8,2),
+    VoucherDate NVARCHAR(20),
+    Estate NVARCHAR(50),
+    DivisionCode NVARCHAR(50),
+    VoucherType NVARCHAR(50),
+    EntryDate NVARCHAR(20),
+    EntryBy NVARCHAR(50)
+)
+GO
+CREATE PROCEDURE Voucher.GetFraGetVoucherErrorLogId
+AS
+BEGIN
+    SELECT ISNULL(Max(LogId),0) + 1 AS LogId from FraGetVoucherErrorLog
+END
+GO
+CREATE PROCEDURE Voucher.SaveFraGetVoucherErrorLog
+(
+    @LogId BIGINT,
+    @GlCode NVARCHAR(50),
+    @GlDescription NVARCHAR(MAX),
+    @AccCode NVARCHAR(50),
+    @AccDescription NVARCHAR(MAX),
+    @Amount decimal(8,2),
+    @VoucherDate NVARCHAR(20),
+    @Estate NVARCHAR(50),
+    @DivisionCode NVARCHAR(50),
+    @VoucherType NVARCHAR(50),
+    @EntryBy NVARCHAR(50)
+)
+AS
+BEGIN
+    declare @RecordId BIGINT
+    Select @RecordId = ISNULL(Max(RecordID),0) + 1 from FraGetVoucherErrorLog
+    IF @RecordId > 0
+    BEGIN
+        INSERT INTO FraGetVoucherErrorLog
+        (
+            RecordID,LogId,GlCode,GlDescription,AccCode,AccDescription,Amount,
+            VoucherDate,Estate,DivisionCode,VoucherType,EntryBy,EntryDate
+        )
+        VALUES
+        (
+            @RecordId,@LogId,@GlCode,@GlDescription,@AccCode,@AccDescription,@Amount,
+            @VoucherDate,@Estate,@DivisionCode,@VoucherType,@EntryBy,GETDATE()
+        )
+    END
+END
+GO
+
+----*************TRANSFER*****************----
+--FraTool
+ALTER Procedure [Security].[FraInfoForLoginByUserName]
+(
+	@UserName Nvarchar(80) = Null
+)
+As
+Begin
+	If @UserName Is Not Null
+	Begin
+		Select 
+		u.FullName, u.CompanyId, c.FraCompanyCode, 
+		c.EstateCode, c.FraCompanyName, c.FraDivisionCode, 
+		c.FraDivisionName, ISNULL(c.OnLocationId,0) OnLocationId
+		From [Security].Users u 
+		Inner Join [Shared].FraLoginCompanies c
+		On c.LoginEstateId = u.CompanyId
+		Where u.UserName = @UserName And u.IsActive = 1
+	End
+End
+GO
+--FraTool
+Alter Table shared.FraLoginCompanies Add IsImportData int
+GO
+Create Procedure pr_InsertTrialBalanceData
+(
+	@Year nvarchar(20) = '', 
+	@Month nvarchar(20) = '',
+	@AccountNo nvarchar(50) = '', 
+	@Description nvarchar(255) = '',
+	@Crop nvarchar(50) = null, 
+	@Amount decimal = 0
+)
+As
+Begin
+	If @Year != '' and @Month != '' and @AccountNo != '' and @Description != ''
+	Begin
+		declare @newId int;
+		select @newId = IsNull(max(ID),0) + 1 from dbo.Tbl_TrialBalance
+		if @newId > 0
+		Begin
+			SET IDENTITY_INSERT Tbl_TrialBalance ON;
+			Insert Into dbo.Tbl_TrialBalance
+			(
+				ID, [Year], [Month], Account_Code, Account_Name, Crop, Amount
+			)
+			Values
+			(
+				@newId, @Year, @Month, @AccountNo, @Description, @Crop, @Amount
+			)
+			SET IDENTITY_INSERT Tbl_TrialBalance OFF;
+		End
+	End
+End
+GO
+--EXEC pr_IsExistData '2025', 'Apr'
+Create Proc pr_IsExistData
+(
+	@Year nvarchar(20) = '', 
+	@Month nvarchar(20) = ''
+)
+AS
+BEGIN
+	IF @Year != '' AND @Month != ''
+	BEGIN
+		Select Count(*) IsFound from Tbl_TrialBalance Where [Year] = @Year AND [Month] = @Month
+	END
+END
+GO
+Create Proc pr_DeleteExistingData
+(
+	@Year nvarchar(20) = '', 
+	@Month nvarchar(20) = ''
+)
+AS
+BEGIN
+	IF @Year != '' AND @Month != ''
+	BEGIN
+		Delete Tbl_TrialBalance Where [Year] = @Year AND [Month] = @Month
+	END
+END
+GO
+--FraTool
+--EXEC Shared.GetCodeForTransectionData 28
+Create Proc Shared.GetCodeForTransectionData
+(
+	@CompanyId BIGINT = 0
+)
+AS
+BEGIN
+	IF @CompanyId > 0
+	BEGIN
+		SELECT EstateCode FROM Shared.FraLoginCompanies WHERE LoginEstateId = @CompanyId
+	END
+END

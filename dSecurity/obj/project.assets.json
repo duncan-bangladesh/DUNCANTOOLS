@@ -774,11 +774,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Source Control\\FraTool\\dSecurity\\dSecurity.csproj",
+      "projectUniqueName": "D:\\Source Control\\BitBucket\\FraTool\\dSecurity\\dSecurity.csproj",
       "projectName": "dSecurity",
-      "projectPath": "D:\\Source Control\\FraTool\\dSecurity\\dSecurity.csproj",
+      "projectPath": "D:\\Source Control\\BitBucket\\FraTool\\dSecurity\\dSecurity.csproj",
       "packagesPath": "C:\\Users\\mdmah\\.nuget\\packages\\",
-      "outputPath": "D:\\Source Control\\FraTool\\dSecurity\\obj\\",
+      "outputPath": "D:\\Source Control\\BitBucket\\FraTool\\dSecurity\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -793,17 +793,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Source Control\\FraTool\\dCommon\\dCommon.csproj": {
-              "projectPath": "D:\\Source Control\\FraTool\\dCommon\\dCommon.csproj"
+            "D:\\Source Control\\BitBucket\\FraTool\\dCommon\\dCommon.csproj": {
+              "projectPath": "D:\\Source Control\\BitBucket\\FraTool\\dCommon\\dCommon.csproj"
             },
-            "D:\\Source Control\\FraTool\\dDataAccess\\dDataAccess.csproj": {
-              "projectPath": "D:\\Source Control\\FraTool\\dDataAccess\\dDataAccess.csproj"
+            "D:\\Source Control\\BitBucket\\FraTool\\dDataAccess\\dDataAccess.csproj": {
+              "projectPath": "D:\\Source Control\\BitBucket\\FraTool\\dDataAccess\\dDataAccess.csproj"
             }
           }
         }
@@ -816,9 +817,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
+        "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.100"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -849,7 +850,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

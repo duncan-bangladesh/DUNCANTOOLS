@@ -12,5 +12,6 @@ namespace dShared.Model
         public string ShortCode { get; set; } = "";
         public int GardenId { get; set; }
         public int IsTeaEstate { get; set; }
+        public int IsTranCompany { get; set; }
     }
 }

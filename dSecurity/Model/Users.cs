@@ -39,8 +39,10 @@ namespace dSecurity.Model
         public string? UserFullName { get; set; }
         public long LoginCompanyId { get; set; }
         public string? FraCompanyCode { get; set; }
+        public string? EstateCode { get; set; }
         public string? FraCompanyName { get; set; }
         public string? FraDivisionCode { get; set; }
         public string? FraDivisionName { get; set; }
+        public int OnLocationId { get; set; }
     }
 }

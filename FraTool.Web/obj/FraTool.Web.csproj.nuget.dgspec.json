@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Source Control\\FraTool\\FraTool.Web\\FraTool.Web.csproj": {}
+    "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\FraTool.Web.csproj": {}
   },
   "projects": {
-    "D:\\Source Control\\FraTool\\dCommon\\dCommon.csproj": {
+    "D:\\Source Control\\BitBucket\\FraTool\\dCommon\\dCommon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Source Control\\FraTool\\dCommon\\dCommon.csproj",
+        "projectUniqueName": "D:\\Source Control\\BitBucket\\FraTool\\dCommon\\dCommon.csproj",
         "projectName": "dCommon",
-        "projectPath": "D:\\Source Control\\FraTool\\dCommon\\dCommon.csproj",
+        "projectPath": "D:\\Source Control\\BitBucket\\FraTool\\dCommon\\dCommon.csproj",
         "packagesPath": "C:\\Users\\mdmah\\.nuget\\packages\\",
-        "outputPath": "D:\\Source Control\\FraTool\\dCommon\\obj\\",
+        "outputPath": "D:\\Source Control\\BitBucket\\FraTool\\dCommon\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,9 +43,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -65,18 +66,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Source Control\\FraTool\\dDataAccess\\dDataAccess.csproj": {
+    "D:\\Source Control\\BitBucket\\FraTool\\dDataAccess\\dDataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Source Control\\FraTool\\dDataAccess\\dDataAccess.csproj",
+        "projectUniqueName": "D:\\Source Control\\BitBucket\\FraTool\\dDataAccess\\dDataAccess.csproj",
         "projectName": "dDataAccess",
-        "projectPath": "D:\\Source Control\\FraTool\\dDataAccess\\dDataAccess.csproj",
+        "projectPath": "D:\\Source Control\\BitBucket\\FraTool\\dDataAccess\\dDataAccess.csproj",
         "packagesPath": "C:\\Users\\mdmah\\.nuget\\packages\\",
-        "outputPath": "D:\\Source Control\\FraTool\\dDataAccess\\obj\\",
+        "outputPath": "D:\\Source Control\\BitBucket\\FraTool\\dDataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -91,6 +92,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -107,9 +109,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -136,18 +138,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Source Control\\FraTool\\dSecurity\\dSecurity.csproj": {
+    "D:\\Source Control\\BitBucket\\FraTool\\dSecurity\\dSecurity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Source Control\\FraTool\\dSecurity\\dSecurity.csproj",
+        "projectUniqueName": "D:\\Source Control\\BitBucket\\FraTool\\dSecurity\\dSecurity.csproj",
         "projectName": "dSecurity",
-        "projectPath": "D:\\Source Control\\FraTool\\dSecurity\\dSecurity.csproj",
+        "projectPath": "D:\\Source Control\\BitBucket\\FraTool\\dSecurity\\dSecurity.csproj",
         "packagesPath": "C:\\Users\\mdmah\\.nuget\\packages\\",
-        "outputPath": "D:\\Source Control\\FraTool\\dSecurity\\obj\\",
+        "outputPath": "D:\\Source Control\\BitBucket\\FraTool\\dSecurity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -162,17 +164,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Source Control\\FraTool\\dCommon\\dCommon.csproj": {
-                "projectPath": "D:\\Source Control\\FraTool\\dCommon\\dCommon.csproj"
+              "D:\\Source Control\\BitBucket\\FraTool\\dCommon\\dCommon.csproj": {
+                "projectPath": "D:\\Source Control\\BitBucket\\FraTool\\dCommon\\dCommon.csproj"
               },
-              "D:\\Source Control\\FraTool\\dDataAccess\\dDataAccess.csproj": {
-                "projectPath": "D:\\Source Control\\FraTool\\dDataAccess\\dDataAccess.csproj"
+              "D:\\Source Control\\BitBucket\\FraTool\\dDataAccess\\dDataAccess.csproj": {
+                "projectPath": "D:\\Source Control\\BitBucket\\FraTool\\dDataAccess\\dDataAccess.csproj"
               }
             }
           }
@@ -185,9 +188,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -218,18 +221,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Source Control\\FraTool\\dShared\\dShared.csproj": {
+    "D:\\Source Control\\BitBucket\\FraTool\\dShared\\dShared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Source Control\\FraTool\\dShared\\dShared.csproj",
+        "projectUniqueName": "D:\\Source Control\\BitBucket\\FraTool\\dShared\\dShared.csproj",
         "projectName": "dShared",
-        "projectPath": "D:\\Source Control\\FraTool\\dShared\\dShared.csproj",
+        "projectPath": "D:\\Source Control\\BitBucket\\FraTool\\dShared\\dShared.csproj",
         "packagesPath": "C:\\Users\\mdmah\\.nuget\\packages\\",
-        "outputPath": "D:\\Source Control\\FraTool\\dShared\\obj\\",
+        "outputPath": "D:\\Source Control\\BitBucket\\FraTool\\dShared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -244,17 +247,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Source Control\\FraTool\\dCommon\\dCommon.csproj": {
-                "projectPath": "D:\\Source Control\\FraTool\\dCommon\\dCommon.csproj"
+              "D:\\Source Control\\BitBucket\\FraTool\\dCommon\\dCommon.csproj": {
+                "projectPath": "D:\\Source Control\\BitBucket\\FraTool\\dCommon\\dCommon.csproj"
               },
-              "D:\\Source Control\\FraTool\\dDataAccess\\dDataAccess.csproj": {
-                "projectPath": "D:\\Source Control\\FraTool\\dDataAccess\\dDataAccess.csproj"
+              "D:\\Source Control\\BitBucket\\FraTool\\dDataAccess\\dDataAccess.csproj": {
+                "projectPath": "D:\\Source Control\\BitBucket\\FraTool\\dDataAccess\\dDataAccess.csproj"
               }
             }
           }
@@ -267,9 +271,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -296,18 +300,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Source Control\\FraTool\\dVoucher\\dVoucher.csproj": {
+    "D:\\Source Control\\BitBucket\\FraTool\\dVoucher\\dVoucher.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Source Control\\FraTool\\dVoucher\\dVoucher.csproj",
+        "projectUniqueName": "D:\\Source Control\\BitBucket\\FraTool\\dVoucher\\dVoucher.csproj",
         "projectName": "dVoucher",
-        "projectPath": "D:\\Source Control\\FraTool\\dVoucher\\dVoucher.csproj",
+        "projectPath": "D:\\Source Control\\BitBucket\\FraTool\\dVoucher\\dVoucher.csproj",
         "packagesPath": "C:\\Users\\mdmah\\.nuget\\packages\\",
-        "outputPath": "D:\\Source Control\\FraTool\\dVoucher\\obj\\",
+        "outputPath": "D:\\Source Control\\BitBucket\\FraTool\\dVoucher\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -322,12 +326,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Source Control\\BitBucket\\FraTool\\dDataAccess\\dDataAccess.csproj": {
+                "projectPath": "D:\\Source Control\\BitBucket\\FraTool\\dDataAccess\\dDataAccess.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -338,9 +347,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -371,18 +380,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Source Control\\FraTool\\FraTool.Web\\FraTool.Web.csproj": {
+    "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\FraTool.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Source Control\\FraTool\\FraTool.Web\\FraTool.Web.csproj",
+        "projectUniqueName": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\FraTool.Web.csproj",
         "projectName": "FraTool.Web",
-        "projectPath": "D:\\Source Control\\FraTool\\FraTool.Web\\FraTool.Web.csproj",
+        "projectPath": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\FraTool.Web.csproj",
         "packagesPath": "C:\\Users\\mdmah\\.nuget\\packages\\",
-        "outputPath": "D:\\Source Control\\FraTool\\FraTool.Web\\obj\\",
+        "outputPath": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -397,20 +406,21 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Source Control\\FraTool\\dSecurity\\dSecurity.csproj": {
-                "projectPath": "D:\\Source Control\\FraTool\\dSecurity\\dSecurity.csproj"
+              "D:\\Source Control\\BitBucket\\FraTool\\dSecurity\\dSecurity.csproj": {
+                "projectPath": "D:\\Source Control\\BitBucket\\FraTool\\dSecurity\\dSecurity.csproj"
               },
-              "D:\\Source Control\\FraTool\\dShared\\dShared.csproj": {
-                "projectPath": "D:\\Source Control\\FraTool\\dShared\\dShared.csproj"
+              "D:\\Source Control\\BitBucket\\FraTool\\dShared\\dShared.csproj": {
+                "projectPath": "D:\\Source Control\\BitBucket\\FraTool\\dShared\\dShared.csproj"
               },
-              "D:\\Source Control\\FraTool\\dVoucher\\dVoucher.csproj": {
-                "projectPath": "D:\\Source Control\\FraTool\\dVoucher\\dVoucher.csproj"
+              "D:\\Source Control\\BitBucket\\FraTool\\dVoucher\\dVoucher.csproj": {
+                "projectPath": "D:\\Source Control\\BitBucket\\FraTool\\dVoucher\\dVoucher.csproj"
               }
             }
           }
@@ -423,9 +433,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -433,7 +443,7 @@
           "dependencies": {
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[8.0.7, )"
             }
           },
           "imports": [
@@ -455,7 +465,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

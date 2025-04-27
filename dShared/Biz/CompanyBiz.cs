@@ -37,6 +37,7 @@ namespace dShared.Biz
                         model.ShortCode = reader["ShortCode"].ToString()!;
                         model.GardenId = Convert.ToInt32(reader["GardenId"]);
                         model.IsTeaEstate = Convert.ToInt32(reader["IsTeaEstate"]);
+                        model.IsTranCompany = Convert.ToInt32(reader["IsTranCompany"]);
                         model.IsActive = Convert.ToBoolean(reader["IsActive"]);
                         model.EntryBy = reader["EntryBy"].ToString();
                         model.EntryDate = reader["EntryDate"].ToString();

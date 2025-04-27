@@ -51,7 +51,9 @@ namespace FraTool.Web.Controllers
                         var currentUser = await biz.FraInfoForLoginByUserName(user.UserName);
                         HttpContext.Session.SetString("FullName", currentUser.UserFullName ?? "");
                         HttpContext.Session.SetString("FraCompanyCode", currentUser.FraCompanyCode ?? "");
+                        HttpContext.Session.SetString("EstateCode", currentUser.EstateCode ?? "");
                         HttpContext.Session.SetString("FraDivisionCode", currentUser.FraDivisionCode ?? "");
+                        HttpContext.Session.SetString("OnLocationId", currentUser.OnLocationId.ToString() ?? "0");
                         HttpContext.Session.SetString("CompanyId", currentUser.LoginCompanyId.ToString() ?? "0");
                         var roleId = await usersInRole.GetRoleByUser(login.UserName);
                         HttpContext.Session.SetString("RoleId", roleId.ToString());

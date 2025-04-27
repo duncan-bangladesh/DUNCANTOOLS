@@ -87,6 +87,8 @@ wwwroot\js\security\rolewiseuser.js
 wwwroot\js\security\users.js
 wwwroot\js\shared\company.js
 wwwroot\js\site.js
+wwwroot\js\transfer\transfer.js
+wwwroot\js\voucher\errorlog.js
 wwwroot\js\voucher\voucher.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

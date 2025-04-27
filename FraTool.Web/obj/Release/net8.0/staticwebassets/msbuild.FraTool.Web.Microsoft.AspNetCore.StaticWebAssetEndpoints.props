@@ -36,17 +36,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"epbarpp562"},{"Name":"integrity","Value":"sha256-wihTebmUi487tJnIOe6W4822BXOoqvsmqRGH3wa5X5I="},{"Name":"label","Value":"_content/FraTool.Web/css/site.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1384"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022wihTebmUi487tJnIOe6W4822BXOoqvsmqRGH3wa5X5I=\u0022"},{"Name":"Last-Modified","Value":"Mon, 13 May 2024 06:24:14 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/FraTool.Web/database/use master.cuhfrvuw30.sql">
+    <StaticWebAssetEndpoint Include="_content/FraTool.Web/database/use master.8k9u2wgw4f.sql">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\database\use master.sql'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"cuhfrvuw30"},{"Name":"integrity","Value":"sha256-FL\u002B3KersZTNfTn/5MuwS8Kmt4DVZqj2bKY96qLoT60E="},{"Name":"label","Value":"_content/FraTool.Web/database/use master.sql"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"31523"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022FL\u002B3KersZTNfTn/5MuwS8Kmt4DVZqj2bKY96qLoT60E=\u0022"},{"Name":"Last-Modified","Value":"Fri, 22 Nov 2024 12:49:46 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8k9u2wgw4f"},{"Name":"integrity","Value":"sha256-6E1mO03C1hA/9lbiwhvugeh9VOGxf\u002B55yjYVQK6NuWU="},{"Name":"label","Value":"_content/FraTool.Web/database/use master.sql"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"36848"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u00226E1mO03C1hA/9lbiwhvugeh9VOGxf\u002B55yjYVQK6NuWU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Apr 2025 12:35:47 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/FraTool.Web/database/use master.sql">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\database\use master.sql'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-FL\u002B3KersZTNfTn/5MuwS8Kmt4DVZqj2bKY96qLoT60E="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"31523"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022FL\u002B3KersZTNfTn/5MuwS8Kmt4DVZqj2bKY96qLoT60E=\u0022"},{"Name":"Last-Modified","Value":"Fri, 22 Nov 2024 12:49:46 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-6E1mO03C1hA/9lbiwhvugeh9VOGxf\u002B55yjYVQK6NuWU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"36848"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u00226E1mO03C1hA/9lbiwhvugeh9VOGxf\u002B55yjYVQK6NuWU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Apr 2025 12:35:47 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/FraTool.Web/dist/css/adminlte.1vrgykl3qs.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\dist\css\adminlte.css'))</AssetFile>
@@ -1080,17 +1080,41 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rm63alta4v"},{"Name":"integrity","Value":"sha256-U1IVqMJPJUBwYdmIJ5qsKbb4E8ODuIl7M0ObVA2zhZ8="},{"Name":"label","Value":"_content/FraTool.Web/js/site.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2131"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022U1IVqMJPJUBwYdmIJ5qsKbb4E8ODuIl7M0ObVA2zhZ8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 09 Nov 2024 14:20:38 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/FraTool.Web/js/voucher/voucher.394x9xleki.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\voucher\voucher.js'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/FraTool.Web/js/transfer/transfer.au2dva5vq4.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\transfer\transfer.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"394x9xleki"},{"Name":"integrity","Value":"sha256-Oc\u002BCz4k20JmuVIpl8E/kaW7ouRxtO7c1kDnsBFDmHJM="},{"Name":"label","Value":"_content/FraTool.Web/js/voucher/voucher.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4985"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Oc\u002BCz4k20JmuVIpl8E/kaW7ouRxtO7c1kDnsBFDmHJM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 14 Nov 2024 10:06:37 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"au2dva5vq4"},{"Name":"integrity","Value":"sha256-XrkiKaYXMYy9vVyLXtYQmHWPSsShfZmrJoGvrN9UMvo="},{"Name":"label","Value":"_content/FraTool.Web/js/transfer/transfer.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4139"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022XrkiKaYXMYy9vVyLXtYQmHWPSsShfZmrJoGvrN9UMvo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Apr 2025 13:05:09 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FraTool.Web/js/transfer/transfer.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\transfer\transfer.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-XrkiKaYXMYy9vVyLXtYQmHWPSsShfZmrJoGvrN9UMvo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4139"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022XrkiKaYXMYy9vVyLXtYQmHWPSsShfZmrJoGvrN9UMvo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Apr 2025 13:05:09 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FraTool.Web/js/voucher/errorlog.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\voucher\errorlog.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-CnAQGZUWDG1FRoYf7gjj9wrTH4zhGaJGJ\u002BKssn4m/u4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"41"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022CnAQGZUWDG1FRoYf7gjj9wrTH4zhGaJGJ\u002BKssn4m/u4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 23 Feb 2025 11:31:10 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FraTool.Web/js/voucher/errorlog.qkex0q08u1.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\voucher\errorlog.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qkex0q08u1"},{"Name":"integrity","Value":"sha256-CnAQGZUWDG1FRoYf7gjj9wrTH4zhGaJGJ\u002BKssn4m/u4="},{"Name":"label","Value":"_content/FraTool.Web/js/voucher/errorlog.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"41"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022CnAQGZUWDG1FRoYf7gjj9wrTH4zhGaJGJ\u002BKssn4m/u4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 23 Feb 2025 11:31:10 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/FraTool.Web/js/voucher/voucher.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\voucher\voucher.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Oc\u002BCz4k20JmuVIpl8E/kaW7ouRxtO7c1kDnsBFDmHJM="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4985"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Oc\u002BCz4k20JmuVIpl8E/kaW7ouRxtO7c1kDnsBFDmHJM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 14 Nov 2024 10:06:37 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-cm5GSjeSH/P1o5/Z9j/Mh/8W6b3Uszn1H46YfgBpsUg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"5282"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022cm5GSjeSH/P1o5/Z9j/Mh/8W6b3Uszn1H46YfgBpsUg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 23 Feb 2025 09:49:08 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FraTool.Web/js/voucher/voucher.qdyeol60eo.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\voucher\voucher.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qdyeol60eo"},{"Name":"integrity","Value":"sha256-cm5GSjeSH/P1o5/Z9j/Mh/8W6b3Uszn1H46YfgBpsUg="},{"Name":"label","Value":"_content/FraTool.Web/js/voucher/voucher.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5282"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022cm5GSjeSH/P1o5/Z9j/Mh/8W6b3Uszn1H46YfgBpsUg=\u0022"},{"Name":"Last-Modified","Value":"Sun, 23 Feb 2025 09:49:08 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/FraTool.Web/lib/bootstrap/dist/css/bootstrap-grid.agp80tu62r.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css'))</AssetFile>

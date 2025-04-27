@@ -113,7 +113,7 @@
       "dCommon/1.0.0": {
         "runtime": {
           "dCommon.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -124,7 +124,7 @@
         },
         "runtime": {
           "dDataAccess.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }

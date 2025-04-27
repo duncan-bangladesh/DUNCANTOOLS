@@ -1,49 +1,89 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Source Control\\FraTool\\",
+  "WorkspaceRootPath": "D:\\Source Control\\BitBucket\\FraTool\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\fratool\\fratool.web\\wwwroot\\database\\use master.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\database\\use master.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+      "AbsoluteMoniker": "D:0:0:{A51CBCC5-A2A5-4771-B970-2FFFB576097C}|dShared\\dShared.csproj|d:\\source control\\bitbucket\\fratool\\dshared\\biz\\transferbiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A51CBCC5-A2A5-4771-B970-2FFFB576097C}|dShared\\dShared.csproj|solutionrelative:dshared\\biz\\transferbiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54349C92-38B5-4142-87F2-A3ABF40868AB}|dVoucher\\dVoucher.csproj|d:\\source control\\fratool\\dvoucher\\biz\\voucherbiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54349C92-38B5-4142-87F2-A3ABF40868AB}|dVoucher\\dVoucher.csproj|solutionrelative:dvoucher\\biz\\voucherbiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\controllers\\transfercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\controllers\\transfercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54349C92-38B5-4142-87F2-A3ABF40868AB}|dVoucher\\dVoucher.csproj|d:\\source control\\fratool\\dvoucher\\biz\\sentvoucherbiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54349C92-38B5-4142-87F2-A3ABF40868AB}|dVoucher\\dVoucher.csproj|solutionrelative:dvoucher\\biz\\sentvoucherbiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\js\\transfer\\transfer.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\js\\transfer\\transfer.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\fratool\\fratool.web\\controllers\\vouchercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\controllers\\vouchercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\js\\security\\users.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\js\\security\\users.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54349C92-38B5-4142-87F2-A3ABF40868AB}|dVoucher\\dVoucher.csproj|d:\\source control\\fratool\\dvoucher\\model\\gl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54349C92-38B5-4142-87F2-A3ABF40868AB}|dVoucher\\dVoucher.csproj|solutionrelative:dvoucher\\model\\gl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{54349C92-38B5-4142-87F2-A3ABF40868AB}|dVoucher\\dVoucher.csproj|d:\\source control\\fratool\\dvoucher\\model\\vouchermaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54349C92-38B5-4142-87F2-A3ABF40868AB}|dVoucher\\dVoucher.csproj|solutionrelative:dvoucher\\model\\vouchermaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\fratool\\fratool.web\\wwwroot\\js\\voucher\\voucher.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\js\\voucher\\voucher.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\js\\voucher\\voucher.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\fratool\\fratool.web\\views\\voucher\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\database\\use master.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\database\\use master.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\controllers\\vouchercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\controllers\\vouchercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A51CBCC5-A2A5-4771-B970-2FFFB576097C}|dShared\\dShared.csproj|d:\\source control\\bitbucket\\fratool\\dshared\\biz\\companybiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A51CBCC5-A2A5-4771-B970-2FFFB576097C}|dShared\\dShared.csproj|solutionrelative:dshared\\biz\\companybiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74A9A342-4164-4537-95BE-2A674B840AFE}|dSecurity\\dSecurity.csproj|d:\\source control\\bitbucket\\fratool\\dsecurity\\biz\\usersbiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74A9A342-4164-4537-95BE-2A674B840AFE}|dSecurity\\dSecurity.csproj|solutionrelative:dsecurity\\biz\\usersbiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A51CBCC5-A2A5-4771-B970-2FFFB576097C}|dShared\\dShared.csproj|d:\\source control\\bitbucket\\fratool\\dshared\\model\\transferdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A51CBCC5-A2A5-4771-B970-2FFFB576097C}|dShared\\dShared.csproj|solutionrelative:dshared\\model\\transferdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\views\\transfer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\views\\transfer\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\views\\voucher\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\views\\voucher\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54349C92-38B5-4142-87F2-A3ABF40868AB}|dVoucher\\dVoucher.csproj|d:\\source control\\fratool\\dvoucher\\model\\configconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54349C92-38B5-4142-87F2-A3ABF40868AB}|dVoucher\\dVoucher.csproj|solutionrelative:dvoucher\\model\\configconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{74A9A342-4164-4537-95BE-2A674B840AFE}|dSecurity\\dSecurity.csproj|d:\\source control\\bitbucket\\fratool\\dsecurity\\model\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74A9A342-4164-4537-95BE-2A674B840AFE}|dSecurity\\dSecurity.csproj|solutionrelative:dsecurity\\model\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54349C92-38B5-4142-87F2-A3ABF40868AB}|dVoucher\\dVoucher.csproj|d:\\source control\\fratool\\dvoucher\\model\\voucherdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\js\\voucher\\errorlog.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\js\\voucher\\errorlog.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\views\\voucher\\errorlog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\views\\voucher\\errorlog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54349C92-38B5-4142-87F2-A3ABF40868AB}|dVoucher\\dVoucher.csproj|d:\\source control\\bitbucket\\fratool\\dvoucher\\biz\\voucherbiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54349C92-38B5-4142-87F2-A3ABF40868AB}|dVoucher\\dVoucher.csproj|solutionrelative:dvoucher\\biz\\voucherbiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54349C92-38B5-4142-87F2-A3ABF40868AB}|dVoucher\\dVoucher.csproj|d:\\source control\\bitbucket\\fratool\\dvoucher\\model\\voucherdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{54349C92-38B5-4142-87F2-A3ABF40868AB}|dVoucher\\dVoucher.csproj|solutionrelative:dvoucher\\model\\voucherdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\fratool\\fratool.web\\wwwroot\\database\\use master.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\database\\use master.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
       "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\database\\use master.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
@@ -54,7 +94,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,131 +106,255 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "users.js",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\security\\users.js",
+              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\js\\security\\users.js",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\security\\users.js",
+              "RelativeToolTip": "FraTool.Web\\wwwroot\\js\\security\\users.js",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAAAL0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-27T13:03:28.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "VoucherData.cs",
-              "DocumentMoniker": "D:\\Source Control\\FraTool\\dVoucher\\Model\\VoucherData.cs",
-              "RelativeDocumentMoniker": "dVoucher\\Model\\VoucherData.cs",
-              "ToolTip": "D:\\Source Control\\FraTool\\dVoucher\\Model\\VoucherData.cs",
-              "RelativeToolTip": "dVoucher\\Model\\VoucherData.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA2wCQAAAApAAAAAAAAAA==",
+              "Title": "CompanyBiz.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\dShared\\Biz\\CompanyBiz.cs",
+              "RelativeDocumentMoniker": "dShared\\Biz\\CompanyBiz.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\dShared\\Biz\\CompanyBiz.cs",
+              "RelativeToolTip": "dShared\\Biz\\CompanyBiz.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAkwJUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T06:08:04.023Z",
+              "WhenOpened": "2025-04-27T08:53:11.759Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "use master.sql ",
-              "DocumentMoniker": "D:\\Source Control\\FraTool\\FraTool.Web\\wwwroot\\database\\use master.sql",
-              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\database\\use master.sql",
-              "ToolTip": "D:\\Source Control\\FraTool\\FraTool.Web\\wwwroot\\database\\use master.sql",
-              "RelativeToolTip": "FraTool.Web\\wwwroot\\database\\use master.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-11-18T05:34:53.843Z",
+              "Title": "TransferBiz.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\dShared\\Biz\\TransferBiz.cs",
+              "RelativeDocumentMoniker": "dShared\\Biz\\TransferBiz.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\dShared\\Biz\\TransferBiz.cs",
+              "RelativeToolTip": "dShared\\Biz\\TransferBiz.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAwwHMAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-27T10:40:31.807Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VoucherBiz.cs",
-              "DocumentMoniker": "D:\\Source Control\\FraTool\\dVoucher\\Biz\\VoucherBiz.cs",
-              "RelativeDocumentMoniker": "dVoucher\\Biz\\VoucherBiz.cs",
-              "ToolTip": "D:\\Source Control\\FraTool\\dVoucher\\Biz\\VoucherBiz.cs",
-              "RelativeToolTip": "dVoucher\\Biz\\VoucherBiz.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA3AAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "TransferData.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\dShared\\Model\\TransferData.cs",
+              "RelativeDocumentMoniker": "dShared\\Model\\TransferData.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\dShared\\Model\\TransferData.cs",
+              "RelativeToolTip": "dShared\\Model\\TransferData.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBAAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T05:19:47.416Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SentVoucherBiz.cs",
-              "DocumentMoniker": "D:\\Source Control\\FraTool\\dVoucher\\Biz\\SentVoucherBiz.cs",
-              "RelativeDocumentMoniker": "dVoucher\\Biz\\SentVoucherBiz.cs",
-              "ToolTip": "D:\\Source Control\\FraTool\\dVoucher\\Biz\\SentVoucherBiz.cs",
-              "RelativeToolTip": "dVoucher\\Biz\\SentVoucherBiz.cs",
-              "ViewState": "AgIAABoBAAAAAAAAAADwvyYBAABbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T05:06:41.532Z",
+              "WhenOpened": "2025-04-27T10:09:02.282Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "ConfigConnection.cs",
-              "DocumentMoniker": "D:\\Source Control\\FraTool\\dVoucher\\Model\\ConfigConnection.cs",
-              "RelativeDocumentMoniker": "dVoucher\\Model\\ConfigConnection.cs",
-              "ToolTip": "D:\\Source Control\\FraTool\\dVoucher\\Model\\ConfigConnection.cs",
-              "RelativeToolTip": "dVoucher\\Model\\ConfigConnection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Title": "CompanyController.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Controllers\\CompanyController.cs",
+              "RelativeDocumentMoniker": "FraTool.Web\\Controllers\\CompanyController.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Controllers\\CompanyController.cs",
+              "RelativeToolTip": "FraTool.Web\\Controllers\\CompanyController.cs",
+              "ViewState": "AgIAAHYAAAAAAAAAAABBwKEAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T04:45:27.977Z",
+              "WhenOpened": "2025-04-27T08:30:37.235Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Source Control\\FraTool\\FraTool.Web\\Views\\Voucher\\Index.cshtml",
-              "RelativeDocumentMoniker": "FraTool.Web\\Views\\Voucher\\Index.cshtml",
-              "ToolTip": "D:\\Source Control\\FraTool\\FraTool.Web\\Views\\Voucher\\Index.cshtml",
-              "RelativeToolTip": "FraTool.Web\\Views\\Voucher\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-14T09:54:38.142Z",
+              "DocumentIndex": 2,
+              "Title": "transfer.js",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\transfer\\transfer.js",
+              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\js\\transfer\\transfer.js",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\transfer\\transfer.js",
+              "RelativeToolTip": "FraTool.Web\\wwwroot\\js\\transfer\\transfer.js",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAowFsAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-27T04:59:06.797Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Transfer\\Index.cshtml",
+              "RelativeDocumentMoniker": "FraTool.Web\\Views\\Transfer\\Index.cshtml",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Transfer\\Index.cshtml",
+              "RelativeToolTip": "FraTool.Web\\Views\\Transfer\\Index.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAD0AAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-23T06:55:16.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TransferController.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Controllers\\TransferController.cs",
+              "RelativeDocumentMoniker": "FraTool.Web\\Controllers\\TransferController.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Controllers\\TransferController.cs",
+              "RelativeToolTip": "FraTool.Web\\Controllers\\TransferController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAArwB0AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T06:55:01.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UsersBiz.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\dSecurity\\Biz\\UsersBiz.cs",
+              "RelativeDocumentMoniker": "dSecurity\\Biz\\UsersBiz.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\dSecurity\\Biz\\UsersBiz.cs",
+              "RelativeToolTip": "dSecurity\\Biz\\UsersBiz.cs",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAkwLMAAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T09:27:24.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Users.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\dSecurity\\Model\\Users.cs",
+              "RelativeDocumentMoniker": "dSecurity\\Model\\Users.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\dSecurity\\Model\\Users.cs",
+              "RelativeToolTip": "dSecurity\\Model\\Users.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAIA+wC0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T09:27:02.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "errorlog.js",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\voucher\\errorlog.js",
+              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\js\\voucher\\errorlog.js",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\voucher\\errorlog.js",
+              "RelativeToolTip": "FraTool.Web\\wwwroot\\js\\voucher\\errorlog.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-02-23T11:26:00.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ErrorLog.cshtml",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Voucher\\ErrorLog.cshtml",
+              "RelativeDocumentMoniker": "FraTool.Web\\Views\\Voucher\\ErrorLog.cshtml",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Voucher\\ErrorLog.cshtml",
+              "RelativeToolTip": "FraTool.Web\\Views\\Voucher\\ErrorLog.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAgwBQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-23T09:57:21.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "voucher.js",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\voucher\\voucher.js",
+              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\js\\voucher\\voucher.js",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\voucher\\voucher.js",
+              "RelativeToolTip": "FraTool.Web\\wwwroot\\js\\voucher\\voucher.js",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAACkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-02-23T09:24:23.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Voucher\\Index.cshtml",
+              "RelativeDocumentMoniker": "FraTool.Web\\Views\\Voucher\\Index.cshtml",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Voucher\\Index.cshtml",
+              "RelativeToolTip": "FraTool.Web\\Views\\Voucher\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-23T09:24:12.454Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "voucher.js",
-              "DocumentMoniker": "D:\\Source Control\\FraTool\\FraTool.Web\\wwwroot\\js\\voucher\\voucher.js",
-              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\js\\voucher\\voucher.js",
-              "ToolTip": "D:\\Source Control\\FraTool\\FraTool.Web\\wwwroot\\js\\voucher\\voucher.js",
-              "RelativeToolTip": "FraTool.Web\\wwwroot\\js\\voucher\\voucher.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-14T08:05:16.486Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "FraTool.Web\\appsettings.json",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\appsettings.json",
+              "RelativeToolTip": "FraTool.Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-23T05:39:40.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AccountsController.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Controllers\\AccountsController.cs",
+              "RelativeDocumentMoniker": "FraTool.Web\\Controllers\\AccountsController.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Controllers\\AccountsController.cs",
+              "RelativeToolTip": "FraTool.Web\\Controllers\\AccountsController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAUwDIAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-23T05:38:04.722Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "VoucherMaster.cs",
-              "DocumentMoniker": "D:\\Source Control\\FraTool\\dVoucher\\Model\\VoucherMaster.cs",
-              "RelativeDocumentMoniker": "dVoucher\\Model\\VoucherMaster.cs",
-              "ToolTip": "D:\\Source Control\\FraTool\\dVoucher\\Model\\VoucherMaster.cs",
-              "RelativeToolTip": "dVoucher\\Model\\VoucherMaster.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T08:03:57.045Z",
+              "Title": "use master.sql ",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\database\\use master.sql",
+              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\database\\use master.sql",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\database\\use master.sql",
+              "RelativeToolTip": "FraTool.Web\\wwwroot\\database\\use master.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-02-20T06:18:17.204Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GL.cs",
-              "DocumentMoniker": "D:\\Source Control\\FraTool\\dVoucher\\Model\\GL.cs",
-              "RelativeDocumentMoniker": "dVoucher\\Model\\GL.cs",
-              "ToolTip": "D:\\Source Control\\FraTool\\dVoucher\\Model\\GL.cs",
-              "RelativeToolTip": "dVoucher\\Model\\GL.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAApwBIAAAABAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "VoucherData.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\dVoucher\\Model\\VoucherData.cs",
+              "RelativeDocumentMoniker": "dVoucher\\Model\\VoucherData.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\dVoucher\\Model\\VoucherData.cs",
+              "RelativeToolTip": "dVoucher\\Model\\VoucherData.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAA0wEEAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T07:27:50.809Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T06:36:47.894Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 18,
+              "Title": "VoucherBiz.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\dVoucher\\Biz\\VoucherBiz.cs",
+              "RelativeDocumentMoniker": "dVoucher\\Biz\\VoucherBiz.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\dVoucher\\Biz\\VoucherBiz.cs",
+              "RelativeToolTip": "dVoucher\\Biz\\VoucherBiz.cs",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAmwHwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T12:01:58.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "VoucherController.cs",
-              "DocumentMoniker": "D:\\Source Control\\FraTool\\FraTool.Web\\Controllers\\VoucherController.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Controllers\\VoucherController.cs",
               "RelativeDocumentMoniker": "FraTool.Web\\Controllers\\VoucherController.cs",
-              "ToolTip": "D:\\Source Control\\FraTool\\FraTool.Web\\Controllers\\VoucherController.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Controllers\\VoucherController.cs",
               "RelativeToolTip": "FraTool.Web\\Controllers\\VoucherController.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAgwBQAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAkwHAAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T02:49:28.679Z",
+              "WhenOpened": "2024-12-18T11:56:34.903Z",
               "EditorCaption": ""
             }
           ]

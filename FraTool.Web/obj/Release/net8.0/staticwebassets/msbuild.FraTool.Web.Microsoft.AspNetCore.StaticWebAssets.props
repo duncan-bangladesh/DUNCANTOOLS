@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>cuhfrvuw30</Fingerprint>
-      <Integrity>FL+3KersZTNfTn/5MuwS8Kmt4DVZqj2bKY96qLoT60E=</Integrity>
+      <Fingerprint>8k9u2wgw4f</Fingerprint>
+      <Integrity>6E1mO03C1hA/9lbiwhvugeh9VOGxf+55yjYVQK6NuWU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\database\use master.sql'))</OriginalItemSpec>
@@ -1620,6 +1620,42 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\transfer\transfer.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>FraTool.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FraTool.Web</BasePath>
+      <RelativePath>js/transfer/transfer.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>au2dva5vq4</Fingerprint>
+      <Integrity>XrkiKaYXMYy9vVyLXtYQmHWPSsShfZmrJoGvrN9UMvo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\transfer\transfer.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\voucher\errorlog.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>FraTool.Web</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/FraTool.Web</BasePath>
+      <RelativePath>js/voucher/errorlog.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>qkex0q08u1</Fingerprint>
+      <Integrity>CnAQGZUWDG1FRoYf7gjj9wrTH4zhGaJGJ+Kssn4m/u4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\voucher\errorlog.js'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\voucher\voucher.js'))">
       <SourceType>Package</SourceType>
       <SourceId>FraTool.Web</SourceId>
@@ -1632,8 +1668,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>394x9xleki</Fingerprint>
-      <Integrity>Oc+Cz4k20JmuVIpl8E/kaW7ouRxtO7c1kDnsBFDmHJM=</Integrity>
+      <Fingerprint>qdyeol60eo</Fingerprint>
+      <Integrity>cm5GSjeSH/P1o5/Z9j/Mh/8W6b3Uszn1H46YfgBpsUg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\voucher\voucher.js'))</OriginalItemSpec>

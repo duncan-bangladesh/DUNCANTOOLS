@@ -154,5 +154,19 @@ namespace FraTool.Web.Controllers
                 throw;
             }
         }
+        [HttpGet]
+        public async Task<IActionResult> GetTranCompanies() 
+        {
+            try
+            {
+                var list = await biz.GetCompanies();
+                var data = list.Where(x => x.IsTranCompany == 1).ToList(); ;
+                return Json(data: data);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }
