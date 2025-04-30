@@ -14,6 +14,6 @@ namespace dShared.Model
         public string AccountNo { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
         public string Crop { get; set; } = string.Empty;
-        public decimal Amount { get; set; } = 0;
+        public double Amount { get; set; }
     }
 }

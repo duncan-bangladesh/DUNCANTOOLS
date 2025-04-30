@@ -74,6 +74,7 @@ wwwroot\dist\js\pages\dashboard.js
 wwwroot\dist\js\pages\dashboard2.js
 wwwroot\dist\js\pages\dashboard3.js
 wwwroot\favicon.ico
+wwwroot\js\epm\importdata.js
 wwwroot\js\home\home.js
 wwwroot\js\jquery.table2excel.js
 wwwroot\js\mymultiselect.js
@@ -87,7 +88,6 @@ wwwroot\js\security\rolewiseuser.js
 wwwroot\js\security\users.js
 wwwroot\js\shared\company.js
 wwwroot\js\site.js
-wwwroot\js\transfer\transfer.js
 wwwroot\js\voucher\errorlog.js
 wwwroot\js\voucher\voucher.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
@@ -2048,3 +2048,4 @@ wwwroot\plugins\uplot\uPlot.esm.js
 wwwroot\plugins\uplot\uPlot.iife.js
 wwwroot\plugins\uplot\uPlot.iife.min.js
 wwwroot\plugins\uplot\uPlot.min.css
+wwwroot\templates\Import Data Template.xlsx

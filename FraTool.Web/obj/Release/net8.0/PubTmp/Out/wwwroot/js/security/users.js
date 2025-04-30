@@ -147,11 +147,14 @@
         if (UserId > 0) {
             var user = {
                 UserId: UserId,
+                UserName: UserName,
                 FullName: FullName,
                 EmailAddress: EmailAddress,
                 MobileNumber: MobileNumber,
-                CompanyId: CompanyId
+                CompanyId: CompanyId,
+                Password: Password
             };
+            
             $.post('/Users/Update',
                 {
                     user: user
@@ -318,9 +321,9 @@ function fnEdit(id) {
             $("#EmailAddress").val(data.emailAddress);
             $("#MobileNumber").val(data.mobileNumber);
             $("#UserName").val(data.userName);
-            $("#Password").val(' ');
+            $("#Password").val('');
             $("#divU").hide();
-            $("#divP").hide();
+            //$("#divP").hide();
             var id = data.companyId;
             $.get('/Company/ActiveCompanies', function (x) {
                 if (x.length > 0) {

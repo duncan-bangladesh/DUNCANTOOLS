@@ -5,12 +5,12 @@ builder.Services.AddControllersWithViews();
 
 //Authentication Cookie Settings
 builder.Services.AddHttpContextAccessor();
-builder.Services.AddSession(x => x.IdleTimeout = TimeSpan.FromMinutes(30));
+builder.Services.AddSession(x => x.IdleTimeout = TimeSpan.FromMinutes(60));
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(x =>
     {
         x.LoginPath = "/accounts/login";
-        x.ExpireTimeSpan = TimeSpan.FromMinutes(30);
+        x.ExpireTimeSpan = TimeSpan.FromMinutes(60);
     });
 
 var app = builder.Build();

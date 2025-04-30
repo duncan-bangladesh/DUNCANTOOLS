@@ -1,0 +1,145 @@
+﻿@{
+    ViewData["Title"] = "Data Import";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<style>
+    .card-header > .mytool {
+        float: right !important;
+    }
+</style>
+<div class="row rowtop">
+    <div class="col-md-12">
+        <div class="card card-info card-outline collapsed-card" >
+            <div class="card-header">
+                <button type="button" class="btn card-title" data-card-widget="collapse">
+                    <i class="fas fa-plus"></i> &nbsp;&nbsp; Import Data
+                </button>
+                <div class="card-tools mytool">
+                    <a href="~/templates/Import Data Template.xlsx" download class="btn btn-primary btn-sm">
+                        <i class="fas fa-file-excel"></i>&nbsp; Download Sample
+                    </a>
+                </div>
+            </div>
+            <div class="card-body">
+                <form class="form-horizontal">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-left col-md-4">Company</label>
+                                <div class="col-md-8">
+                                    <select id="CompanyId" tabindex="1" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="2" aria-hidden="true">
+                                        <option value="0">--Select--</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-left col-md-4">Upload Excel</label>
+                                <div class="col-md-8">
+                                    <input type="file" tabindex="2" id="excelFile" disabled = "disabled" accept=".xlsx, .xls" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div id="displayUploadedData">
+                    <hr />
+                    <table id="excelDataTable" class="table table-bordered table-hover table-sm">
+                        <thead>
+                            <tr style="background-color: #ebebe0;">
+                                <th>Year</th>
+                                <th>Month</th>
+                                <th>Account No</th>
+                                <th>Description</th>
+                                <th>Crop</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <hr />
+                    <form class="form-horizontal">
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <input type="button" tabindex="3" id="btnSave" value="Save" class="btn btn-success" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row rowtop">
+    <div class="col-md-12">
+        <div class="card card-warning card-outline">
+            <div class="card-header">
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                        <i class="fas fa-minus"></i> &nbsp;&nbsp; Filter Data
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">                
+                <form>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label>Company</label>
+                                <select id="ddCompanyId" tabindex="4" class="form-control select2 select2-hidden-accessible" style="width: 100%;" aria-hidden="true">
+                                    <option value="0">--Select--</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label>Year</label>
+                                <select id="ddYear" tabindex="5" class="form-control select2 select2-hidden-accessible" style="width: 100%;" aria-hidden="true">
+                                    <option value="0">--Select--</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label>Month</label>
+                                <select id="ddMonth" tabindex="6" class="form-control select2 select2-hidden-accessible" style="width: 100%;" aria-hidden="true">
+                                    <option value="0">--Select--</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <input type="button" tabindex="7" id="btnSearch" value="Search" class="btn btn-primary" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div id="filtredData">
+                    <hr />
+                    <table id="displayTable" class="table table-bordered table-hover table-sm">
+                        <thead>
+                            <tr style="background-color: #ebebe0;">
+                                <th>Year</th>
+                                <th>Month</th>
+                                <th>Account No</th>
+                                <th>Description</th>
+                                <th>Crop</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+@section Scripts {
+    <script src="~/js/epm/importdata.js"></script>
+    <script></script>
+}

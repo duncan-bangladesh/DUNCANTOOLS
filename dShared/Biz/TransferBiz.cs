@@ -14,7 +14,6 @@ namespace dShared.Biz
     public class TransferBiz
     {
         private readonly IConfiguration _configuration;
-
         public TransferBiz(IConfiguration configuration)
         {
             _configuration = configuration;
@@ -182,6 +181,120 @@ namespace dShared.Biz
                 connection.Dispose();
             }
             return await Task.Run(() => result);
+        }
+        public async Task<List<Years>> GetYears()
+        {
+            List<Years> years = new List<Years>();
+            string? connectionString = _configuration.GetConnectionString("DefaultConnection");
+            SqlConnection connection = access.GetConnection(connectionString);
+            try
+            {
+                if (connection.State == System.Data.ConnectionState.Open)
+                {
+                    SqlCommand command = new SqlCommand("Shared.GetYears", connection);
+                    command.CommandType = System.Data.CommandType.StoredProcedure;
+                    command.Parameters.Clear();
+                    SqlDataReader reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        years.Add(new Years()
+                        {
+                            RecordId = Convert.ToInt64(reader["RecordId"]),
+                            Year = reader["Year"].ToString(),
+                            IsActive = Convert.ToInt32(reader["IsActive"])
+                        });
+                    }
+                    reader.Close();
+                    connection.Close();
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                connection.Dispose();
+            }
+            return await Task.Run(() => years);
+        }
+        public async Task<List<Months>> GetMonths()
+        {
+            List<Months> months = new List<Months>();
+            string? connectionString = _configuration.GetConnectionString("DefaultConnection");
+            SqlConnection connection = access.GetConnection(connectionString);
+            try
+            {
+                if (connection.State == System.Data.ConnectionState.Open)
+                {
+                    SqlCommand command = new SqlCommand("Shared.GetMonths", connection);
+                    command.CommandType = System.Data.CommandType.StoredProcedure;
+                    command.Parameters.Clear();
+                    SqlDataReader reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        months.Add(new Months()
+                        {
+                            RecordId = Convert.ToInt64(reader["RecordId"]),
+                            MonthCode = reader["MonthCode"].ToString(),
+                            MonthName = reader["MonthName"].ToString(),
+                            IsActive = Convert.ToInt32(reader["IsActive"])
+                        });
+                    }
+                    reader.Close();
+                    connection.Close();
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                connection.Dispose();
+            }
+            return await Task.Run(() => months);
+        }
+        public async Task<List<TransferData>> GetTransferData(string year, string month, string conString)
+        {
+            List<TransferData> transferData = new List<TransferData>();
+            string? connectionString = _configuration.GetConnectionString(conString);
+            SqlConnection connection = access.GetConnection(connectionString);
+            try
+            {
+                if (connection.State == System.Data.ConnectionState.Open)
+                {
+                    SqlCommand command = new SqlCommand("dbo.pr_GetTrialBalanceByYearAndMonth", connection);
+                    command.CommandType = System.Data.CommandType.StoredProcedure;
+                    command.Parameters.Clear();
+                    command.Parameters.AddWithValue("@Year", year);
+                    command.Parameters.AddWithValue("@Month", month);
+                    SqlDataReader reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        transferData.Add(new TransferData()
+                        {
+                            Year = reader["Year"].ToString()!,
+                            Month = reader["Month"].ToString()!,
+                            AccountNo = reader["AccountNo"].ToString()!,
+                            Description = reader["Description"].ToString()!,
+                            Crop = reader["Crop"].ToString()!,
+                            Amount = Convert.ToDouble(reader["Amount"])
+                        });
+                    }
+                    reader.Close();
+                    connection.Close();
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                connection.Dispose();
+            }
+            return await Task.Run(() => transferData);
         }
     }
 }

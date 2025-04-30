@@ -36,17 +36,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"epbarpp562"},{"Name":"integrity","Value":"sha256-wihTebmUi487tJnIOe6W4822BXOoqvsmqRGH3wa5X5I="},{"Name":"label","Value":"_content/FraTool.Web/css/site.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1384"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022wihTebmUi487tJnIOe6W4822BXOoqvsmqRGH3wa5X5I=\u0022"},{"Name":"Last-Modified","Value":"Mon, 13 May 2024 06:24:14 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/FraTool.Web/database/use master.8k9u2wgw4f.sql">
+    <StaticWebAssetEndpoint Include="_content/FraTool.Web/database/use master.0d3nwn4m29.sql">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\database\use master.sql'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8k9u2wgw4f"},{"Name":"integrity","Value":"sha256-6E1mO03C1hA/9lbiwhvugeh9VOGxf\u002B55yjYVQK6NuWU="},{"Name":"label","Value":"_content/FraTool.Web/database/use master.sql"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"36848"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u00226E1mO03C1hA/9lbiwhvugeh9VOGxf\u002B55yjYVQK6NuWU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Apr 2025 12:35:47 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0d3nwn4m29"},{"Name":"integrity","Value":"sha256-xAzlJIuIPRRTH\u002BlQNlKLiP3VwnmpxTg9KIInq\u002BHieC4="},{"Name":"label","Value":"_content/FraTool.Web/database/use master.sql"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"37699"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022xAzlJIuIPRRTH\u002BlQNlKLiP3VwnmpxTg9KIInq\u002BHieC4=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 10:48:38 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/FraTool.Web/database/use master.sql">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\database\use master.sql'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-6E1mO03C1hA/9lbiwhvugeh9VOGxf\u002B55yjYVQK6NuWU="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"36848"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u00226E1mO03C1hA/9lbiwhvugeh9VOGxf\u002B55yjYVQK6NuWU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Apr 2025 12:35:47 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-xAzlJIuIPRRTH\u002BlQNlKLiP3VwnmpxTg9KIInq\u002BHieC4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"37699"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022xAzlJIuIPRRTH\u002BlQNlKLiP3VwnmpxTg9KIInq\u002BHieC4=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 10:48:38 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/FraTool.Web/dist/css/adminlte.1vrgykl3qs.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\dist\css\adminlte.css'))</AssetFile>
@@ -924,6 +924,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kafhp1c2df"},{"Name":"integrity","Value":"sha256-VPuN5tX\u002BZdHW9eC4Blh1FtBV7mksXtBxi7ohIoADyNg="},{"Name":"label","Value":"_content/FraTool.Web/FraTool.Web.bundle.scp.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1128"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022VPuN5tX\u002BZdHW9eC4Blh1FtBV7mksXtBxi7ohIoADyNg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 09:39:19 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FraTool.Web/js/epm/importdata.j1xmctwv7f.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\epm\importdata.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"j1xmctwv7f"},{"Name":"integrity","Value":"sha256-Oc9YtBdV\u002BSuU/ko4jz1sOviA3MBNHMZU2TbS\u002Bw8YTNM="},{"Name":"label","Value":"_content/FraTool.Web/js/epm/importdata.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"8790"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Oc9YtBdV\u002BSuU/ko4jz1sOviA3MBNHMZU2TbS\u002Bw8YTNM=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Apr 2025 05:46:51 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FraTool.Web/js/epm/importdata.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\epm\importdata.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Oc9YtBdV\u002BSuU/ko4jz1sOviA3MBNHMZU2TbS\u002Bw8YTNM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"8790"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Oc9YtBdV\u002BSuU/ko4jz1sOviA3MBNHMZU2TbS\u002Bw8YTNM=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Apr 2025 05:46:51 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/FraTool.Web/js/home/home.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\home\home.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -1047,14 +1059,14 @@
     <StaticWebAssetEndpoint Include="_content/FraTool.Web/js/security/users.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\security\users.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-sWWdCIzdG11Z8dXORtFdwluQu9l7S46EGBTWr/3VuTQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"14281"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022sWWdCIzdG11Z8dXORtFdwluQu9l7S46EGBTWr/3VuTQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 14 Apr 2024 15:42:20 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-RybDQ3Cq6sswhif\u002BYMK7xz/q4M/75iroj4dK0u\u002B6YOs="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"14370"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022RybDQ3Cq6sswhif\u002BYMK7xz/q4M/75iroj4dK0u\u002B6YOs=\u0022"},{"Name":"Last-Modified","Value":"Wed, 30 Apr 2025 05:20:37 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/FraTool.Web/js/security/users.tlqotrse0q.js">
+    <StaticWebAssetEndpoint Include="_content/FraTool.Web/js/security/users.vym4xavzul.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\security\users.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"tlqotrse0q"},{"Name":"integrity","Value":"sha256-sWWdCIzdG11Z8dXORtFdwluQu9l7S46EGBTWr/3VuTQ="},{"Name":"label","Value":"_content/FraTool.Web/js/security/users.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"14281"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022sWWdCIzdG11Z8dXORtFdwluQu9l7S46EGBTWr/3VuTQ=\u0022"},{"Name":"Last-Modified","Value":"Sun, 14 Apr 2024 15:42:20 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vym4xavzul"},{"Name":"integrity","Value":"sha256-RybDQ3Cq6sswhif\u002BYMK7xz/q4M/75iroj4dK0u\u002B6YOs="},{"Name":"label","Value":"_content/FraTool.Web/js/security/users.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"14370"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022RybDQ3Cq6sswhif\u002BYMK7xz/q4M/75iroj4dK0u\u002B6YOs=\u0022"},{"Name":"Last-Modified","Value":"Wed, 30 Apr 2025 05:20:37 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/FraTool.Web/js/shared/company.53scdjheh6.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\shared\company.js'))</AssetFile>
@@ -1079,18 +1091,6 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rm63alta4v"},{"Name":"integrity","Value":"sha256-U1IVqMJPJUBwYdmIJ5qsKbb4E8ODuIl7M0ObVA2zhZ8="},{"Name":"label","Value":"_content/FraTool.Web/js/site.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2131"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022U1IVqMJPJUBwYdmIJ5qsKbb4E8ODuIl7M0ObVA2zhZ8=\u0022"},{"Name":"Last-Modified","Value":"Sat, 09 Nov 2024 14:20:38 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/FraTool.Web/js/transfer/transfer.au2dva5vq4.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\transfer\transfer.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"au2dva5vq4"},{"Name":"integrity","Value":"sha256-XrkiKaYXMYy9vVyLXtYQmHWPSsShfZmrJoGvrN9UMvo="},{"Name":"label","Value":"_content/FraTool.Web/js/transfer/transfer.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4139"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022XrkiKaYXMYy9vVyLXtYQmHWPSsShfZmrJoGvrN9UMvo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Apr 2025 13:05:09 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/FraTool.Web/js/transfer/transfer.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\transfer\transfer.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-XrkiKaYXMYy9vVyLXtYQmHWPSsShfZmrJoGvrN9UMvo="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4139"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022XrkiKaYXMYy9vVyLXtYQmHWPSsShfZmrJoGvrN9UMvo=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Apr 2025 13:05:09 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/FraTool.Web/js/voucher/errorlog.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\voucher\errorlog.js'))</AssetFile>
@@ -24611,6 +24611,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xkp51v21gk"},{"Name":"integrity","Value":"sha256-PxIc1KmXtjTgeoh2WIUAGOR1wm8L3dh0EJqNOCwZ3oc="},{"Name":"label","Value":"_content/FraTool.Web/plugins/uplot/uPlot.min.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1839"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022PxIc1KmXtjTgeoh2WIUAGOR1wm8L3dh0EJqNOCwZ3oc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 18 Jul 2023 05:26:22 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FraTool.Web/templates/Import Data Template.p7kd7hv6zv.xlsx">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\templates\Import Data Template.xlsx'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"p7kd7hv6zv"},{"Name":"integrity","Value":"sha256-lWJJUthfcSYQGMB69KGufmJULcLhAfMqZbYuiLbfeVg="},{"Name":"label","Value":"_content/FraTool.Web/templates/Import Data Template.xlsx"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"12823"},{"Name":"Content-Type","Value":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"},{"Name":"ETag","Value":"\u0022lWJJUthfcSYQGMB69KGufmJULcLhAfMqZbYuiLbfeVg=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 12:01:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FraTool.Web/templates/Import Data Template.xlsx">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\templates\Import Data Template.xlsx'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-lWJJUthfcSYQGMB69KGufmJULcLhAfMqZbYuiLbfeVg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"12823"},{"Name":"Content-Type","Value":"application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"},{"Name":"ETag","Value":"\u0022lWJJUthfcSYQGMB69KGufmJULcLhAfMqZbYuiLbfeVg=\u0022"},{"Name":"Last-Modified","Value":"Mon, 28 Apr 2025 12:01:52 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

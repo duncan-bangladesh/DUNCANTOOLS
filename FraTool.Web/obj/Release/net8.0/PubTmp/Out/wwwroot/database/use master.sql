@@ -1538,7 +1538,7 @@ Create Procedure pr_InsertTrialBalanceData
 	@AccountNo nvarchar(50) = '', 
 	@Description nvarchar(255) = '',
 	@Crop nvarchar(50) = null, 
-	@Amount decimal = 0
+	@Amount decimal(18,6)
 )
 As
 Begin
@@ -1562,7 +1562,6 @@ Begin
 	End
 End
 GO
---EXEC pr_IsExistData '2025', 'Apr'
 Create Proc pr_IsExistData
 (
 	@Year nvarchar(20) = '', 
@@ -1600,5 +1599,56 @@ BEGIN
 	IF @CompanyId > 0
 	BEGIN
 		SELECT EstateCode FROM Shared.FraLoginCompanies WHERE LoginEstateId = @CompanyId
+	END
+END
+--************Import Data View Report*************--
+--FraTool
+Create Table Shared.tblYear
+(
+	RecordId BIGINT,
+	[Year] nvarchar(20),
+	IsActive int
+)
+GO
+--FraTool
+Create Table Shared.tblMonth
+(
+	RecordId BIGINT,
+	[MonthCode] nvarchar(20),
+	[MonthName] nvarchar(20),
+	IsActive int
+)
+GO
+--FraTool
+Create Proc Shared.GetYears
+As
+Begin
+	Select * From Shared.tblYear
+End
+GO
+--FraTool
+Create Proc Shared.GetMonths
+As
+Begin
+	Select * From Shared.tblMonth
+End
+
+GO
+CREATE PROC pr_GetTrialBalanceByYearAndMonth
+(
+	@Year nvarchar(20) = '',
+	@Month nvarchar(20) = ''
+)
+AS
+BEGIN
+	IF @Year != '' AND @Month != ''
+	BEGIN
+		SELECT 
+		[Year], [Month], 
+		Account_Code AccountNo, 
+		Account_Name [Description], 
+		CASE WHEN Crop = 'NULL' THEN '' ELSE Crop END Crop, 
+		Amount 
+		FROM Tbl_TrialBalance Where [YEAR] = @Year AND [Month] = @Month
 	END
 END

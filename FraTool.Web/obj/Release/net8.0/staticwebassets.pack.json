@@ -309,6 +309,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\epm\\importdata.js",
+      "PackagePath": "staticwebassets\\js\\epm\\importdata.js"
+    },
+    {
       "Id": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\home\\home.js",
       "PackagePath": "staticwebassets\\js\\home\\home.js"
     },
@@ -359,10 +363,6 @@
     {
       "Id": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
-    },
-    {
-      "Id": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\transfer\\transfer.js",
-      "PackagePath": "staticwebassets\\js\\transfer\\transfer.js"
     },
     {
       "Id": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\voucher\\errorlog.js",
@@ -8203,6 +8203,10 @@
     {
       "Id": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\plugins\\uplot\\uPlot.min.css",
       "PackagePath": "staticwebassets\\plugins\\uplot\\uPlot.min.css"
+    },
+    {
+      "Id": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\templates\\Import Data Template.xlsx",
+      "PackagePath": "staticwebassets\\templates\\Import Data Template.xlsx"
     },
     {
       "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.FraTool.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

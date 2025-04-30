@@ -480,3 +480,4 @@ D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Debug\net8.0\FraTool.Web.gen
 D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Debug\net8.0\ref\FraTool.Web.dll
 D:\Source Control\BitBucket\FraTool\FraTool.Web\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
 D:\Source Control\BitBucket\FraTool\FraTool.Web\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

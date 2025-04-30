@@ -52,7 +52,17 @@ namespace FraTool.Web.Controllers
                 if (user != null)
                 {
                     user.ModifyBy = HttpContext.Session.GetString("UserName");
-                    result = await biz.UpdateUserInfo(user);
+                    if (user.Password == null || user.Password == "")
+                    {
+                        result = await biz.UpdateUserInfo(user);
+                    }
+                    else
+                    {
+                        user.OldPassword = "";
+                        user.PasswordHash = await biz.ShaEncrypt(user.Password);
+                        user.EntryBy = HttpContext.Session.GetString("UserName");
+                        result = await biz.ChangePassword(user);
+                    }
                 }
                 return Json(data: result);
             }
