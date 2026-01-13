@@ -1,0 +1,135 @@
+﻿
+@{
+    ViewData["Title"] = "Students";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row rowtop">
+    <div class="col-md-12">
+        <div class="card card-primary card-outline collapsed-card" id="entry-ui">
+            <div class="card-header">
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool text-bold" data-card-widget="collapse" id="btntool">
+                        <i class="fas fa-plus"></i>&nbsp;&nbsp; Add Student Profile
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <form class="form-horizontal">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input id="RecordId" value="0" hidden type="text" />
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-left col-md-4">Parent <span class="text text-danger">*</span></label>
+                                <div class="col-md-8">
+                                    <select id="EmployeeRefId" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="1" aria-hidden="true">
+                                        <option value="0">--Select--</option>                                        
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-left col-md-4">Student Code <span class="text text-danger">*</span></label>
+                                <div class="col-md-8">
+                                    <input id="StudentCode" autocomplete="off" class="form-control" tabindex="2" placeholder="student code" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-left col-md-4">Full Name <span class="text text-danger">*</span></label>
+                                <div class="col-md-8">
+                                    <input id="StudentName" autocomplete="off" class="form-control" tabindex="3" placeholder="full name" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-left col-md-4">Birth Date <span class="text text-danger">*</span></label>
+                                <div class="col-md-8">
+                                    <div class="input-group date">
+                                        <input type="text" id="DateOfBirth" autocomplete="off" placeholder="date of birth" tabindex="4" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-left col-md-4">Gender</label>
+                                <div class="col-md-8">
+                                    <select id="Gender" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="2" tabindex="5" aria-hidden="true">
+                                        <option value="">--Select--</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                    </select>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-left col-md-4">Account No. </label>
+                                <div class="col-md-8">
+                                    <input id="BankAccountNo" autocomplete="off" class="form-control" tabindex="6" placeholder="bank account no" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-left col-md-4">Bank Name</label>
+                                <div class="col-md-8">
+                                    <select id="BankId" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="3" tabindex="1" aria-hidden="true">
+                                        <option value="0">--Select--</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-left col-md-4">Branch </label>
+                                <div class="col-md-8">
+                                    <input id="BankBranch" autocomplete="off" class="form-control" tabindex="8" placeholder="bank branch" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-left col-md-4">Routing No </label>
+                                <div class="col-md-8">
+                                    <input id="BankRoutingNo" autocomplete="off" class="form-control" tabindex="9" placeholder="bank routing no" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <div class="offset-md-4 col-md-8">
+                                    <input type="button" id="btnSubmit" value="Save" class="btn btn-success" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row rowtop">
+    <div class="col-md-12">
+        <div class="card card-success card-outline">
+            <div class="card-header">
+                <h3 class="card-title">Student Lists</h3>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover display dataTable" id="rTable" style="font-size:14px !important;">
+                        <thead>
+                            <tr class="bg-success">
+                                <th>Parent Name</th>
+                                <th>Student Name</th>
+                                <th>Birth Date</th>
+                                <th>Age</th>
+                                <th>Account No</th>
+                                <th>Bank</th>
+                                <th>Branch</th>
+                                <th>Routing</th>
+                                <th data-orderable="false"></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/macalms/student_profile.js"></script>
+    <script></script>
+}

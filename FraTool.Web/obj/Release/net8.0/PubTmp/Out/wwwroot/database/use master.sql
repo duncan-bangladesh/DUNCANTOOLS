@@ -1531,7 +1531,7 @@ GO
 --FraTool
 Alter Table shared.FraLoginCompanies Add IsImportData int
 GO
-Create Procedure pr_InsertTrialBalanceData
+Create Procedure [dbo].[pr_InsertTrialBalanceData]
 (
 	@Year nvarchar(20) = '', 
 	@Month nvarchar(20) = '',
@@ -1546,6 +1546,10 @@ Begin
 	Begin
 		declare @newId int;
 		select @newId = IsNull(max(ID),0) + 1 from dbo.Tbl_TrialBalance
+		if(@Crop = '' or @Crop = null)
+		Begin
+			set @Crop = NULL
+		End
 		if @newId > 0
 		Begin
 			SET IDENTITY_INSERT Tbl_TrialBalance ON;

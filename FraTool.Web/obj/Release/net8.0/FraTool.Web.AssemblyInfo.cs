@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FraTool.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+570276124fccc4a46eb3f25222923b5eca0541b3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1850d187cfcc55dab3a4e45d47ff409a1c9b9b69")]
 [assembly: System.Reflection.AssemblyProductAttribute("FraTool.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FraTool.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -27,7 +27,6 @@ D:\Source Control\BitBucket\FraTool\dShared\obj\Release\net8.0\dShared.Generated
 D:\Source Control\BitBucket\FraTool\dShared\obj\Release\net8.0\dShared.AssemblyInfoInputs.cache
 D:\Source Control\BitBucket\FraTool\dShared\obj\Release\net8.0\dShared.AssemblyInfo.cs
 D:\Source Control\BitBucket\FraTool\dShared\obj\Release\net8.0\dShared.csproj.CoreCompileInputs.cache
-D:\Source Control\BitBucket\FraTool\dShared\obj\Release\net8.0\dShared.sourcelink.json
 D:\Source Control\BitBucket\FraTool\dShared\obj\Release\net8.0\dShared.csproj.Up2Date
 D:\Source Control\BitBucket\FraTool\dShared\obj\Release\net8.0\dShared.dll
 D:\Source Control\BitBucket\FraTool\dShared\obj\Release\net8.0\refint\dShared.dll

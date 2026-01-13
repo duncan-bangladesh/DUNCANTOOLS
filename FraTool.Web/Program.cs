@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -12,7 +13,15 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         x.LoginPath = "/accounts/login";
         x.ExpireTimeSpan = TimeSpan.FromMinutes(60);
     });
+builder.Services.Configure<IISServerOptions>(options =>
+{
+    options.MaxRequestBodySize = long.MaxValue; // For IIS
+});
 
+builder.Services.Configure<KestrelServerOptions>(options =>
+{
+    options.Limits.MaxRequestBodySize = long.MaxValue; // For Kestrel
+});
 var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {

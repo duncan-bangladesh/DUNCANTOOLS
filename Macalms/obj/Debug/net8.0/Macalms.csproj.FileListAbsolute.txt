@@ -1,0 +1,17 @@
+D:\Source Control\BitBucket\FraTool\Macalms\bin\Debug\net8.0\Macalms.deps.json
+D:\Source Control\BitBucket\FraTool\Macalms\bin\Debug\net8.0\Macalms.dll
+D:\Source Control\BitBucket\FraTool\Macalms\bin\Debug\net8.0\Macalms.pdb
+D:\Source Control\BitBucket\FraTool\Macalms\bin\Debug\net8.0\dCommon.dll
+D:\Source Control\BitBucket\FraTool\Macalms\bin\Debug\net8.0\dDataAccess.dll
+D:\Source Control\BitBucket\FraTool\Macalms\bin\Debug\net8.0\dCommon.pdb
+D:\Source Control\BitBucket\FraTool\Macalms\bin\Debug\net8.0\dDataAccess.pdb
+D:\Source Control\BitBucket\FraTool\Macalms\obj\Debug\net8.0\Macalms.csproj.AssemblyReference.cache
+D:\Source Control\BitBucket\FraTool\Macalms\obj\Debug\net8.0\Macalms.GeneratedMSBuildEditorConfig.editorconfig
+D:\Source Control\BitBucket\FraTool\Macalms\obj\Debug\net8.0\Macalms.AssemblyInfoInputs.cache
+D:\Source Control\BitBucket\FraTool\Macalms\obj\Debug\net8.0\Macalms.AssemblyInfo.cs
+D:\Source Control\BitBucket\FraTool\Macalms\obj\Debug\net8.0\Macalms.csproj.CoreCompileInputs.cache
+D:\Source Control\BitBucket\FraTool\Macalms\obj\Debug\net8.0\Macalms.csproj.Up2Date
+D:\Source Control\BitBucket\FraTool\Macalms\obj\Debug\net8.0\Macalms.dll
+D:\Source Control\BitBucket\FraTool\Macalms\obj\Debug\net8.0\refint\Macalms.dll
+D:\Source Control\BitBucket\FraTool\Macalms\obj\Debug\net8.0\Macalms.pdb
+D:\Source Control\BitBucket\FraTool\Macalms\obj\Debug\net8.0\ref\Macalms.dll

@@ -1,7 +1,104 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Source Control\\BitBucket\\FraTool\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\database\\macalms_scripts.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\database\\macalms_scripts.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\controllers\\macalmscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\controllers\\macalmscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\js\\macalms\\scholarship.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\js\\macalms\\scholarship.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\views\\macalms\\scholarship.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\views\\macalms\\scholarship.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\js\\macalms\\student_result.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\js\\macalms\\student_result.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\views\\macalms\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\views\\macalms\\result.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8776AC42-E9BA-41AA-9451-90F0212D58C0}|Macalms\\Macalms.csproj|d:\\source control\\bitbucket\\fratool\\macalms\\model\\examresults.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8776AC42-E9BA-41AA-9451-90F0212D58C0}|Macalms\\Macalms.csproj|solutionrelative:macalms\\model\\examresults.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8776AC42-E9BA-41AA-9451-90F0212D58C0}|Macalms\\Macalms.csproj|d:\\source control\\bitbucket\\fratool\\macalms\\biz\\scholarshipbiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8776AC42-E9BA-41AA-9451-90F0212D58C0}|Macalms\\Macalms.csproj|solutionrelative:macalms\\biz\\scholarshipbiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8776AC42-E9BA-41AA-9451-90F0212D58C0}|Macalms\\Macalms.csproj|d:\\source control\\bitbucket\\fratool\\macalms\\biz\\studentprofilbiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8776AC42-E9BA-41AA-9451-90F0212D58C0}|Macalms\\Macalms.csproj|solutionrelative:macalms\\biz\\studentprofilbiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8776AC42-E9BA-41AA-9451-90F0212D58C0}|Macalms\\Macalms.csproj|d:\\source control\\bitbucket\\fratool\\macalms\\model\\scholarships.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8776AC42-E9BA-41AA-9451-90F0212D58C0}|Macalms\\Macalms.csproj|solutionrelative:macalms\\model\\scholarships.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8776AC42-E9BA-41AA-9451-90F0212D58C0}|Macalms\\Macalms.csproj|d:\\source control\\bitbucket\\fratool\\macalms\\biz\\employeeprofilebiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8776AC42-E9BA-41AA-9451-90F0212D58C0}|Macalms\\Macalms.csproj|solutionrelative:macalms\\biz\\employeeprofilebiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\js\\macalms\\employee_profile.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\js\\macalms\\employee_profile.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8776AC42-E9BA-41AA-9451-90F0212D58C0}|Macalms\\Macalms.csproj|d:\\source control\\bitbucket\\fratool\\macalms\\model\\employeeprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8776AC42-E9BA-41AA-9451-90F0212D58C0}|Macalms\\Macalms.csproj|solutionrelative:macalms\\model\\employeeprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8776AC42-E9BA-41AA-9451-90F0212D58C0}|Macalms\\Macalms.csproj|d:\\source control\\bitbucket\\fratool\\macalms\\biz\\examresultbiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8776AC42-E9BA-41AA-9451-90F0212D58C0}|Macalms\\Macalms.csproj|solutionrelative:macalms\\biz\\examresultbiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\js\\macalms\\student_profile.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\js\\macalms\\student_profile.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\views\\macalms\\students.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\views\\macalms\\students.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\views\\macalms\\employee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\views\\macalms\\employee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8776AC42-E9BA-41AA-9451-90F0212D58C0}|Macalms\\Macalms.csproj|d:\\source control\\bitbucket\\fratool\\macalms\\model\\assessmentyear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8776AC42-E9BA-41AA-9451-90F0212D58C0}|Macalms\\Macalms.csproj|solutionrelative:macalms\\model\\assessmentyear.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8776AC42-E9BA-41AA-9451-90F0212D58C0}|Macalms\\Macalms.csproj|d:\\source control\\bitbucket\\fratool\\macalms\\model\\studentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8776AC42-E9BA-41AA-9451-90F0212D58C0}|Macalms\\Macalms.csproj|solutionrelative:macalms\\model\\studentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\js\\security\\users.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\js\\security\\users.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8776AC42-E9BA-41AA-9451-90F0212D58C0}|Macalms\\Macalms.csproj|d:\\source control\\bitbucket\\fratool\\macalms\\model\\banks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8776AC42-E9BA-41AA-9451-90F0212D58C0}|Macalms\\Macalms.csproj|solutionrelative:macalms\\model\\banks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\database\\macalms_scripts.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\database\\macalms_scripts.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +106,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 22,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +115,294 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "scholarship.js",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\macalms\\scholarship.js",
+              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\js\\macalms\\scholarship.js",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\macalms\\scholarship.js",
+              "RelativeToolTip": "FraTool.Web\\wwwroot\\js\\macalms\\scholarship.js",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-01-12T08:45:29.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MacalmsController.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Controllers\\MacalmsController.cs",
+              "RelativeDocumentMoniker": "FraTool.Web\\Controllers\\MacalmsController.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Controllers\\MacalmsController.cs",
+              "RelativeToolTip": "FraTool.Web\\Controllers\\MacalmsController.cs",
+              "ViewState": "AgIAALYAAAAAAAAAAAAuwBsAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T10:27:51.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Scholarship.cshtml",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Macalms\\Scholarship.cshtml",
+              "RelativeDocumentMoniker": "FraTool.Web\\Views\\Macalms\\Scholarship.cshtml",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Macalms\\Scholarship.cshtml",
+              "RelativeToolTip": "FraTool.Web\\Views\\Macalms\\Scholarship.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-12T08:44:15.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ScholarshipBiz.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Biz\\ScholarshipBiz.cs",
+              "RelativeDocumentMoniker": "Macalms\\Biz\\ScholarshipBiz.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Biz\\ScholarshipBiz.cs",
+              "RelativeToolTip": "Macalms\\Biz\\ScholarshipBiz.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAASwFUAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T06:51:21.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Scholarships.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Model\\Scholarships.cs",
+              "RelativeDocumentMoniker": "Macalms\\Model\\Scholarships.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Model\\Scholarships.cs",
+              "RelativeToolTip": "Macalms\\Model\\Scholarships.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T06:44:33.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "FraTool.Web\\appsettings.json",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\appsettings.json",
+              "RelativeToolTip": "FraTool.Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-12T04:58:58.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EmployeeProfileBiz.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Biz\\EmployeeProfileBiz.cs",
+              "RelativeDocumentMoniker": "Macalms\\Biz\\EmployeeProfileBiz.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Biz\\EmployeeProfileBiz.cs",
+              "RelativeToolTip": "Macalms\\Biz\\EmployeeProfileBiz.cs",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAUwJIAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T08:33:24.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EmployeeProfile.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Model\\EmployeeProfile.cs",
+              "RelativeDocumentMoniker": "Macalms\\Model\\EmployeeProfile.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Model\\EmployeeProfile.cs",
+              "RelativeToolTip": "Macalms\\Model\\EmployeeProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T08:29:26.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StudentProfilBiz.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Biz\\StudentProfilBiz.cs",
+              "RelativeDocumentMoniker": "Macalms\\Biz\\StudentProfilBiz.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Biz\\StudentProfilBiz.cs",
+              "RelativeToolTip": "Macalms\\Biz\\StudentProfilBiz.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAuwG0AAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T11:21:18.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ExamResultBiz.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Biz\\ExamResultBiz.cs",
+              "RelativeDocumentMoniker": "Macalms\\Biz\\ExamResultBiz.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Biz\\ExamResultBiz.cs",
+              "RelativeToolTip": "Macalms\\Biz\\ExamResultBiz.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAYwLAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-10T08:19:13.115Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ExamResults.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Model\\ExamResults.cs",
+              "RelativeDocumentMoniker": "Macalms\\Model\\ExamResults.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Model\\ExamResults.cs",
+              "RelativeToolTip": "Macalms\\Model\\ExamResults.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-10T15:44:53.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Result.cshtml",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Macalms\\Result.cshtml",
+              "RelativeDocumentMoniker": "FraTool.Web\\Views\\Macalms\\Result.cshtml",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Macalms\\Result.cshtml",
+              "RelativeToolTip": "FraTool.Web\\Views\\Macalms\\Result.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAF8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-05T06:46:51.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "student_result.js",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\macalms\\student_result.js",
+              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\js\\macalms\\student_result.js",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\macalms\\student_result.js",
+              "RelativeToolTip": "FraTool.Web\\wwwroot\\js\\macalms\\student_result.js",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADQAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-01-05T06:48:16.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "student_profile.js",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\macalms\\student_profile.js",
+              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\js\\macalms\\student_profile.js",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\macalms\\student_profile.js",
+              "RelativeToolTip": "FraTool.Web\\wwwroot\\js\\macalms\\student_profile.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-12-28T06:59:17.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AssessmentYear.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Model\\AssessmentYear.cs",
+              "RelativeDocumentMoniker": "Macalms\\Model\\AssessmentYear.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Model\\AssessmentYear.cs",
+              "RelativeToolTip": "Macalms\\Model\\AssessmentYear.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-10T08:17:44.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Program.cs",
+              "RelativeDocumentMoniker": "FraTool.Web\\Program.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Program.cs",
+              "RelativeToolTip": "FraTool.Web\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T09:40:16.077Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "users.js",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\security\\users.js",
+              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\js\\security\\users.js",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\security\\users.js",
+              "RelativeToolTip": "FraTool.Web\\wwwroot\\js\\security\\users.js",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-01-04T07:11:02.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "StudentProfile.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Model\\StudentProfile.cs",
+              "RelativeDocumentMoniker": "Macalms\\Model\\StudentProfile.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Model\\StudentProfile.cs",
+              "RelativeToolTip": "Macalms\\Model\\StudentProfile.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T11:50:19.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Students.cshtml",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Macalms\\Students.cshtml",
+              "RelativeDocumentMoniker": "FraTool.Web\\Views\\Macalms\\Students.cshtml",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Macalms\\Students.cshtml",
+              "RelativeToolTip": "FraTool.Web\\Views\\Macalms\\Students.cshtml",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAG0AAACEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-21T10:32:17.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Banks.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Model\\Banks.cs",
+              "RelativeDocumentMoniker": "Macalms\\Model\\Banks.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Model\\Banks.cs",
+              "RelativeToolTip": "Macalms\\Model\\Banks.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-30T11:18:52.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "macalms_scripts.sql ",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\database\\macalms_scripts.sql",
+              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\database\\macalms_scripts.sql",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\database\\macalms_scripts.sql",
+              "RelativeToolTip": "FraTool.Web\\wwwroot\\database\\macalms_scripts.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-12-28T06:29:07.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Employee.cshtml",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Macalms\\Employee.cshtml",
+              "RelativeDocumentMoniker": "FraTool.Web\\Views\\Macalms\\Employee.cshtml",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Macalms\\Employee.cshtml",
+              "RelativeToolTip": "FraTool.Web\\Views\\Macalms\\Employee.cshtml",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAAAG4AAACEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-21T10:31:06.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "employee_profile.js",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\macalms\\employee_profile.js",
+              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\js\\macalms\\employee_profile.js",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\macalms\\employee_profile.js",
+              "RelativeToolTip": "FraTool.Web\\wwwroot\\js\\macalms\\employee_profile.js",
+              "ViewState": "AgIAAE8AAAAAAAAAAAA0wGQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-12-22T05:52:19.728Z",
+              "EditorCaption": ""
             }
           ]
         }

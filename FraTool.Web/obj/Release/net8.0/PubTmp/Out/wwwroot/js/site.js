@@ -35,8 +35,7 @@ $(document).ready(function () {
             html += '</li>';
         }
         $('#menus').append(html);
-    });
-    
+    });    
 });
 function my_datepicker(picker_id) {
     $(picker_id).datepicker({
@@ -50,7 +49,17 @@ function my_datepicker(picker_id) {
     });
     $(picker_id).datepicker('setDate', 'today');
 }
-
+function init_datepicker(element) {
+    $(element).datepicker({
+        dateFormat: "dd-mm-yy",
+        todayHighlight: true,
+        changeMonth: true,
+        changeYear: true,
+        showOtherMonths: true,
+        selectOtherMonths: true,
+        maxDate: 0
+    });
+}
 function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 };

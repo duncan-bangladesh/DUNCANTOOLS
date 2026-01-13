@@ -15,6 +15,8 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v8.0
 build_property.RootNamespace = FraTool.Web
 build_property.RootNamespace = FraTool.Web
 build_property.ProjectDir = D:\Source Control\BitBucket\FraTool\FraTool.Web\
@@ -42,6 +44,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Source Control/BitBucket/FraTool/FraTool.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Source Control/BitBucket/FraTool/FraTool.Web/Views/Macalms/Employee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFjYWxtc1xFbXBsb3llZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Source Control/BitBucket/FraTool/FraTool.Web/Views/Macalms/Result.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFjYWxtc1xSZXN1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Source Control/BitBucket/FraTool/FraTool.Web/Views/Macalms/Scholarship.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFjYWxtc1xTY2hvbGFyc2hpcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Source Control/BitBucket/FraTool/FraTool.Web/Views/Macalms/Students.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFjYWxtc1xTdHVkZW50cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Source Control/BitBucket/FraTool/FraTool.Web/Views/Menus/Index.cshtml]

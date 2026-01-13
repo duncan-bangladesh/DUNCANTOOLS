@@ -1,0 +1,138 @@
+﻿
+@{
+    ViewData["Title"] = "Result";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row rowtop">
+    <div class="col-md-12">
+        <div class="card card-primary card-outline collapsed-card" id="entry-ui">
+            <div class="card-header">
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool text-bold" data-card-widget="collapse" id="btntool">
+                        <i class="fas fa-plus"></i>&nbsp;&nbsp; Add Student Result
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <form class="form-horizontal">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input id="RecordId" value="0" hidden type="text" />
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-left col-md-4">Assessment Year <span class="text text-danger">*</span></label>
+                                <div class="col-md-8">
+                                    <select id="AssessmentYearId" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="1" aria-hidden="true">
+                                        <option value="0">--Select--</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-left col-md-4">Parent Name <span class="text text-danger">*</span></label>
+                                <div class="col-md-8">
+                                    <select id="EmployeeRefId" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="2" tabindex="2" aria-hidden="true">
+                                        <option value="0">--Select--</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-left col-md-4">Studen Name <span class="text text-danger">*</span></label>
+                                <div class="col-md-8">
+                                    <select id="StudentId" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="3" tabindex="3" aria-hidden="true">
+                                        <option value="0">--Select--</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-left col-md-4">Class Studied <span class="text text-danger">*</span></label>
+                                <div class="col-md-8">
+                                    <input id="ClassStudied" class="form-control" tabindex="4" placeholder="class studied" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-left col-md-4">Institution Name <span class="text text-danger">*</span></label>
+                                <div class="col-md-8">
+                                    <input id="InstitutionName" class="form-control" tabindex="5" placeholder="institution name" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-left col-md-4">Study Medium <span class="text text-danger">*</span></label>
+                                <div class="col-md-8">
+                                    <select id="StudyMedium" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="4" tabindex="6" aria-hidden="true">
+                                        <option value="">--Select--</option>
+                                        <option value="Bengali">Bengali</option>
+                                        <option value="English">English</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-left col-md-4">Academy Type </label>
+                                <div class="col-md-8">
+                                    <select id="AcademyType" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="5" tabindex="7" aria-hidden="true">
+                                        <option value="">--Select--</option>
+                                        <option value="Pre School">Pre School</option>
+                                        <option value="Primary School">Primary School</option>
+                                        <option value="High School">High School</option>
+                                        <option value="Board Examinee">Board Examinee</option>
+                                        <option value="Undergrad">Undergrad</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-left col-md-4">Exam Result <span class="text text-danger">*</span></label>
+                                <div class="col-md-8">
+                                    <input id="ExamResult" class="form-control" tabindex="8" placeholder="exam result" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <div class="offset-md-4 col-md-8">
+                                    <input type="button" id="btnSubmit" value="Save" class="btn btn-success" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row rowtop">
+    <div class="col-md-12">
+        <div class="card card-success card-outline">
+            <div class="card-header">
+                <h3 class="card-title">Exam Results</h3>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover display dataTable" id="rTable" style="font-size:14px !important;">
+                        <thead>
+                            <tr class="bg-success">
+                                <th>Student Code</th>
+                                <th>Student Name</th>
+                                <th>Year</th>
+                                <th>Class Studied</th>
+                                <th>Institution</th>
+                                <th>Medium</th>
+                                <th>Result</th>
+                                <th>Academy Type</th>
+                                <th data-orderable="false"></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/macalms/student_result.js"></script>
+    <script></script>
+}
+
+

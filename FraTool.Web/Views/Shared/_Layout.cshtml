@@ -43,6 +43,12 @@
     <link href="~/css/site.css" rel="stylesheet" />
     
     <style>
+        @@media (min-width: 768px) {
+            .offset-md-2 {
+                margin-left: 12.666667% !important;
+            }
+        }
+
         .rowtop {
             margin-top: 10px !important;
             margin-bottom: -10px !important;
@@ -90,6 +96,28 @@
             border-collapse: separate !important;
             border-spacing: 0;
         }
+
+        .table th {
+            line-height: 1.15;
+        }
+
+        .table td {
+            padding: 2px 4px;
+            line-height: 1.1;
+        }
+
+        .table {
+            border-collapse: collapse; /* Avoid extra spacing */
+        }
+
+            .table tbody .btn {
+                margin-top: -10px !important;
+                margin-bottom: -4px !important;
+            }
+
+        .icheck {
+            min-height: 12px !important;
+        }
     </style>
 
 </head>
@@ -98,7 +126,7 @@
 
         <!-- Preloader -->
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="~/dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+            <img class="animation__shake" src="~/dist/img/logo_duncan.png" alt="Duncan Logo" height="80" width="80">
         </div>
 
         <!-- Navbar -->
@@ -175,7 +203,7 @@
         </nav>
         <!-- /.navbar -->
         <!-- Main Sidebar Container -->
-        <aside class="main-sidebar sidebar-dark-primary  elevation-4">
+        <aside class="main-sidebar sidebar-dark-primary  elevation-4" style="font-size:15px !important; line-height:0.5 !important;">
             <!-- Brand Logo -->
             <a asp-controller="Home" asp-action="Index" class="brand-link">
                 <img src="~/dist/img/app_logo.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
@@ -194,7 +222,7 @@
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
-            <section class="content" style="padding-top:5px;">
+            <section class="content">
                 <div class="container-fluid">
                     <main role="main" class="pb-3">
                         @RenderBody()                        

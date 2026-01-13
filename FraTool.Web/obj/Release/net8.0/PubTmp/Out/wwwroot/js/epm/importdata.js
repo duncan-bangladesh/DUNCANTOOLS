@@ -30,20 +30,7 @@
             }
         }
     });
-    $.get('/Company/GetTranCompanies', function (data) {
-        if (data.length > 0) {
-            $('#CompanyId').empty();
-            $("#CompanyId").append('<option value="0">--Select--</option>');            
-            for (var i = 0; i < data.length; i++) {
-                $('<option/>',
-                    {
-                        value: data[i].companyId,
-                        html: data[i].companyName
-                    }
-                ).appendTo("#CompanyId");
-            }
-        }
-    });
+    LoadCompany();
     $.get('/Company/GetTranCompanies', function (data) {
         if (data.length > 0) {
             $('#ddCompanyId').empty();
@@ -78,7 +65,8 @@
             var workbook = XLSX.read(data, { type: 'array' });
             var sheetName = workbook.SheetNames[0];
             var worksheet = workbook.Sheets[sheetName];
-            var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
+            var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, defval: "" });
+            transferData = jsonData;
             if (jsonData.length > 0) {
                 $('#excelDataTable tbody').empty();
                 var rows = '<tbody>';
@@ -93,16 +81,6 @@
                     }
                     var value = parseFloat(chAmount);
                     total += value;
-                    var model = {
-                        Id: 0,
-                        Year: jsonData[x][0],
-                        Month: jsonData[x][1],
-                        AccountNo: jsonData[x][2],
-                        Description: jsonData[x][3],
-                        Crop: jsonData[x][4],
-                        Amount: chAmount
-                    };
-                    transferData.push(model);
                     rows += `<tr>
                                 <td>${jsonData[x][0]}</td>
                                 <td>${jsonData[x][1]}</td>
@@ -130,18 +108,48 @@
     });
     $('#btnSave').click(function () {
         var companyId = $('#CompanyId').val();
+        if (transferData.length === 0) {
+            toastr.error("No data to send.");
+            return;
+        }
         if (companyId > 0) {
-            $.post('/Epm/SaveTransferData'
-                , { companyId: companyId, transferData: transferData }
-                , function (data) {
-                    if (data.success == true) {
-                        toastr.success(data.message);
-                        setTimeout(function () {
-                            window.location.reload();
-                        }, 2000);
-                    }
+            let jsonData = [];
+            let headers = transferData[0];
+
+            for (let i = 1; i < transferData.length; i++) {
+                let rowObj = {};
+                for (let j = 0; j < headers.length; j++) {
+                    rowObj[headers[j]] = transferData[i][j];
                 }
-            );
+                jsonData.push(rowObj);
+            }
+            $.ajax({
+                url: '/Epm/UploadExcelData',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    companyId: companyId,
+                    excelRows: jsonData // your Excel data array
+                }),
+                success: function (response) {
+                    if (response.success) {
+                        setTimeout(function () {
+                            toastr.success("Data uploaded successfully.");
+                            $('#excelFile').prop('disabled', true);
+                            $('#excelDataTable tbody').empty();
+                            $('#displayUploadedData').hide();
+                            $('#excelFile').val('');
+                            LoadCompany();
+                            transferData = [];
+                        }, 2000);                        
+                    } else {
+                        toastr.error("Error saving data.");
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.error(error);
+                }
+            });
         }
     });
     $("#btnSearch").click(function () {
@@ -216,3 +224,19 @@
         }
     });
 });
+function LoadCompany() {
+    $.get('/Company/GetTranCompanies', function (data) {
+        if (data.length > 0) {
+            $('#CompanyId').empty();
+            $("#CompanyId").append('<option value="0">--Select--</option>');
+            for (var i = 0; i < data.length; i++) {
+                $('<option/>',
+                    {
+                        value: data[i].companyId,
+                        html: data[i].companyName
+                    }
+                ).appendTo("#CompanyId");
+            }
+        }
+    });
+}
