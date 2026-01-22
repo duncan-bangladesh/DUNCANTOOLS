@@ -32,3 +32,4 @@ D:\Source Control\BitBucket\FraTool\dShared\obj\Release\net8.0\dShared.dll
 D:\Source Control\BitBucket\FraTool\dShared\obj\Release\net8.0\refint\dShared.dll
 D:\Source Control\BitBucket\FraTool\dShared\obj\Release\net8.0\dShared.pdb
 D:\Source Control\BitBucket\FraTool\dShared\obj\Release\net8.0\ref\dShared.dll
+D:\Source Control\BitBucket\FraTool\dShared\obj\Release\net8.0\dShared.sourcelink.json

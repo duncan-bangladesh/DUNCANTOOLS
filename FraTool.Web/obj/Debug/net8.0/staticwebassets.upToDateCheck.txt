@@ -79,6 +79,7 @@ wwwroot\favicon.ico
 wwwroot\js\epm\importdata.js
 wwwroot\js\home\home.js
 wwwroot\js\jquery.table2excel.js
+wwwroot\js\macalms\bank.js
 wwwroot\js\macalms\employee_profile.js
 wwwroot\js\macalms\scholarship.js
 wwwroot\js\macalms\student_profile.js

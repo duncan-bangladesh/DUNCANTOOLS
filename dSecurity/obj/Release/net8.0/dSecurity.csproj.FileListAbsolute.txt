@@ -32,3 +32,4 @@ D:\Source Control\BitBucket\FraTool\dSecurity\obj\Release\net8.0\dSecurity.dll
 D:\Source Control\BitBucket\FraTool\dSecurity\obj\Release\net8.0\refint\dSecurity.dll
 D:\Source Control\BitBucket\FraTool\dSecurity\obj\Release\net8.0\dSecurity.pdb
 D:\Source Control\BitBucket\FraTool\dSecurity\obj\Release\net8.0\ref\dSecurity.dll
+D:\Source Control\BitBucket\FraTool\dSecurity\obj\Release\net8.0\dSecurity.sourcelink.json

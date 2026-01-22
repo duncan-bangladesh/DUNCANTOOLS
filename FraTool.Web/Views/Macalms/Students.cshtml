@@ -3,6 +3,27 @@
     ViewData["Title"] = "Students";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<style>
+    /* Green switch (Active) */
+    .switch-active .custom-control-input:checked ~ .custom-control-label::before {
+        background-color: #28a745;
+        border-color: #28a745;
+    }
+
+    .switch-active .custom-control-input:checked ~ .custom-control-label::after {
+        background-color: #fff;
+    }
+
+    /* Red switch (Inactive) */
+    .switch-inactive .custom-control-label::before {
+        background-color: #dc3545;
+        border-color: #dc3545;
+    }
+
+    .switch-inactive .custom-control-label::after {
+        background-color: #fff;
+    }
+</style>
 
 <div class="row rowtop">
     <div class="col-md-12">
@@ -110,8 +131,8 @@
                     <table class="table table-bordered table-hover display dataTable" id="rTable" style="font-size:14px !important;">
                         <thead>
                             <tr class="bg-success">
-                                <th>Parent Name</th>
-                                <th>Student Name</th>
+                                <th data-orderable="false">Parent Name</th>
+                                <th data-orderable="false">Student Name</th>
                                 <th>Birth Date</th>
                                 <th>Age</th>
                                 <th>Account No</th>

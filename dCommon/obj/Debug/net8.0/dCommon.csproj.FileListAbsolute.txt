@@ -16,6 +16,7 @@ D:\Source Control\BitBucket\FraTool\dCommon\obj\Debug\net8.0\dCommon.GeneratedMS
 D:\Source Control\BitBucket\FraTool\dCommon\obj\Debug\net8.0\dCommon.AssemblyInfoInputs.cache
 D:\Source Control\BitBucket\FraTool\dCommon\obj\Debug\net8.0\dCommon.AssemblyInfo.cs
 D:\Source Control\BitBucket\FraTool\dCommon\obj\Debug\net8.0\dCommon.csproj.CoreCompileInputs.cache
+D:\Source Control\BitBucket\FraTool\dCommon\obj\Debug\net8.0\dCommon.sourcelink.json
 D:\Source Control\BitBucket\FraTool\dCommon\obj\Debug\net8.0\dCommon.dll
 D:\Source Control\BitBucket\FraTool\dCommon\obj\Debug\net8.0\refint\dCommon.dll
 D:\Source Control\BitBucket\FraTool\dCommon\obj\Debug\net8.0\dCommon.pdb

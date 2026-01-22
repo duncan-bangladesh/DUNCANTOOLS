@@ -6,12 +6,12 @@ builder.Services.AddControllersWithViews();
 
 //Authentication Cookie Settings
 builder.Services.AddHttpContextAccessor();
-builder.Services.AddSession(x => x.IdleTimeout = TimeSpan.FromMinutes(60));
+builder.Services.AddSession(x => x.IdleTimeout = TimeSpan.FromMinutes(600));
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(x =>
     {
         x.LoginPath = "/accounts/login";
-        x.ExpireTimeSpan = TimeSpan.FromMinutes(60);
+        x.ExpireTimeSpan = TimeSpan.FromMinutes(600);
     });
 builder.Services.Configure<IISServerOptions>(options =>
 {
@@ -28,6 +28,7 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Home/Error");
 }
 app.UseStaticFiles();
+
 app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();

@@ -21,46 +21,6 @@ namespace Macalms.Biz
             connectionString = _configuration.GetConnectionString("DefaultConnection");
         }
         private readonly DbAccess access = new DbAccess();
-        public async Task<List<Banks>> GetBanks()
-        {
-            List<Banks> list = new List<Banks>();
-            SqlDataReader? reader = null;
-            SqlConnection connection = access.GetConnection(connectionString);
-            try
-            {
-                SqlCommand command = new SqlCommand("Macalms.GetAllBanks", connection);
-                command.CommandType = System.Data.CommandType.StoredProcedure;
-                command.Parameters.Clear();
-                reader = command.ExecuteReader();
-                if (reader.HasRows)
-                {
-                    while (reader.Read())
-                    {
-                        Banks model = new Banks();
-                        model.RecordId = Convert.ToInt64(reader["RecordId"]);
-                        model.BankName = reader["BankName"].ToString();
-                        model.ShortCode = reader["ShortCode"].ToString();
-                        model.IsActive = Convert.ToBoolean(reader["IsActive"]);                        
-
-                        list.Add(model);
-                    }
-                }
-                connection.Close();
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-            finally
-            {
-                if (reader != null)
-                {
-                    reader.Close();
-                }
-                connection.Dispose();
-            }
-            return await Task.Run(() => list);
-        }
         public async Task<string> GetStudentCodeByParentCode(string EmployeeRefCode)
         {
             string StudentCode = "";

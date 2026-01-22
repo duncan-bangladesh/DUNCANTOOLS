@@ -24,9 +24,13 @@ namespace Macalms.Model
     }
     public class  ScholarshipData
     {
+        public int SL { get; set; }
+        public int AssessmentYear { get; set; }
         public string? StudentName { get; set; }
         public string? ParentName { get; set; }
         public string? DateOfBirth { get; set; }
+        public string? Age { get; set; }
+        public int ScholarshipDuration { get; set; }
         public string? BankName { get; set; }
         public string? BankBranch { get; set; }
         public string? BankAccountNo { get; set; }

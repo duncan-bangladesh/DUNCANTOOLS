@@ -20,3 +20,4 @@ D:\Source Control\BitBucket\FraTool\dCommon\obj\Release\net8.0\dCommon.dll
 D:\Source Control\BitBucket\FraTool\dCommon\obj\Release\net8.0\refint\dCommon.dll
 D:\Source Control\BitBucket\FraTool\dCommon\obj\Release\net8.0\dCommon.pdb
 D:\Source Control\BitBucket\FraTool\dCommon\obj\Release\net8.0\ref\dCommon.dll
+D:\Source Control\BitBucket\FraTool\dCommon\obj\Release\net8.0\dCommon.sourcelink.json

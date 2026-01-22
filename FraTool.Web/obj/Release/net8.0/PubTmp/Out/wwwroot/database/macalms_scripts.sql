@@ -185,6 +185,41 @@ BEGIN
 	SELECT RecordId, BankName, ShortCode, IsActive FROM Macalms.AllBanks
 END
 GO
+CREATE PROC Macalms.AddBank
+(
+	@BankName nvarchar(250) = null,
+	@EntryBy nvarchar(80) = null
+)
+AS
+BEGIN
+	IF @BankName IS NOT NULL
+	BEGIN
+		DECLARE @Id BIGINT = 0;
+		SELECT @Id = (ISNULL(MAX(RecordId),0) + 1) FROM Macalms.AllBanks 
+		IF @Id > 0
+		BEGIN
+			INSERT INTO Macalms.AllBanks (RecordId, BankName, IsActive, EntryBy, EntryDate)
+			VALUES (@Id, @BankName, 1, @EntryBy, GETDATE())
+		END
+	END
+END
+GO
+Create Proc Macalms.UpdateBankName
+(
+	@RecordId bigint = 0,
+	@BankName nvarchar(250) = null, 
+	@ModifyBy nvarchar(80) = null
+)
+AS
+BEGIN
+	IF @RecordId > 0
+	BEGIN
+		Update Macalms.AllBanks
+		Set BankName = @BankName, ModifyBy = @ModifyBy, ModifyDate = GETDATE()
+		Where RecordId = @RecordId;
+	END
+END
+GO
 Create Table Macalms.StudentProfile(
 	RecordId bigint Primary key,
 	ParentId bigint,
@@ -602,3 +637,65 @@ BEGIN
 END
 GO
 
+
+
+
+alter PROC Macalms.GetAllEligibleStudent
+(
+	@AssessmentYear INT = 0
+)
+AS
+BEGIN
+	IF @AssessmentYear > 0
+	BEGIN
+		DECLARE @YearStart DATE = DATEFROMPARTS(@AssessmentYear, 1, 1);
+		DECLARE @YearEnd   DATE = DATEFROMPARTS(@AssessmentYear, 12, 31);
+
+		/* Temp Employee Dataset */
+		DECLARE @EmpDates TABLE
+		(
+			EmployeeCode   NVARCHAR(20),
+			EmployeeName   NVARCHAR(100),
+			ApplicableFrom DATE,
+			ApplicableUpto DATE
+		);
+		INSERT INTO @EmpDates (EmployeeCode, EmployeeName, ApplicableFrom, ApplicableUpto)
+		SELECT e.EmployeeCode, e.EmployeeName, TRY_CONVERT(DATE, e.ApplicableFrom, 105), CASE WHEN e.ApplicableUpto IS NULL OR e.ApplicableUpto = '' THEN NULL ELSE TRY_CONVERT(DATE, e.ApplicableUpto, 105) END
+		FROM Macalms.EmployeeProfile e WHERE e.IsActive = 1;
+
+		SELECT s.StudentName, e.EmployeeName AS ParentName, s.DateOfBirth, r.StudyMedium, AgeCalc.AgeYears  AS StAgeYears, AgeCalc.AgeMonths AS StAgeMonths, AgeCalc.AgeDays   AS StAgeDays,
+			s.BankName, s.BankBranch, s.BankAccountNo, s.BankRoutingNo, ISNULL(e.ApplicableUpto, @YearEnd) AS ApplicableUpto,
+			/* FINAL — Correct Month & Day Result */
+			M.FullMonths AS EmpEligibleMonths, CASE WHEN M.FullMonths = 12 THEN 0 ELSE DATEDIFF(DAY, DATEADD(MONTH, M.FullMonths, Calc.StartDate), Calc.EndDate) + 1 END AS EmpEligibleDays
+		FROM Macalms.StudentProfile s
+		JOIN @EmpDates e ON s.EmployeeRefCode = e.EmployeeCode
+		JOIN Macalms.StudentResults r ON r.StudentCode = s.StudentCode AND r.AssessmentYear = CAST(@AssessmentYear AS NVARCHAR(4)) AND r.IsActive = 1
+
+		/* Accurate Student Age */
+		CROSS APPLY
+		(SELECT AgeYears = DATEDIFF(YEAR, TRY_CONVERT(DATE, s.DateOfBirth, 105), @YearEnd)
+					- CASE WHEN DATEADD(YEAR, DATEDIFF(YEAR, TRY_CONVERT(DATE, s.DateOfBirth, 105), @YearEnd), TRY_CONVERT(DATE, s.DateOfBirth, 105)) > @YearEnd THEN 1 ELSE 0 END,
+				AgeMonths = DATEDIFF(MONTH, DATEADD(YEAR, DATEDIFF(YEAR, TRY_CONVERT(DATE, s.DateOfBirth, 105), @YearEnd), TRY_CONVERT(DATE, s.DateOfBirth, 105)), @YearEnd ) % 12,
+				AgeDays = DATEDIFF(DAY,DATEADD(MONTH, DATEDIFF(MONTH, DATEADD(YEAR, DATEDIFF(YEAR, TRY_CONVERT(DATE, s.DateOfBirth, 105), @YearEnd), 
+					TRY_CONVERT(DATE, s.DateOfBirth, 105)), @YearEnd), DATEADD(YEAR, DATEDIFF(YEAR, TRY_CONVERT(DATE, s.DateOfBirth, 105), @YearEnd), 
+					TRY_CONVERT(DATE, s.DateOfBirth, 105))), @YearEnd)) AgeCalc
+
+		/* Normalize Applicable Period */
+		CROSS APPLY
+		(SELECT
+			StartDate = CASE WHEN e.ApplicableFrom < @YearStart THEN @YearStart ELSE e.ApplicableFrom END,
+			EndDate = CASE WHEN e.ApplicableUpto IS NOT NULL 
+			--AND e.ApplicableUpto < @YearEnd 
+			THEN e.ApplicableUpto ELSE @YearEnd END) Calc
+
+		/* FINAL — Month Calculation (No Overflows) */
+		CROSS APPLY (SELECT BaseMonths = DATEDIFF(MONTH, Calc.StartDate, Calc.EndDate)) BM
+		CROSS APPLY (SELECT FullMonths = CASE
+			/* Not resigned + full year */
+			WHEN e.ApplicableUpto IS NULL AND DATEDIFF(DAY, Calc.StartDate, Calc.EndDate) + 1 >= 365 THEN 12
+			/* Adjust if adding months overshoots */
+			WHEN DATEADD(MONTH, BM.BaseMonths, Calc.StartDate) > Calc.EndDate THEN BM.BaseMonths - 1 ELSE BM.BaseMonths END) M
+		WHERE s.IsActive = 1 AND AgeCalc.AgeYears BETWEEN 6 AND 22
+		ORDER BY s.StudentName;
+	END
+END

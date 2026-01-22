@@ -23,6 +23,19 @@
                 }
                 rows += `<tr style="font-weight: bold;"><td></td><td></td><td></td><td></td><td></td><td></td><td>Total</td><td>${numberWithCommas(total)}</td></tr>`;
                 $('#rTable').append(rows);
+
+                var fileType = "excel";
+                var url = "/Macalms/DownloadScholarship"
+                    + "?AssessmentYear=" + encodeURIComponent(assessmentYear)
+                    + "&FileType=" + encodeURIComponent(fileType);
+                $("#aExcel").attr("href", url);
+
+                var fileType2 = "pdf";
+                var url2 = "/Macalms/DownloadScholarship"
+                    + "?AssessmentYear=" + encodeURIComponent(assessmentYear)
+                    + "&FileType=" + encodeURIComponent(fileType2);
+                $("#aPdf").attr("href", url2);
+
                 $('#scholarshipDiv').show();
             }
             else {

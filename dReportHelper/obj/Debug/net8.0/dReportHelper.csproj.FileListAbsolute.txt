@@ -1,0 +1,12 @@
+D:\Source Control\BitBucket\FraTool\dReportHelper\bin\Debug\net8.0\dReportHelper.deps.json
+D:\Source Control\BitBucket\FraTool\dReportHelper\bin\Debug\net8.0\dReportHelper.dll
+D:\Source Control\BitBucket\FraTool\dReportHelper\bin\Debug\net8.0\dReportHelper.pdb
+D:\Source Control\BitBucket\FraTool\dReportHelper\obj\Debug\net8.0\dReportHelper.GeneratedMSBuildEditorConfig.editorconfig
+D:\Source Control\BitBucket\FraTool\dReportHelper\obj\Debug\net8.0\dReportHelper.AssemblyInfoInputs.cache
+D:\Source Control\BitBucket\FraTool\dReportHelper\obj\Debug\net8.0\dReportHelper.AssemblyInfo.cs
+D:\Source Control\BitBucket\FraTool\dReportHelper\obj\Debug\net8.0\dReportHelper.csproj.CoreCompileInputs.cache
+D:\Source Control\BitBucket\FraTool\dReportHelper\obj\Debug\net8.0\dReportHelper.sourcelink.json
+D:\Source Control\BitBucket\FraTool\dReportHelper\obj\Debug\net8.0\dReportHelper.dll
+D:\Source Control\BitBucket\FraTool\dReportHelper\obj\Debug\net8.0\refint\dReportHelper.dll
+D:\Source Control\BitBucket\FraTool\dReportHelper\obj\Debug\net8.0\dReportHelper.pdb
+D:\Source Control\BitBucket\FraTool\dReportHelper\obj\Debug\net8.0\ref\dReportHelper.dll

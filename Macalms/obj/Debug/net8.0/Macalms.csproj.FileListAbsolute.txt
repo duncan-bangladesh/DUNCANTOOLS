@@ -10,6 +10,7 @@ D:\Source Control\BitBucket\FraTool\Macalms\obj\Debug\net8.0\Macalms.GeneratedMS
 D:\Source Control\BitBucket\FraTool\Macalms\obj\Debug\net8.0\Macalms.AssemblyInfoInputs.cache
 D:\Source Control\BitBucket\FraTool\Macalms\obj\Debug\net8.0\Macalms.AssemblyInfo.cs
 D:\Source Control\BitBucket\FraTool\Macalms\obj\Debug\net8.0\Macalms.csproj.CoreCompileInputs.cache
+D:\Source Control\BitBucket\FraTool\Macalms\obj\Debug\net8.0\Macalms.sourcelink.json
 D:\Source Control\BitBucket\FraTool\Macalms\obj\Debug\net8.0\Macalms.csproj.Up2Date
 D:\Source Control\BitBucket\FraTool\Macalms\obj\Debug\net8.0\Macalms.dll
 D:\Source Control\BitBucket\FraTool\Macalms\obj\Debug\net8.0\refint\Macalms.dll

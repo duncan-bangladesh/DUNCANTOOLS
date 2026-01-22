@@ -27,6 +27,7 @@ D:\Source Control\BitBucket\FraTool\dSecurity\obj\Debug\net8.0\dSecurity.Generat
 D:\Source Control\BitBucket\FraTool\dSecurity\obj\Debug\net8.0\dSecurity.AssemblyInfoInputs.cache
 D:\Source Control\BitBucket\FraTool\dSecurity\obj\Debug\net8.0\dSecurity.AssemblyInfo.cs
 D:\Source Control\BitBucket\FraTool\dSecurity\obj\Debug\net8.0\dSecurity.csproj.CoreCompileInputs.cache
+D:\Source Control\BitBucket\FraTool\dSecurity\obj\Debug\net8.0\dSecurity.sourcelink.json
 D:\Source Control\BitBucket\FraTool\dSecurity\obj\Debug\net8.0\dSecurity.csproj.Up2Date
 D:\Source Control\BitBucket\FraTool\dSecurity\obj\Debug\net8.0\dSecurity.dll
 D:\Source Control\BitBucket\FraTool\dSecurity\obj\Debug\net8.0\refint\dSecurity.dll

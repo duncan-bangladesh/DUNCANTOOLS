@@ -20,6 +20,7 @@ D:\Source Control\BitBucket\FraTool\dVoucher\obj\Debug\net8.0\dVoucher.Generated
 D:\Source Control\BitBucket\FraTool\dVoucher\obj\Debug\net8.0\dVoucher.AssemblyInfoInputs.cache
 D:\Source Control\BitBucket\FraTool\dVoucher\obj\Debug\net8.0\dVoucher.AssemblyInfo.cs
 D:\Source Control\BitBucket\FraTool\dVoucher\obj\Debug\net8.0\dVoucher.csproj.CoreCompileInputs.cache
+D:\Source Control\BitBucket\FraTool\dVoucher\obj\Debug\net8.0\dVoucher.sourcelink.json
 D:\Source Control\BitBucket\FraTool\dVoucher\obj\Debug\net8.0\dVoucher.csproj.Up2Date
 D:\Source Control\BitBucket\FraTool\dVoucher\obj\Debug\net8.0\dVoucher.dll
 D:\Source Control\BitBucket\FraTool\dVoucher\obj\Debug\net8.0\refint\dVoucher.dll

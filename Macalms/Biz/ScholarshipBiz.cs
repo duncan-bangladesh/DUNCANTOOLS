@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -74,23 +75,28 @@ namespace Macalms.Biz
         {
             List<ScholarshipData> list = new List<ScholarshipData>();
             var result = await GetAllEligibleStudent(AssessmentYear);
+            int serialNo = 0;
             foreach (var item in result)
             {
+                serialNo = serialNo + 1;
                 ScholarshipData model = new ScholarshipData();
+                model.SL = serialNo;
+                model.AssessmentYear = AssessmentYear;
                 model.StudentName = item.StudentName;
                 model.ParentName = item.ParentName;
-                model.DateOfBirth = item.DateOfBirth;
+                                model.DateOfBirth = item.DateOfBirth;
                 model.BankName = item.BankName;
                 model.BankBranch = item.BankBranch;
                 model.BankAccountNo = item.BankAccountNo;
                 model.BankRoutingNo = item.BankRoutingNo;
+                model.Age = Ages(item.StAgeYears, item.StAgeMonths, item.StAgeDays);
                 double amount = 0;
                 int eligibleMonths = 0;
 
                 // Adjust amount based on age
                 if (item.StAgeYears >= 7 && item.StAgeYears < 21)
                 {
-                    if(item.EmpEligibleMonths < 12)
+                    if (item.EmpEligibleMonths < 12)
                     {
                         if (item.EmpEligibleDays >= 15)
                         {
@@ -100,14 +106,14 @@ namespace Macalms.Biz
                         {
                             item.EmpEligibleMonths = item.EmpEligibleMonths;
                         }
-                    }                    
+                    }
                     eligibleMonths = item.EmpEligibleMonths;
                 }
-                else if (item.StAgeYears >= 21 && item.StAgeYears <= 22) 
+                else if (item.StAgeYears >= 21 && item.StAgeYears <= 22)
                 {
                     if (item.EmpEligibleMonths < 12)
                     {
-                        if(item.EmpEligibleDays >= 15)
+                        if (item.EmpEligibleDays >= 15)
                         {
                             item.EmpEligibleMonths = item.EmpEligibleMonths + 1;
                         }
@@ -127,7 +133,8 @@ namespace Macalms.Biz
                             item.StAgeMonths = item.StAgeMonths;
                         }
                     }
-                    if (item.StAgeMonths < item.EmpEligibleMonths) { 
+                    if (item.StAgeMonths < item.EmpEligibleMonths)
+                    {
                         eligibleMonths = item.StAgeMonths;
                     }
                     else
@@ -135,7 +142,7 @@ namespace Macalms.Biz
                         eligibleMonths = item.EmpEligibleMonths;
                     }
                 }
-                else if(item.StAgeYears == 6)
+                else if (item.StAgeYears == 6)
                 {
                     if (item.EmpEligibleMonths < 12)
                     {
@@ -178,11 +185,18 @@ namespace Macalms.Biz
                 {
                     amount = 2000 * eligibleMonths;
                 }
+
+                model.ScholarshipDuration = eligibleMonths;
                 model.Amount = amount;
                 list.Add(model);
             }
 
             return list;
+        }
+        private string Ages(int year, int month, int day)
+        {
+            //return $"{year:00}Y {month:00}M {day:00}D";
+            return $"{year:00}y {month:00}m {day:00}d";
         }
     }
 }

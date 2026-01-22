@@ -1,8 +1,12 @@
-﻿using dShared.Model;
+﻿using AspNetCore.Reporting;
+using dShared.Model;
 using Macalms.Biz;
 using Macalms.Model;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Reflection;
+using System.Text;
+
 
 namespace FraTool.Web.Controllers
 {
@@ -15,6 +19,7 @@ namespace FraTool.Web.Controllers
         private StudentProfilBiz studentProfilBiz;
         private ExamResultBiz examResultBiz;
         private ScholarshipBiz scholarshipBiz;
+        private BankBiz bankBiz;
         public MacalmsController(IConfiguration configuration)
         {
             _configuration = configuration;
@@ -23,9 +28,9 @@ namespace FraTool.Web.Controllers
             studentProfilBiz = new StudentProfilBiz(_configuration);
             examResultBiz = new ExamResultBiz(_configuration);
             scholarshipBiz = new ScholarshipBiz(_configuration);
+            bankBiz = new BankBiz(_configuration);
         }
         #region Employee
-        [Authorize]
         public IActionResult Employee()
         {
             return View();
@@ -39,11 +44,11 @@ namespace FraTool.Web.Controllers
                 var data = from c in dataSet
                         .Where(x => x.IsActive == true)
                         .OrderBy(x => x.DepartmentName)
-                        select new
-                        {
-                            c.RecordId,
-                            c.DepartmentName
-                        };
+                           select new
+                           {
+                               c.RecordId,
+                               c.DepartmentName
+                           };
                 return Json(data);
             }
             catch (Exception)
@@ -130,7 +135,7 @@ namespace FraTool.Web.Controllers
         {
             try
             {
-                var dataSet = await employeeProfileBiz.GetEmployeeProfiles();
+                var dataSet = (await employeeProfileBiz.GetEmployeeProfiles()).OrderByDescending(x => x.RecordId);
                 return Json(data: dataSet);
             }
             catch (Exception)
@@ -181,12 +186,77 @@ namespace FraTool.Web.Controllers
             }
         }
         #endregion
-        #region Student
-        [Authorize]
-        public IActionResult Students()
+        #region Bank
+        public IActionResult Bank()
         {
             return View();
         }
+        [HttpGet]
+        public async Task<IActionResult> GetBanks()
+        {
+            try
+            {
+                var dataSet = (await bankBiz.GetBanks()).OrderByDescending(x=> x.RecordId);
+                return Json(data: dataSet);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        [HttpPost]
+        public async Task<IActionResult> AddBank(Banks model)
+        {
+            try
+            {
+                int result = 0;
+                if (model != null)
+                {
+                    model.EntryBy = HttpContext.Session.GetString("UserName");
+                    result = await bankBiz.AddBank(model);
+                }
+                return Json(result);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        [HttpGet]
+        public async Task<IActionResult> BankEditView(long RecordId)
+        {
+            var data = new Banks();
+            if (RecordId > 0)
+            {
+                var bank = await bankBiz.GetBanks();
+                data = bank.Where(c => c.RecordId == RecordId).SingleOrDefault();
+            }
+            return Json(data: data);
+        }
+        [HttpPost]
+        public async Task<IActionResult> UpdateBank(Banks model)
+        {
+            try
+            {
+                var result = 0;
+                if (model.RecordId > 0)
+                {
+                    model.ModifyBy = HttpContext.Session.GetString("UserName");
+                    result = await bankBiz.UpdateBankName(model);
+                }
+                return Json(result);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        #endregion
+        #region Student
+        public IActionResult Students()
+        {
+            return View();
+        }        
         [HttpGet]
         public async Task<IActionResult> GetParents()
         {
@@ -207,13 +277,13 @@ namespace FraTool.Web.Controllers
             {
                 throw;
             }
-        }
+        }        
         [HttpGet]
-        public async Task<IActionResult> GetBanks()
+        public async Task<IActionResult> GetBanks_dd()
         {
             try
             {
-                var dataSet = await studentProfilBiz.GetBanks();
+                var dataSet = await bankBiz.GetBanks();
                 var data = from b in dataSet
                         .Where(x => x.IsActive == true)
                         .OrderBy(x => x.BankName)
@@ -253,7 +323,7 @@ namespace FraTool.Web.Controllers
             try
             {
                 int result = 0;
-                if(model != null)
+                if (model != null)
                 {
                     model.EntryBy = HttpContext.Session.GetString("UserName");
                     result = await studentProfilBiz.AddStudentProfile(model);
@@ -297,12 +367,12 @@ namespace FraTool.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> ChangeStudentStatus(long RecordId)
         {
-            int result = 0;            
+            int result = 0;
             var model = (await studentProfilBiz.GetStudentProfiles()).Where(x => x.RecordId == RecordId).FirstOrDefault();
             if (model != null)
             {
                 var parent = (await employeeProfileBiz.GetEmployeeProfiles()).Where(x => x.EmployeeCode == model.EmployeeRefCode).FirstOrDefault();
-                if(parent!.IsActive == true)
+                if (parent!.IsActive == true)
                 {
                     model.IsActive = !model.IsActive;
                     model.ModifyBy = HttpContext.Session.GetString("UserName");
@@ -320,7 +390,7 @@ namespace FraTool.Web.Controllers
         {
             try
             {
-                var dataSet = await studentProfilBiz.GetStudentProfiles();
+                var dataSet = (await studentProfilBiz.GetStudentProfiles()).OrderByDescending(x => x.RecordId);
                 return Json(data: dataSet);
             }
             catch (Exception)
@@ -330,7 +400,6 @@ namespace FraTool.Web.Controllers
         }
         #endregion
         #region Results
-        [Authorize]
         public IActionResult Result()
         {
             return View();
@@ -359,15 +428,13 @@ namespace FraTool.Web.Controllers
         {
             try
             {
-                var dataSet = (await studentProfilBiz.GetStudentProfiles()).Where(x=> x.ParentId ==ParentId).ToList();
-                var data = from e in dataSet
-                        .Where(x => x.IsActive == true)
-                        .OrderBy(x => x.StudentCode)
-                           select new
-                           {
-                               e.RecordId,
-                               StudentName = e.StudentCode + " - " + e.StudentName
-                           };
+                var dataSet = (await studentProfilBiz.GetStudentProfiles()).Where(x => x.ParentId == ParentId).ToList();
+                var data = from e in dataSet.Where(x => x.IsActive == true).OrderBy(x => x.StudentCode)
+                    select new
+                    {
+                        e.RecordId,
+                        StudentName = e.StudentCode + " - " + e.StudentName
+                    };
                 return Json(data: data);
             }
             catch (Exception)
@@ -381,7 +448,7 @@ namespace FraTool.Web.Controllers
             try
             {
                 int result = 0;
-                if(model != null)
+                if (model != null)
                 {
                     model.EntryBy = HttpContext.Session.GetString("UserName");
                     result = await examResultBiz.SaveStudentResult(model);
@@ -398,7 +465,7 @@ namespace FraTool.Web.Controllers
         {
             try
             {
-                var dataSet = await examResultBiz.GetExamResults();
+                var dataSet = (await examResultBiz.GetExamResults()).OrderByDescending(x=> x.RecordId);
                 return Json(data: dataSet);
             }
             catch (Exception)
@@ -437,7 +504,6 @@ namespace FraTool.Web.Controllers
         }
         #endregion
         #region Schlorship
-        [Authorize]
         public IActionResult Scholarship()
         {
             return View();
@@ -449,6 +515,51 @@ namespace FraTool.Web.Controllers
             {
                 var dataSet = await scholarshipBiz.GetScholarshipData(AssessmentYear);
                 return Json(data: dataSet);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        public async Task<FileContentResult> DownloadScholarship(int AssessmentYear, string FileType)
+        {
+            try
+            {
+                var dataList = await scholarshipBiz.GetScholarshipData(AssessmentYear);
+                string fileDirPath = Assembly.GetExecutingAssembly().Location.Replace("FraTool.Web.dll", string.Empty);
+                string rdlcFilePath = "";
+                if(FileType == "excel")
+                {
+                    rdlcFilePath = string.Format("{0}Reports\\{1}.rdlc", fileDirPath, "rptScholarship_ls");
+                }
+                else
+                {
+                    rdlcFilePath = string.Format("{0}Reports\\{1}.rdlc", fileDirPath, "rptScholarship_ls");
+                }
+                Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+                Encoding.GetEncoding("utf-8");
+                LocalReport report = new LocalReport(rdlcFilePath);
+                report.AddDataSource("dScholarship", dataList);
+                Dictionary<string, string> parameters = new Dictionary<string, string>();
+
+                if (FileType == "excel")
+                {
+                    var result = report.Execute(RenderType.Excel, 1, parameters, "application/vnd.ms-excel");
+                    Response.Cookies.Append("reportDownloadComplete", "true", new CookieOptions
+                    {
+                        Expires = DateTime.Now.AddSeconds(5)
+                    });
+                    return File(result.MainStream, "application/vnd.ms-excel", "Scholarship Data Downloaded - Date (" + DateTime.Now.ToString() + ").xls");
+                }
+                else
+                {
+                    var result = report.Execute(RenderType.Pdf, 1, parameters, "application/pdf");
+                    Response.Cookies.Append("reportDownloadComplete", "true", new CookieOptions
+                    {
+                        Expires = DateTime.Now.AddSeconds(5)
+                    });
+                    return File(result.MainStream, "application/pdf", "Scholarship Data Downloaded - Date (" + DateTime.Now.ToString() + ").pdf");
+                }
             }
             catch (Exception)
             {

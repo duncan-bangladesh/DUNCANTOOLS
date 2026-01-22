@@ -23,13 +23,11 @@ function initDataTable() {
                 data: 'isActive',
                 className: 'text-center',
                 render: function (value, type, row) {
-                    return `<button type="button" class="btn btn1 btn-edit" data-id="${row.recordId}">
-                                <i class="fas fa-edit"></i>
-                            </button>`;
+                    return `<button type="button" class="btn btn1 btn-edit" data-id="${row.recordId}"><i class="fas fa-edit"></i></button>`;
                 }
             }
         ],
-        order: [[0, 'asc']],
+        //order: [[0, 'asc']],
         pageLength: 30,
         responsive: true,
         lengthChange: false,

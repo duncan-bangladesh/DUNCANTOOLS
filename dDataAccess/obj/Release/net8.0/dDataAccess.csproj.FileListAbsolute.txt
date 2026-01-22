@@ -22,3 +22,4 @@ D:\Source Control\BitBucket\FraTool\dDataAccess\obj\Release\net8.0\dDataAccess.d
 D:\Source Control\BitBucket\FraTool\dDataAccess\obj\Release\net8.0\refint\dDataAccess.dll
 D:\Source Control\BitBucket\FraTool\dDataAccess\obj\Release\net8.0\dDataAccess.pdb
 D:\Source Control\BitBucket\FraTool\dDataAccess\obj\Release\net8.0\ref\dDataAccess.dll
+D:\Source Control\BitBucket\FraTool\dDataAccess\obj\Release\net8.0\dDataAccess.sourcelink.json

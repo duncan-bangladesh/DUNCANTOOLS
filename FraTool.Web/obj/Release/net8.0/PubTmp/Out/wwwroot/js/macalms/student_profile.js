@@ -21,12 +21,6 @@ function initDataTable() {
         },
         columns: [
             { data: 'parentName' },
-            //{
-            //    data: null,
-            //    render: function (data, type, row) {
-            //        return row.studentCode + ' ' + row.studentName;
-            //    },
-            //},
             { data: 'studentName' },
             { data: 'dateOfBirth' },
             {
@@ -61,17 +55,17 @@ function initDataTable() {
             { data: 'bankRoutingNo' },
             {
                 data: 'isActive',
-                className: 'text-center',
+                className: '',
                 render: function (value, type, row, meta) {
                     let switchId = `empSwitch_${meta.row}`;
                     let checked = value == 1 ? 'checked' : '';
-                    let statusText = value == 1 ? 'Active' : 'Inactive';
-                    let statusClass = value == 1 ? 'text-success' : 'text-danger';
-                    return `<div class="custom-control custom-switch"><input type="checkbox" class="custom-control-input emp-status" id="${switchId}" data-id="${row.recordId}"${checked}><label class="custom-control-label ${statusClass}" for="${switchId}">${statusText}</label> | <button type="button" class="btn btn1 btn-edit" data-id="${row.recordId}"><i class="fas fa-edit"></i></button></div>`;
+                    let switchClass = value == 1 ? 'switch-active' : 'switch-inactive';
+                    let editButton = value == 1 ? `<button type="button" class="btn btn1 btn-edit" data-id="${row.recordId}"><i class="fas fa-edit"></i></button>` : '';
+                    return `<div class="custom-control custom-switch ${switchClass}"><input type="checkbox" class="custom-control-input emp-status" id="${switchId}" data-id="${row.recordId}" ${checked}><label class="custom-control-label" for="${switchId}"></label>${editButton ? '|' + editButton : ''}</div>`;
                 }
             }
         ],
-        order: [[0, 'asc']],
+        //order: [[0, 'asc']],
         pageLength: 30,
         responsive: true,
         lengthChange: false,
@@ -164,7 +158,7 @@ function resetForm() {
 }
 function loadAllDropdowns() {
     loadDropdown('/Macalms/GetParents', '#EmployeeRefId', 'employeeName');
-    loadDropdown('/Macalms/GetBanks', '#BankId', 'bankName');
+    loadDropdown('/Macalms/GetBanks_dd', '#BankId', 'bankName');
 }
 function loadDropdown(url, selector, textField) {
     $.get(url, function (data) {

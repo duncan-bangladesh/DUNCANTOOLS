@@ -15,3 +15,4 @@ D:\Source Control\BitBucket\FraTool\Macalms\obj\Release\net8.0\Macalms.dll
 D:\Source Control\BitBucket\FraTool\Macalms\obj\Release\net8.0\refint\Macalms.dll
 D:\Source Control\BitBucket\FraTool\Macalms\obj\Release\net8.0\Macalms.pdb
 D:\Source Control\BitBucket\FraTool\Macalms\obj\Release\net8.0\ref\Macalms.dll
+D:\Source Control\BitBucket\FraTool\Macalms\obj\Release\net8.0\Macalms.sourcelink.json

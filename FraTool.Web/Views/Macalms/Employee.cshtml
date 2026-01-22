@@ -3,7 +3,27 @@
     ViewData["Title"] = "Employee";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<style>
+    /* Green switch (Active) */
+    .switch-active .custom-control-input:checked ~ .custom-control-label::before {
+        background-color: #28a745;
+        border-color: #28a745;
+    }
 
+    .switch-active .custom-control-input:checked ~ .custom-control-label::after {
+        background-color: #fff;
+    }
+
+    /* Red switch (Inactive) */
+    .switch-inactive .custom-control-label::before {
+        background-color: #dc3545;
+        border-color: #dc3545;
+    }
+
+    .switch-inactive .custom-control-label::after {
+        background-color: #fff;
+    }
+</style>
 <div class="row rowtop">
     <div class="col-md-12">
         <div class="card card-primary card-outline collapsed-card" id="entry-ui">
@@ -118,7 +138,7 @@
                                 <th>Working In</th>
                                 <th>Email</th>
                                 <th>Mobile</th>
-                                <th>Job Status</th>
+                                @* <th>Job Status</th> *@
                                 <th data-orderable="false"></th>
                             </tr>
                         </thead>

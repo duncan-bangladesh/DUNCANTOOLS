@@ -27,28 +27,20 @@ function initDataTable() {
             { data: 'contactNumber' },
             {
                 data: 'isActive',
-                className: 'text-center',
+                className: '',
                 render: function (value, type, row, meta) {
                     let switchId = `empSwitch_${meta.row}`;
                     let checked = value == 1 ? 'checked' : '';
-                    let statusText = value == 1 ? 'Active' : 'Inactive';
-                    let statusClass = value == 1 ? 'text-success' : 'text-danger';
-                    return `<div class="custom-control custom-switch"><input type="checkbox" class="custom-control-input emp-status" id="${switchId}" data-id="${row.recordId}"${checked}><label class="custom-control-label ${statusClass}" for="${switchId}">${statusText}</label></div>`;
-                }
-            },
-            {
-                data: null,
-                className: 'text-center',
-                render: function (data) {
-                    return `<button type="button" class="btn btn1 btn-edit" data-id="${data.recordId}"><i class="fas fa-edit"></i></button>`;
+                    let switchClass = value == 1 ? 'switch-active' : 'switch-inactive';
+                    let editButton = value == 1 ? `<button type="button" class="btn btn1 btn-edit" data-id="${row.recordId}"><i class="fas fa-edit"></i></button>` : '';
+                    return `<div class="custom-control custom-switch ${switchClass}"><input type="checkbox" class="custom-control-input emp-status" id="${switchId}" data-id="${row.recordId}" ${checked}><label class="custom-control-label" for="${switchId}"></label>${editButton ? ' | ' + editButton : ''}</div>`;
                 }
             }
         ],
-        order: [[0, 'asc']],
+        //order: [[0, 'asc']],
         pageLength: 30,
         lengthMenu: [[30, 50, 100, -1], [30, 50, 100, "All"]],
         responsive: true,
-        //lengthChange: false,
         autoWidth: false,
         info: true 
     });
@@ -91,10 +83,10 @@ function bindSubmit() {
             ApplicableFrom: $('#ApplicableFrom').val(),
             ApplicableUpto: $('#ApplicableUpto').val()
         };
-        if (RecordId == 0) {
-            addEmployee(model);
-        } else {
+        if (model.RecordId > 0) {
             updateEmployee(model);
+        } else {
+            addEmployee(model);
         }
     });
 }

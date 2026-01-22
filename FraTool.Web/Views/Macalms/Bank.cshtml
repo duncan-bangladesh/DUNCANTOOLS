@@ -1,0 +1,90 @@
+﻿@{
+    ViewData["Title"] = "Bank";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    /* Green switch (Active) */
+    .switch-active .custom-control-input:checked ~ .custom-control-label::before {
+        background-color: #28a745;
+        border-color: #28a745;
+    }
+
+    .switch-active .custom-control-input:checked ~ .custom-control-label::after {
+        background-color: #fff;
+    }
+
+    /* Red switch (Inactive) */
+    .switch-inactive .custom-control-label::before {
+        background-color: #dc3545;
+        border-color: #dc3545;
+    }
+
+    .switch-inactive .custom-control-label::after {
+        background-color: #fff;
+    }
+</style>
+<div class="row rowtop">
+    <div class="col-md-12">
+        <div class="card card-primary card-outline collapsed-card" id="entry-ui">
+            <div class="card-header">
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool text-bold" data-card-widget="collapse" id="btntool">
+                        <i class="fas fa-plus"></i>&nbsp;&nbsp; Add Bank
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <form class="form-horizontal">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-6">
+                                <input id="RecordId" value="0" hidden type="text" />
+                                <div class="form-group row">
+                                    <label class="control-label text-md-right text-sm-left col-md-4">Bank Name<span class="text text-danger">*</span></label>
+                                    <div class="col-md-8">
+                                        <input id="BankName" autocomplete="off" class="form-control" tabindex="1" placeholder="bank name" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <div class="offset-md-4 col-md-8">
+                                    <input type="button" id="btnSubmit" value="Save" class="btn btn-success" style="margin-left: 5px;"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row rowtop">
+    <div class="col-md-12">
+        <div class="card card-success card-outline">
+            <div class="card-header">
+                <h3 class="card-title">Bank Lists</h3>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover display dataTable" id="rTable" style="font-size:14px !important;">
+                        <thead>
+                            <tr class="bg-success">
+                                <th>Bank Name</th>
+                                <th data-orderable="false"></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/macalms/bank.js"></script>
+    <script></script>
+}
+
