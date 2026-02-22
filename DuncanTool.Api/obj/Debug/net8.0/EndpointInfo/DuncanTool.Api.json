@@ -1,0 +1,122 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Duncan Tool API",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/WeighbridgeScale/SaveScaleData": {
+      "post": {
+        "tags": [
+          "WeighbridgeScale"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WeighbridgeScaleData"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WeighbridgeScaleData"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/WeighbridgeScaleData"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/WeighbridgeScale/test": {
+      "get": {
+        "tags": [
+          "WeighbridgeScale"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "WeighbridgeScaleData": {
+        "type": "object",
+        "properties": {
+          "recordId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "serialNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "vehicleId": {
+            "type": "string",
+            "nullable": true
+          },
+          "vehicleNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "materialId": {
+            "type": "string",
+            "nullable": true
+          },
+          "material": {
+            "type": "string",
+            "nullable": true
+          },
+          "customerId": {
+            "type": "string",
+            "nullable": true
+          },
+          "customer": {
+            "type": "string",
+            "nullable": true
+          },
+          "gross": {
+            "type": "string",
+            "nullable": true
+          },
+          "tare": {
+            "type": "string",
+            "nullable": true
+          },
+          "net": {
+            "type": "string",
+            "nullable": true
+          },
+          "realNet": {
+            "type": "string",
+            "nullable": true
+          },
+          "recordDateTime": {
+            "type": "string",
+            "nullable": true
+          },
+          "sourceName": {
+            "type": "string",
+            "nullable": true
+          },
+          "entryDate": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

@@ -4,8 +4,10 @@ using Macalms.Biz;
 using Macalms.Model;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using System.Reflection;
 using System.Text;
+using System.Threading.Tasks;
 
 
 namespace FraTool.Web.Controllers
@@ -513,8 +515,18 @@ namespace FraTool.Web.Controllers
         {
             try
             {
-                var dataSet = await scholarshipBiz.GetScholarshipData(AssessmentYear);
-                return Json(data: dataSet);
+                var dataSet = new List<ScholarshipData>();
+                dataSet = await scholarshipBiz.GetScholarshipData(AssessmentYear);
+                if (dataSet.First().IsPayment == 0)
+                {
+                    return Json(data: dataSet);
+                }
+                else 
+                { 
+                    dataSet = new List<ScholarshipData>();
+                    dataSet = await scholarshipBiz.GetScholarshipPaymentByAssessmentYear(AssessmentYear);
+                    return Json(data: dataSet);
+                }
             }
             catch (Exception)
             {
@@ -530,11 +542,13 @@ namespace FraTool.Web.Controllers
                 string rdlcFilePath = "";
                 if(FileType == "excel")
                 {
-                    rdlcFilePath = string.Format("{0}Reports\\{1}.rdlc", fileDirPath, "rptScholarship_ls");
+                    //rdlcFilePath = string.Format("{0}Reports\\{1}.rdlc", fileDirPath, "rptScholarship_ls");
+                    rdlcFilePath = string.Format("{0}Reports\\{1}.rdlc", fileDirPath, "rptScholarship");
                 }
                 else
                 {
-                    rdlcFilePath = string.Format("{0}Reports\\{1}.rdlc", fileDirPath, "rptScholarship_ls");
+                    //rdlcFilePath = string.Format("{0}Reports\\{1}.rdlc", fileDirPath, "rptScholarship_ls");
+                    rdlcFilePath = string.Format("{0}Reports\\{1}.rdlc", fileDirPath, "rptScholarship");
                 }
                 Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
                 Encoding.GetEncoding("utf-8");
@@ -560,6 +574,39 @@ namespace FraTool.Web.Controllers
                     });
                     return File(result.MainStream, "application/pdf", "Scholarship Data Downloaded - Date (" + DateTime.Now.ToString() + ").pdf");
                 }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        #endregion
+        #region Payments
+        public IActionResult Payment()
+        {
+            return View();
+        }
+        //public IActionResult SavePayment(List<Payment> model)
+        public async Task<IActionResult> SavePayment(string? model)
+        {
+            var dataofset = new List<Payment>();
+            if (!string.IsNullOrEmpty(model))
+            {
+                dataofset = JsonConvert.DeserializeObject<List<Payment>>(model!)!;
+            }
+            try
+            {
+                int result = 0;
+                if (dataofset != null && dataofset.Count > 0)
+                {
+                    var entryBy = HttpContext.Session.GetString("UserName");
+                    if (entryBy != null)
+                    {
+                        result = await scholarshipBiz.SaveScholarshipPayment(dataofset, entryBy);
+                    }
+                    else { result = 0; }
+                }
+                return Json(result);
             }
             catch (Exception)
             {

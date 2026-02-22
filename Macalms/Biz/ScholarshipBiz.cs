@@ -38,6 +38,7 @@ namespace Macalms.Biz
                     while (reader.Read())
                     {
                         Scholarships model = new Scholarships();
+                        model.StudentCode = reader["StudentCode"].ToString();
                         model.StudentName = reader["StudentName"].ToString();
                         model.ParentName = reader["ParentName"].ToString();
                         model.DateOfBirth = reader["DateOfBirth"].ToString();
@@ -51,6 +52,8 @@ namespace Macalms.Biz
                         model.BankRoutingNo = reader["BankRoutingNo"].ToString();
                         model.EmpEligibleMonths = Convert.ToInt32(reader["EmpEligibleMonths"]);
                         model.EmpEligibleDays = Convert.ToInt32(reader["EmpEligibleDays"]);
+                        model.EmpEligibleDays = Convert.ToInt32(reader["EmpEligibleDays"]);
+                        model.IsPayment = Convert.ToInt32(reader["IsPayment"]);
 
                         list.Add(model);
                     }
@@ -82,14 +85,17 @@ namespace Macalms.Biz
                 ScholarshipData model = new ScholarshipData();
                 model.SL = serialNo;
                 model.AssessmentYear = AssessmentYear;
+                model.StudentCode = item.StudentCode;
                 model.StudentName = item.StudentName;
+                model.StudyMedium = item.StudyMedium;
                 model.ParentName = item.ParentName;
-                                model.DateOfBirth = item.DateOfBirth;
+                model.DateOfBirth = item.DateOfBirth;
                 model.BankName = item.BankName;
                 model.BankBranch = item.BankBranch;
                 model.BankAccountNo = item.BankAccountNo;
                 model.BankRoutingNo = item.BankRoutingNo;
                 model.Age = Ages(item.StAgeYears, item.StAgeMonths, item.StAgeDays);
+                model.IsPayment = item.IsPayment;
                 double amount = 0;
                 int eligibleMonths = 0;
 
@@ -109,7 +115,7 @@ namespace Macalms.Biz
                     }
                     eligibleMonths = item.EmpEligibleMonths;
                 }
-                else if (item.StAgeYears >= 21 && item.StAgeYears <= 22)
+                else if (item.StAgeYears >= 21 && item.StAgeYears < 22)
                 {
                     if (item.EmpEligibleMonths < 12)
                     {
@@ -141,6 +147,7 @@ namespace Macalms.Biz
                     {
                         eligibleMonths = item.EmpEligibleMonths;
                     }
+                    eligibleMonths = 12 - eligibleMonths;
                 }
                 else if (item.StAgeYears == 6)
                 {
@@ -187,15 +194,111 @@ namespace Macalms.Biz
                 }
 
                 model.ScholarshipDuration = eligibleMonths;
+                model.AllowedMonths = 0;
                 model.Amount = amount;
                 list.Add(model);
             }
 
             return list;
         }
+
+        public async Task<List<ScholarshipData>> GetScholarshipPaymentByAssessmentYear(int AssessmentYear)
+        {
+            List<ScholarshipData> list = new List<ScholarshipData>();
+            SqlDataReader? reader = null;
+            SqlConnection connection = access.GetConnection(connectionString);
+            try
+            {
+                SqlCommand command = new SqlCommand("Macalms.GetScholarshipPayments", connection);
+                command.CommandType = System.Data.CommandType.StoredProcedure;
+                command.Parameters.Clear();
+                command.Parameters.AddWithValue("@AssessmentYear", AssessmentYear);
+                reader = command.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        ScholarshipData model = new ScholarshipData();
+                        model.SL = Convert.ToInt32(reader["SL"]);
+                        model.AssessmentYear = Convert.ToInt32(reader["AssessmentYear"]);
+                        model.StudentCode = reader["StudentCode"].ToString();
+                        model.StudentName = reader["StudentName"].ToString();
+                        model.StudyMedium = reader["StudyMedium"].ToString();
+                        model.ParentName = reader["ParentName"].ToString();
+                        model.DateOfBirth = reader["DateOfBirth"].ToString();
+                        model.Age = reader["Age"].ToString();
+                        model.ScholarshipDuration = Convert.ToInt32(reader["ScholarshipDuration"]);
+                        model.AllowedMonths = Convert.ToInt32(reader["AllowedMonths"]);
+                        model.BankName = reader["BankName"].ToString();
+                        model.BankBranch = reader["BankBranch"].ToString();
+                        model.BankAccountNo = reader["BankAccountNo"].ToString();
+                        model.BankRoutingNo = reader["BankRoutingNo"].ToString();
+                        model.Amount = Convert.ToDouble(reader["Amount"]);
+                        model.IsPayment = 1;
+                        list.Add(model);
+                    }
+                }
+                connection.Close();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                if (reader != null)
+                {
+                    reader.Close();
+                }
+                connection.Dispose();
+            }
+            return await Task.Run(() => list);
+        }
+
+        public async Task<int> SaveScholarshipPayment(List<Payment>? data, string EntryBy)
+        {
+            int result = 0;
+            SqlConnection connection = access.GetConnection(connectionString);
+            try
+            {
+                foreach (var item in data!)
+                {
+                    SqlCommand command = new SqlCommand("Macalms.SaveScholarshipPayment", connection);
+                    command.CommandType = System.Data.CommandType.StoredProcedure;
+                    command.Parameters.Clear();
+                    command.Parameters.AddWithValue("@SL", item.SL);
+                    command.Parameters.AddWithValue("@AssessmentYear", item.AssessmentYear);
+                    command.Parameters.AddWithValue("@StudentCode", item.StudentCode);
+                    command.Parameters.AddWithValue("@StudentName", item.StudentName);
+                    command.Parameters.AddWithValue("@StudyMedium", item.StudyMedium);
+                    command.Parameters.AddWithValue("@ParentName", item.ParentName);
+                    command.Parameters.AddWithValue("@DateOfBirth", item.DateOfBirth);
+                    command.Parameters.AddWithValue("@Age", item.Age);
+                    command.Parameters.AddWithValue("@ScholarshipDuration", item.ScholarshipDuration);
+                    command.Parameters.AddWithValue("@AllowedMonths", item.AllowedMonths);
+                    command.Parameters.AddWithValue("@BankName", item.BankName);
+                    command.Parameters.AddWithValue("@BankBranch", item.BankBranch);
+                    command.Parameters.AddWithValue("@BankAccountNo", item.BankAccountNo);
+                    command.Parameters.AddWithValue("@BankRoutingNo", item.BankRoutingNo);
+                    command.Parameters.AddWithValue("@Amount", item.Amount);
+                    command.Parameters.AddWithValue("@EntryBy", EntryBy);
+                    result = command.ExecuteNonQuery();
+                    command.Dispose();
+                }
+                connection.Close();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                connection.Dispose();
+            }
+            return await Task.Run(() => result);
+        }
         private string Ages(int year, int month, int day)
         {
-            //return $"{year:00}Y {month:00}M {day:00}D";
             return $"{year:00}y {month:00}m {day:00}d";
         }
     }

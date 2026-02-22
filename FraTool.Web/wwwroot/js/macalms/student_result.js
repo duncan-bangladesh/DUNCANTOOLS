@@ -1,6 +1,10 @@
 ﻿$(document).ready(function () {
     initDataTable();
     initializeDropdowns();
+    //$('#StudentId').change(function () {
+    //    $('#StudentId').val();
+    //    toastr.info(`Selected Student ID: ${$('#StudentId').val()}`);
+    //});
     bindEvents();
     bindSubmit();
 });

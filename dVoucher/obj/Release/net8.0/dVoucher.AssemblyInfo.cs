@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("dVoucher")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f3bf09a791e69cb399663dc6a5bc9b396ad23816")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f9dc6ab47435fd414074af5e6edec1d024d304a")]
 [assembly: System.Reflection.AssemblyProductAttribute("dVoucher")]
 [assembly: System.Reflection.AssemblyTitleAttribute("dVoucher")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

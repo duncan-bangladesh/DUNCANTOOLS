@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "DuncanTool.Api.Controllers.WeighbridgeScaleController",
+    "Method": "SaveScaleData",
+    "RelativePath": "api/WeighbridgeScale/SaveScaleData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "DuncanTool.Api.Model.WeighbridgeScaleData",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DuncanTool.Api.Controllers.WeighbridgeScaleController",
+    "Method": "Test",
+    "RelativePath": "api/WeighbridgeScale/test",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "FraTool.Web\\FraTool.Web.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
