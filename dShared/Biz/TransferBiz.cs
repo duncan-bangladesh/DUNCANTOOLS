@@ -112,7 +112,7 @@ namespace dShared.Biz
             }
             return await Task.Run(() => result);
         }
-        public async Task<int> SaveTransectionData(List<TransferData> transferDatas, string conString)
+        public async Task<int> SaveTransectionData(List<TransferData>? transferDatas, string conString)
         {
             int result = 0;
             string? connectionString = _configuration.GetConnectionString(conString);
@@ -121,10 +121,10 @@ namespace dShared.Biz
             {
                 if (connection.State == System.Data.ConnectionState.Open)
                 {
-                    var isExist = IsExistTransection(transferDatas[0].Year, transferDatas[0].Month, conString).Result;
+                    var isExist = IsExistTransection(transferDatas![0].Year!, transferDatas![0].Month!, conString).Result;
                     if (isExist > 0)
                     {
-                        var deleteResult = DeleteExistingTransectionData(transferDatas[0].Year, transferDatas[0].Month, conString).Result;
+                        var deleteResult = DeleteExistingTransectionData(transferDatas![0].Year!, transferDatas![0].Month!, conString).Result;
                         if (deleteResult > 0)
                         {
                             result = InsertTransferData(transferDatas, conString).Result;
@@ -217,6 +217,61 @@ namespace dShared.Biz
                 connection.Dispose();
             }
             return await Task.Run(() => years);
+        }
+        public async Task<int> ChangeYearsStatus(Years model)
+        {
+            int result = 0;
+            string? connectionString = _configuration.GetConnectionString("DefaultConnection");
+            SqlConnection connection = access.GetConnection(connectionString);
+            try
+            {
+                if (connection.State == System.Data.ConnectionState.Open)
+                {
+                    SqlCommand command = new SqlCommand("Shared.ChangeYearsStatus", connection);
+                    command.CommandType = System.Data.CommandType.StoredProcedure;
+                    command.Parameters.Clear();
+                    command.Parameters.AddWithValue("@RecordId", model.RecordId);
+                    command.Parameters.AddWithValue("@IsActive", model.IsActive);
+                    result = command.ExecuteNonQuery();
+                    connection.Close();
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                connection.Dispose();
+            }
+            return await Task.Run(() => result);
+        }
+        public async Task<int> SaveYear(Years model)
+        {
+            int result = 0;
+            string? connectionString = _configuration.GetConnectionString("DefaultConnection");
+            SqlConnection connection = access.GetConnection(connectionString);
+            try
+            {
+                if (connection.State == System.Data.ConnectionState.Open)
+                {
+                    SqlCommand command = new SqlCommand("Shared.SaveYear", connection);
+                    command.CommandType = System.Data.CommandType.StoredProcedure;
+                    command.Parameters.Clear();
+                    command.Parameters.AddWithValue("@Year", model.Year);
+                    result = Convert.ToInt32(command.ExecuteScalar());
+                }
+                connection.Close();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                connection.Dispose();
+            }
+            return await Task.Run(() => result);
         }
         public async Task<List<Months>> GetMonths()
         {

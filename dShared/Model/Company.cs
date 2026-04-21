@@ -8,8 +8,9 @@ namespace dShared.Model
         public long CompanyId { get; set; }
         [Display(Name = "Company Name")]
         public string? CompanyName { get; set; }
-        public string CompanyCode { get; set; } = "";
-        public string ShortCode { get; set; } = "";
+        public string? CompanyCode { get; set; }
+        public string? ShortCode { get; set; }
+        public string? EstateCodeForScale { get; set; }
         public int GardenId { get; set; }
         public int IsTeaEstate { get; set; }
         public int IsTranCompany { get; set; }

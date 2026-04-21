@@ -19,46 +19,7 @@ namespace Macalms.Biz
             _configuration = configuration;
             connectionString = _configuration.GetConnectionString("DefaultConnection");
         }
-        private readonly DbAccess access = new DbAccess();
-        public async Task<List<AssessmentYear>> GetAssessmentYearsAsync()
-        {
-            List<AssessmentYear> list = new List<AssessmentYear>();
-            SqlDataReader? reader = null;
-            SqlConnection connection = access.GetConnection(connectionString);
-            try
-            {
-                SqlCommand command = new SqlCommand("Macalms.GetAssessmentYear", connection);
-                command.CommandType = System.Data.CommandType.StoredProcedure;
-                command.Parameters.Clear();
-                reader = command.ExecuteReader();
-                if (reader.HasRows)
-                {
-                    while (reader.Read())
-                    {
-                        AssessmentYear model = new AssessmentYear();
-                        model.RecordId = Convert.ToInt64(reader["RecordId"]);
-                        model.YearName = reader["YearName"].ToString();
-                        model.ShortCode = reader["ShortCode"].ToString();
-
-                        list.Add(model);
-                    }
-                }
-                connection.Close();
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-            finally
-            {
-                if (reader != null)
-                {
-                    reader.Close();
-                }
-                connection.Dispose();
-            }
-            return await Task.Run(() => list);
-        }
+        private readonly DbAccess access = new DbAccess();        
         public async Task<int> SaveStudentResult(ExamResults model)
         {
             int result = 0;

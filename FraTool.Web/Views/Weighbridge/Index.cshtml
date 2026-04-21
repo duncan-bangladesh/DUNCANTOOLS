@@ -1,0 +1,83 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row rowtop">
+    <div class="col-md-12">
+        <div class="card card-primary card-outline">
+            <div class="card-body">
+                <form asp-action="Create" class="form-horizontal">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input id="UserId" hidden type="text" />
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-left col-md-4">Estate</label>
+                                <div class="col-md-8">
+                                    <select id="EstateCodeForScale" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="1" aria-hidden="true">
+                                        <option value="0">--Select--</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-left col-md-4">From Date</label>
+                                <div class="col-md-8">
+                                    <div class="input-group date">
+                                        <input type="text" id="FromDate" autocomplete="off" placeholder="from date" tabindex="4" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-left col-md-4">To Date</label>
+                                <div class="col-md-8">
+                                    <div class="input-group date">
+                                        <input type="text" id="ToDate" autocomplete="off" placeholder="to date" tabindex="4" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="col-md-6"></div>
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <div class="offset-md-4 col-md-8">
+                                    <input type="button" id="btnSearch" value="Search" class="btn btn-primary" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row rowtop">
+    <div class="col-md-12">
+        <div class="card card-success card-outline">
+            <div class="card-header">
+                <h3 class="card-title">Weighbridge Data Report</h3>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered table-hover" id="rTable">
+                    <thead>
+                        <tr class="bg-success">
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Vehicle / Driver</th>
+                            <th>Loaded Vehicle (kg)</th>
+                            <th>Tare (kg)</th>
+                            <th>Green Leaf (kg)</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/weighbridge/weighbridge.js"></script>
+    <script></script>
+}
+
+

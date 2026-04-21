@@ -1,6 +1,8 @@
 ﻿using dShared.Biz;
 using dShared.Model;
 using FraTool.Web.Models;
+using Macalms.Biz;
+using Macalms.Model;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -53,6 +55,53 @@ namespace FraTool.Web.Controllers
                 var years = await transferBiz.GetYears();
                 var data = years.OrderByDescending(x => x.Year).ToList();
                 return Json(data : data );
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        public IActionResult Years()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> ChangeYearStatus(int id)
+        {
+            try
+            {
+                var result = 0;
+                if (id > 0)
+                {
+                    var data = await transferBiz.GetYears();
+                    var year = data.Where(u => u.RecordId == id).FirstOrDefault();
+                    if (year != null)
+                    {
+                        if (year.IsActive == 1)
+                        {
+                            year.IsActive = 0;
+                        }
+                        else
+                        {
+                            year.IsActive = 1;
+                        }
+                        result = await transferBiz.ChangeYearsStatus(year);
+                    }
+                }
+                return Json(data: result);
+            }
+            catch
+            {
+                throw;
+            }
+        }
+        [HttpPost]
+        public IActionResult SaveYear(Years model)
+        {
+            try
+            {
+                var result = transferBiz.SaveYear(model);
+                return Json(result.Result);
             }
             catch (Exception)
             {

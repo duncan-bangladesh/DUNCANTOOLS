@@ -11,5 +11,10 @@ namespace Macalms.Model
         public long RecordId { get; set; }
         public string? YearName { get; set; }
         public string? ShortCode { get; set; }
+        public int IsActive { get; set; }
+        public string? EntryBy { get; set; }
+        public string? EntryDate { get; set; }
+        public string? ModifyBy { get; set; }
+        public string? ModifyDate { get; set; }
     }
 }

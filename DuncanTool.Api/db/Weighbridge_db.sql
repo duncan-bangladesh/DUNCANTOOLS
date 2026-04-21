@@ -181,4 +181,5 @@ BEGIN
 		DELETE FROM @temp WHERE SerialNo = @SerialNo;
 	END
 END
+GO
 

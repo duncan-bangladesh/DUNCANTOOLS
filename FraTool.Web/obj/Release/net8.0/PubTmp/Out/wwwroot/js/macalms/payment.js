@@ -40,52 +40,6 @@
         }
     }
     $('#btnSearch').click(function () {
-        //let assessmentYear = $('#AssessmentYear option:selected').text();
-        //$.get('/Macalms/GetScholarshipData', { AssessmentYear: assessmentYear }, function (data) {
-        //    if (data.length > 0) {
-        //        dSet = data;
-        //        console.log(data);
-        //        $('#rTable tbody').empty();
-        //        var rows = '<tbody>';
-        //        var total = 0;
-        //        var isPayment = data[0].isPayment;
-        //        for (var i = 0; i < data.length; i++) {
-        //            total += parseInt(data[i].amount);
-        //            rows += `<tr>
-        //                    <td>${data[i].studentName}</td>
-        //                    <td>${data[i].parentName}</td>
-        //                    <td>${data[i].dateOfBirth}</td>
-        //                    <td class="text text-center">${data[i].scholarshipDuration}</td>
-        //                    <td style="display:flex; justify-content:center;"><input type="number" class="form-control" id="allowedMonths_${ data[i].sl }" value="${data[i].allowedMonths}"/></td>
-        //                    <td>${data[i].bankName}</td>
-        //                    <td>${data[i].bankBranch}</td>
-        //                    <td>${data[i].bankAccountNo}</td>
-        //                    <td>${data[i].bankRoutingNo}</td>
-        //                    <td style="text-align:right;">${numberWithCommas(data[i].amount.toFixed(2))}</td>
-        //                </tr>`;
-        //        }
-        //        rows += `<tr style="font-weight: bold;"><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>Total</td><td style="text-align:right;">${numberWithCommas(total.toFixed(2))}</td></tr>`;
-        //        $('#rTable').append(rows);
-        //        $("#rTable").on("input change", "input", function () {
-        //            let idParts = $(this).attr("id").split("_");
-        //            let rowId = idParts[1];
-        //            getTheRow(rowId);
-        //        });
-        //        $('#scholarshipDiv').show();
-        //        if (isPayment > 0) {
-        //            $('#divPaymentSave').hide();
-        //        }
-        //        else {
-        //            $('#divPaymentSave').show();
-        //        }
-        //    }
-        //    else {
-        //        $('#scholarshipDiv').hide();
-        //    }
-        //});
-
-
-
         let assessmentYear = $('#AssessmentYear option:selected').text();
 
         $.get('/Macalms/GetScholarshipData',
@@ -125,30 +79,31 @@
                     }
 
                     rows += `
-                <tr>
-                    <td>${item.studentName}</td>
-                    <td>${item.parentName}</td>
-                    <td>${item.dateOfBirth}</td>
-                    <td class="text-center">${item.scholarshipDuration}</td>
-                    ${allowedMonthsColumn}
-                    <td>${item.bankName}</td>
-                    <td>${item.bankBranch}</td>
-                    <td>${item.bankAccountNo}</td>
-                    <td>${item.bankRoutingNo}</td>
-                    <td style="text-align:right;">
-                        ${numberWithCommas(parseFloat(item.amount).toFixed(2))}
-                    </td>
-                </tr>`;
-                });
+                        <tr>
+                            <td>${item.studentName}</td>
+                            <td>${item.parentName}</td>
+                            <td>${item.dateOfBirth}</td>
+                            <td class="text-center">${item.scholarshipDuration}</td>
+                            ${allowedMonthsColumn}
+                            <td>${item.bankName}</td>
+                            <td>${item.bankBranch}</td>
+                            <td>${item.bankAccountNo}</td>
+                            <td>${item.bankRoutingNo}</td>
+                            <td style="text-align:right;">
+                                ${numberWithCommas(parseFloat(item.amount).toFixed(2))}
+                            </td>
+                        </tr>`;
+                    }
+                );
 
                 rows += `
-            <tr style="font-weight:bold;">
-                <td colspan="8"></td>
-                <td>Total</td>
-                <td style="text-align:right;">
-                    ${numberWithCommas(total.toFixed(2))}
-                </td>
-            </tr>`;
+                    <tr style="font-weight:bold;">
+                        <td colspan="8"></td>
+                        <td>Total</td>
+                        <td style="text-align:right;">
+                            ${numberWithCommas(total.toFixed(2))}
+                        </td>
+                    </tr>`;
 
                 $('#rTable tbody').append(rows);
 
@@ -186,7 +141,7 @@ function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 };
 function initializeDropdowns() {
-    loadAssessmentYear('/Macalms/GetAssessmentYears', '#AssessmentYear', 'yearName');
+    loadAssessmentYear('/Macalms/AssessmentYear_dd', '#AssessmentYear', 'yearName');
 }
 function loadAssessmentYear(url, selector, textField) {
     $.get(url).done(function (data) {

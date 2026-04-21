@@ -1,0 +1,221 @@
+﻿
+@{
+    ViewData["Title"] = "Supplier";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .input-error {
+        border: 1px solid red !important;
+        outline: none;
+    }
+
+    .no-spinners::-webkit-outer-spin-button,
+    .no-spinners::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    .no-spinners {
+        -moz-appearance: textfield; /* Firefox */
+    }
+</style>
+<div class="row rowtop">
+    <div class="col-md-12">
+        <div class="card card-primary card-outline collapsed-card" id="entry-ui">
+            <div class="card-header">
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool text-bold" data-card-widget="collapse" id="btntool">
+                        <i class="fas fa-plus"></i>&nbsp;&nbsp; Add New Supplier.
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <form asp-action="Create" class="form-horizontal">
+                    <input id="SLNo" hidden value="0" type="text" />
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-2 text-md-right text-sm-left">
+                                    <strong>Supplier <span class="text text-danger">*</span></strong>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <div class="form-group row">
+                                                <input autocomplete="off" id="SupplierName" class="form-control" tabindex="1" placeholder="supplier name" title="supplier name" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group row">
+                                                <input autocomplete="off" id="SupplierCode" disabled="disabled" class="form-control" tabindex="2" placeholder="supplier code" title="supplier code" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-2 text-md-right text-sm-left">
+                                    <strong>Address </strong>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group row">
+                                                <input autocomplete="off" id="Address" class="form-control" tabindex="3" placeholder="supplier address" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group row">
+                                                <input autocomplete="off" id="City" class="form-control" tabindex="4" placeholder="city name" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group row">
+                                                <input autocomplete="off" id="Country" class="form-control" tabindex="5" placeholder="country name" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-2 text-md-right text-sm-left">
+                                    <strong>Bank Info</strong>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group row">
+                                                <input autocomplete="off" id="Bank" class="form-control" tabindex="6" placeholder="bank name" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group row">
+                                                <input type="number" step="0.01" autocomplete="off" id="AccountNo" class="form-control no-spinners" tabindex="7" placeholder="account no." />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group row">
+                                                <input type="number" step="0.01" autocomplete="off" id="RoutingNo" class="form-control no-spinners" tabindex="8" placeholder="routing no." />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-2 text-md-right text-sm-left">
+                                    <strong>Tax Info <span class="text text-danger">*</span></strong>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group row">
+                                                <input type="number" step="0.01" autocomplete="off" id="Taxgroup" class="form-control no-spinners" tabindex="9" placeholder="tax-group" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group row">
+                                                <input type="number" step="0.01" autocomplete="off" id="TIN" class="form-control no-spinners" tabindex="10" placeholder="TIN" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group row">
+                                                <input type="number" step="0.01" autocomplete="off" id="BIN" class="form-control no-spinners" tabindex="11" placeholder="BIN" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-2 text-md-right text-sm-left">
+                                    <strong>Contact Info</strong>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group row">
+                                                <input type="number" step="0.01" autocomplete="off" id="Phone" class="form-control no-spinners" tabindex="12" placeholder="mobile no." />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group row">
+                                                <input type="email" id="Email" autocomplete="off" class="form-control" tabindex="13" placeholder="email address" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+                                        <div class="offset-md-4 col-md-8">
+                                            <input type="button" id="btnSave" value="Save" class="btn btn-success" style="margin-left:-7px;" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6"></div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row rowtop">
+    <div class="col-md-12">
+        <div class="card card-success card-outline">
+            <div class="card-header">
+                <h3 class="card-title">Suppliers List</h3>
+            </div>
+            <div class="card-body" style="width: 100%; overflow-x: auto;">
+                <table class="table table-bordered table-hover table-sm display nowrap" id="rTable" style="font-size:14px !important;">
+                    <thead>
+                        @* <tr class="bg-success">
+                            <th>Code</th>
+                            <th>Supplier Name</th>
+                            <th>TIN</th>
+                            <th>BIN</th>
+                            <th>Address</th>
+                            <th>City</th>
+                            <th>Country</th>
+                            <th>Bank</th>
+                            <th>Account No.</th>
+                            <th>Routing No.</th>
+                            <th>Tax Group</th>
+                            <th>Mobile No.</th>
+                            <th>Email</th>
+                            <th data-orderable="false"></th>
+                        </tr> *@
+
+                        <tr class="bg-success">
+                            <th>Code</th>
+                            <th>Supplier Name</th>
+                            <th>Tax Group</th>
+                            <th>TIN</th>
+                            <th>BIN</th>
+                            <th>City</th>
+                            <th>Mobile No.</th>
+                            <th data-orderable="false"></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/procurement/supplier.js"></script>
+    <script></script>
+}

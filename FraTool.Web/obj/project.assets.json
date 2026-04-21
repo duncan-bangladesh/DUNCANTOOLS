@@ -2746,6 +2746,21 @@
           "bin/placeholder/dVoucher.dll": {}
         }
       },
+      "dWeighbridge/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
+          "dCommon": "1.0.0",
+          "dDataAccess": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/dWeighbridge.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/dWeighbridge.dll": {}
+        }
+      },
       "Macalms/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -2759,6 +2774,21 @@
         },
         "runtime": {
           "bin/placeholder/Macalms.dll": {}
+        }
+      },
+      "Procurement/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
+          "dCommon": "1.0.0",
+          "dDataAccess": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Procurement.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Procurement.dll": {}
         }
       }
     }
@@ -8354,10 +8384,20 @@
       "path": "../dVoucher/dVoucher.csproj",
       "msbuildProject": "../dVoucher/dVoucher.csproj"
     },
+    "dWeighbridge/1.0.0": {
+      "type": "project",
+      "path": "../dWeighbridge/dWeighbridge.csproj",
+      "msbuildProject": "../dWeighbridge/dWeighbridge.csproj"
+    },
     "Macalms/1.0.0": {
       "type": "project",
       "path": "../Macalms/Macalms.csproj",
       "msbuildProject": "../Macalms/Macalms.csproj"
+    },
+    "Procurement/1.0.0": {
+      "type": "project",
+      "path": "../Procurement/Procurement.csproj",
+      "msbuildProject": "../Procurement/Procurement.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8365,11 +8405,13 @@
       "AspNetCore.Reporting >= 2.1.0",
       "Macalms >= 1.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.23",
+      "Procurement >= 1.0.0",
       "System.Drawing.Common >= 10.0.2",
       "System.Security.Permissions >= 10.0.2",
       "dSecurity >= 1.0.0",
       "dShared >= 1.0.0",
-      "dVoucher >= 1.0.0"
+      "dVoucher >= 1.0.0",
+      "dWeighbridge >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -8413,8 +8455,14 @@
             "D:\\Source Control\\BitBucket\\FraTool\\dVoucher\\dVoucher.csproj": {
               "projectPath": "D:\\Source Control\\BitBucket\\FraTool\\dVoucher\\dVoucher.csproj"
             },
+            "D:\\Source Control\\BitBucket\\FraTool\\dWeighbridge\\dWeighbridge.csproj": {
+              "projectPath": "D:\\Source Control\\BitBucket\\FraTool\\dWeighbridge\\dWeighbridge.csproj"
+            },
             "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Macalms.csproj": {
               "projectPath": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Macalms.csproj"
+            },
+            "D:\\Source Control\\BitBucket\\FraTool\\Procurement\\Procurement.csproj": {
+              "projectPath": "D:\\Source Control\\BitBucket\\FraTool\\Procurement\\Procurement.csproj"
             }
           }
         }
@@ -8429,7 +8477,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -8471,7 +8519,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.313/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

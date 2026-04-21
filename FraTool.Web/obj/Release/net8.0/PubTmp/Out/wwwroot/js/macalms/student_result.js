@@ -178,7 +178,7 @@ function loadStudents(parentId, callback) {
     });
 }
 function initializeDropdowns() {
-    loadAssessmentYear('/Macalms/GetAssessmentYears', '#AssessmentYearId', 'yearName');
+    loadAssessmentYear('/Macalms/AssessmentYearActive_dd', '#AssessmentYearId', 'yearName');
     loadParents('/Macalms/GetParents', '#EmployeeRefId', 'employeeName');
 }
 function loadAssessmentYear(url, selector, textField) {

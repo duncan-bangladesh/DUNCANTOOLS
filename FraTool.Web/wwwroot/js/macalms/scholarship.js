@@ -49,7 +49,7 @@ function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 };
 function initializeDropdowns() {
-    loadAssessmentYear('/Macalms/GetAssessmentYears', '#AssessmentYear', 'yearName');
+    loadAssessmentYear('/Macalms/AssessmentYearActive_dd', '#AssessmentYear', 'yearName');
 }
 function loadAssessmentYear(url, selector, textField) {
     $.get(url).done(function (data) {

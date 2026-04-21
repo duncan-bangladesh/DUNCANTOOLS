@@ -22,6 +22,7 @@ namespace FraTool.Web.Controllers
         private ExamResultBiz examResultBiz;
         private ScholarshipBiz scholarshipBiz;
         private BankBiz bankBiz;
+        private AssessmentYearBiz assessmentYearBiz;
         public MacalmsController(IConfiguration configuration)
         {
             _configuration = configuration;
@@ -31,7 +32,112 @@ namespace FraTool.Web.Controllers
             examResultBiz = new ExamResultBiz(_configuration);
             scholarshipBiz = new ScholarshipBiz(_configuration);
             bankBiz = new BankBiz(_configuration);
+            assessmentYearBiz = new AssessmentYearBiz(_configuration);
         }
+        #region Assessment Year
+        public IActionResult AssessmentYear()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult SaveAssessmentYear(AssessmentYear model)
+        {
+            try
+            {
+                model.EntryBy = HttpContext.Session.GetString("UserName");
+                var result = assessmentYearBiz.SaveAssessmentYear(model);
+                return Json(result.Result);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        [HttpGet]
+        public async Task<IActionResult> AssessmentYears()
+        {
+            try
+            {
+                var data = await assessmentYearBiz.GetAssessmentYears();                
+                return Json(data: data);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        [HttpPost]
+        public async Task<IActionResult> ChangeYearStatus(int id)
+        {
+            try
+            {
+                var result = 0;
+                if (id > 0)
+                {
+                    var data = await assessmentYearBiz.GetAssessmentYears();
+                    var year = data.Where(u => u.RecordId == id).FirstOrDefault();
+                    if (year != null)
+                    {
+                        if (year.IsActive == 1)
+                        {
+                            year.IsActive = 0;
+                        }
+                        else
+                        {
+                            year.IsActive = 1;
+                        }
+                        year.ModifyBy = HttpContext.Session.GetString("UserName");
+                        result = await assessmentYearBiz.ChangeYearsStatus(year);
+                    }
+                }
+                return Json(data: result);
+            }
+            catch
+            {
+                throw;
+            }
+        }
+        [HttpGet]
+        public async Task<IActionResult> AssessmentYearActive_dd()
+        {
+            try
+            {
+                var dataSet = (await assessmentYearBiz.GetAssessmentYears()).Where(x => x.IsActive == 1);
+                var data = from c in dataSet
+                        .OrderBy(x => x.YearName)
+                           select new
+                           {
+                               c.RecordId,
+                               c.YearName
+                           };
+                return Json(data: data);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        [HttpGet]
+        public async Task<IActionResult> AssessmentYear_dd()
+        {
+            try
+            {
+                var dataSet = await assessmentYearBiz.GetAssessmentYears();
+                var data = from c in dataSet
+                        .OrderByDescending(x => x.YearName)
+                           select new
+                           {
+                               c.RecordId,
+                               c.YearName
+                           };
+                return Json(data: data);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        #endregion
         #region Employee
         public IActionResult Employee()
         {
@@ -405,26 +511,7 @@ namespace FraTool.Web.Controllers
         public IActionResult Result()
         {
             return View();
-        }
-        public async Task<IActionResult> GetAssessmentYears()
-        {
-            try
-            {
-                var dataSet = await examResultBiz.GetAssessmentYearsAsync();
-                var data = from c in dataSet
-                        .OrderBy(x => x.YearName)
-                           select new
-                           {
-                               c.RecordId,
-                               c.YearName
-                           };
-                return Json(data: data);
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-        }
+        }        
         [HttpGet]
         public async Task<IActionResult> GetStudents(long ParentId)
         {
@@ -586,7 +673,6 @@ namespace FraTool.Web.Controllers
         {
             return View();
         }
-        //public IActionResult SavePayment(List<Payment> model)
         public async Task<IActionResult> SavePayment(string? model)
         {
             var dataofset = new List<Payment>();

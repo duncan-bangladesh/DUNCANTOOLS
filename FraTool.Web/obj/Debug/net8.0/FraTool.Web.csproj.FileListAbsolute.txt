@@ -471,11 +471,15 @@ D:\Source Control\BitBucket\FraTool\FraTool.Web\bin\Debug\net8.0\dDataAccess.dll
 D:\Source Control\BitBucket\FraTool\FraTool.Web\bin\Debug\net8.0\dSecurity.dll
 D:\Source Control\BitBucket\FraTool\FraTool.Web\bin\Debug\net8.0\dShared.dll
 D:\Source Control\BitBucket\FraTool\FraTool.Web\bin\Debug\net8.0\dVoucher.dll
+D:\Source Control\BitBucket\FraTool\FraTool.Web\bin\Debug\net8.0\dWeighbridge.dll
 D:\Source Control\BitBucket\FraTool\FraTool.Web\bin\Debug\net8.0\Macalms.dll
+D:\Source Control\BitBucket\FraTool\FraTool.Web\bin\Debug\net8.0\Procurement.dll
 D:\Source Control\BitBucket\FraTool\FraTool.Web\bin\Debug\net8.0\dSecurity.pdb
 D:\Source Control\BitBucket\FraTool\FraTool.Web\bin\Debug\net8.0\dShared.pdb
 D:\Source Control\BitBucket\FraTool\FraTool.Web\bin\Debug\net8.0\dVoucher.pdb
+D:\Source Control\BitBucket\FraTool\FraTool.Web\bin\Debug\net8.0\dWeighbridge.pdb
 D:\Source Control\BitBucket\FraTool\FraTool.Web\bin\Debug\net8.0\Macalms.pdb
+D:\Source Control\BitBucket\FraTool\FraTool.Web\bin\Debug\net8.0\Procurement.pdb
 D:\Source Control\BitBucket\FraTool\FraTool.Web\bin\Debug\net8.0\dCommon.pdb
 D:\Source Control\BitBucket\FraTool\FraTool.Web\bin\Debug\net8.0\dDataAccess.pdb
 D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Debug\net8.0\FraTool.Web.csproj.AssemblyReference.cache
@@ -498,7 +502,6 @@ D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Debug\net8.0\staticwebassets
 D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Debug\net8.0\staticwebassets.build.json.cache
 D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Debug\net8.0\staticwebassets.development.json
 D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Debug\net8.0\swae.build.ex.cache
 D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Debug\net8.0\FraTool..5F7A3ABF.Up2Date
 D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Debug\net8.0\FraTool.Web.dll

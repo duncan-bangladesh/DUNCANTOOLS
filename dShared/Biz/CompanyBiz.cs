@@ -35,6 +35,7 @@ namespace dShared.Biz
                         model.CompanyName = reader["CompanyName"].ToString();
                         model.CompanyCode = reader["CompanyCode"].ToString()!;
                         model.ShortCode = reader["ShortCode"].ToString()!;
+                        model.EstateCodeForScale = reader["EstateCodeForScale"].ToString()!;
                         model.GardenId = Convert.ToInt32(reader["GardenId"]);
                         model.IsTeaEstate = Convert.ToInt32(reader["IsTeaEstate"]);
                         model.IsTranCompany = Convert.ToInt32(reader["IsTranCompany"]);

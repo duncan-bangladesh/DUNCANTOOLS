@@ -3,32 +3,108 @@
   "WorkspaceRootPath": "D:\\Source Control\\BitBucket\\FraTool\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\controllers\\macalmscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\controllers\\macalmscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{91452229-3C6A-4EE6-9EF5-FBDCCA7E2DFB}|Procurement\\Procurement.csproj|d:\\source control\\bitbucket\\fratool\\procurement\\biz\\supplierprofilebiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91452229-3C6A-4EE6-9EF5-FBDCCA7E2DFB}|Procurement\\Procurement.csproj|solutionrelative:procurement\\biz\\supplierprofilebiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\js\\macalms\\payment.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\js\\macalms\\payment.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\controllers\\procurementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\controllers\\procurementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\js\\procurement\\supplier.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\js\\procurement\\supplier.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\views\\procurement\\supplier.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\views\\procurement\\supplier.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\database\\bill.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\database\\bill.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91452229-3C6A-4EE6-9EF5-FBDCCA7E2DFB}|Procurement\\Procurement.csproj|d:\\source control\\bitbucket\\fratool\\procurement\\model\\supplierprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91452229-3C6A-4EE6-9EF5-FBDCCA7E2DFB}|Procurement\\Procurement.csproj|solutionrelative:procurement\\model\\supplierprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\views\\macalms\\employee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\views\\macalms\\employee.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\views\\weighbridge\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\views\\weighbridge\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\js\\macalms\\employee_profile.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\js\\macalms\\employee_profile.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\js\\weighbridge\\weighbridge.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\js\\weighbridge\\weighbridge.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93D792C9-5573-4C7E-B97D-1F15F0C200C3}|DuncanTool.Api\\DuncanTool.Api.csproj|d:\\source control\\bitbucket\\fratool\\duncantool.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93D792C9-5573-4C7E-B97D-1F15F0C200C3}|DuncanTool.Api\\DuncanTool.Api.csproj|solutionrelative:duncantool.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\database\\weighbridge.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\database\\weighbridge.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8776AC42-E9BA-41AA-9451-90F0212D58C0}|Macalms\\Macalms.csproj|d:\\source control\\bitbucket\\fratool\\macalms\\biz\\scholarshipbiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8776AC42-E9BA-41AA-9451-90F0212D58C0}|Macalms\\Macalms.csproj|solutionrelative:macalms\\biz\\scholarshipbiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\views\\macalms\\payment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\views\\macalms\\payment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\controllers\\companycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8776AC42-E9BA-41AA-9451-90F0212D58C0}|Macalms\\Macalms.csproj|d:\\source control\\bitbucket\\fratool\\macalms\\model\\scholarships.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8776AC42-E9BA-41AA-9451-90F0212D58C0}|Macalms\\Macalms.csproj|solutionrelative:macalms\\model\\scholarships.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\database\\use master.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\database\\use master.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8776AC42-E9BA-41AA-9451-90F0212D58C0}|Macalms\\Macalms.csproj|d:\\source control\\bitbucket\\fratool\\macalms\\model\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8776AC42-E9BA-41AA-9451-90F0212D58C0}|Macalms\\Macalms.csproj|solutionrelative:macalms\\model\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8776AC42-E9BA-41AA-9451-90F0212D58C0}|Macalms\\Macalms.csproj|d:\\source control\\bitbucket\\fratool\\macalms\\biz\\assessmentyearbiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8776AC42-E9BA-41AA-9451-90F0212D58C0}|Macalms\\Macalms.csproj|solutionrelative:macalms\\biz\\assessmentyearbiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\views\\macalms\\scholarship.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\views\\macalms\\scholarship.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E710DD98-A614-4A0A-A829-1D358E00842A}|dWeighbridge\\dWeighbridge.csproj|d:\\source control\\bitbucket\\fratool\\dweighbridge\\biz\\scaledatabiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E710DD98-A614-4A0A-A829-1D358E00842A}|dWeighbridge\\dWeighbridge.csproj|solutionrelative:dweighbridge\\biz\\scaledatabiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93D792C9-5573-4C7E-B97D-1F15F0C200C3}|DuncanTool.Api\\DuncanTool.Api.csproj|d:\\source control\\bitbucket\\fratool\\duncantool.api\\db\\weighbridge_scale_computer_setup_instructions.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{93D792C9-5573-4C7E-B97D-1F15F0C200C3}|DuncanTool.Api\\DuncanTool.Api.csproj|solutionrelative:duncantool.api\\db\\weighbridge_scale_computer_setup_instructions.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\controllers\\weighbridgecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\controllers\\weighbridgecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E710DD98-A614-4A0A-A829-1D358E00842A}|dWeighbridge\\dWeighbridge.csproj|d:\\source control\\bitbucket\\fratool\\dweighbridge\\model\\scaledata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E710DD98-A614-4A0A-A829-1D358E00842A}|dWeighbridge\\dWeighbridge.csproj|solutionrelative:dweighbridge\\model\\scaledata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\views\\epm\\years.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\views\\epm\\years.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A51CBCC5-A2A5-4771-B970-2FFFB576097C}|dShared\\dShared.csproj|d:\\source control\\bitbucket\\fratool\\dshared\\model\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A51CBCC5-A2A5-4771-B970-2FFFB576097C}|dShared\\dShared.csproj|solutionrelative:dshared\\model\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\database\\bill.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\database\\bill.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +114,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,88 +126,306 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "FraTool.Web\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-04-20T12:24:45.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Employee.cshtml",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Macalms\\Employee.cshtml",
+              "RelativeDocumentMoniker": "FraTool.Web\\Views\\Macalms\\Employee.cshtml",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Macalms\\Employee.cshtml",
+              "RelativeToolTip": "FraTool.Web\\Views\\Macalms\\Employee.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIIAAACEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-20T12:13:32.028Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Scholarships.cs",
-              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Model\\Scholarships.cs",
-              "RelativeDocumentMoniker": "Macalms\\Model\\Scholarships.cs",
-              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Model\\Scholarships.cs",
-              "RelativeToolTip": "Macalms\\Model\\Scholarships.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAqAAAAAAAAAA==",
+              "Title": "bill.sql ",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\database\\bill.sql",
+              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\database\\bill.sql",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\database\\bill.sql",
+              "RelativeToolTip": "FraTool.Web\\wwwroot\\database\\bill.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-04-19T11:41:40.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "FraTool.Web\\appsettings.json",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\appsettings.json",
+              "RelativeToolTip": "FraTool.Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-19T11:26:53.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SupplierProfileBiz.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\Procurement\\Biz\\SupplierProfileBiz.cs",
+              "RelativeDocumentMoniker": "Procurement\\Biz\\SupplierProfileBiz.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\Procurement\\Biz\\SupplierProfileBiz.cs",
+              "RelativeToolTip": "Procurement\\Biz\\SupplierProfileBiz.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAxwHgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-08T06:41:19.256Z",
+              "WhenOpened": "2026-04-19T11:21:41.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "supplier.js",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\procurement\\supplier.js",
+              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\js\\procurement\\supplier.js",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\procurement\\supplier.js",
+              "RelativeToolTip": "FraTool.Web\\wwwroot\\js\\procurement\\supplier.js",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAcwL0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-04-19T11:32:52.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Supplier.cshtml",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Procurement\\Supplier.cshtml",
+              "RelativeDocumentMoniker": "FraTool.Web\\Views\\Procurement\\Supplier.cshtml",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Procurement\\Supplier.cshtml",
+              "RelativeToolTip": "FraTool.Web\\Views\\Procurement\\Supplier.cshtml",
+              "ViewState": "AgIAAL8AAAAAAAAAAAAcwM4AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-16T06:11:28.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProcurementController.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Controllers\\ProcurementController.cs",
+              "RelativeDocumentMoniker": "FraTool.Web\\Controllers\\ProcurementController.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Controllers\\ProcurementController.cs",
+              "RelativeToolTip": "FraTool.Web\\Controllers\\ProcurementController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAkwDQAAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T06:09:18.974Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Scholarship.cshtml",
-              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Macalms\\Scholarship.cshtml",
-              "RelativeDocumentMoniker": "FraTool.Web\\Views\\Macalms\\Scholarship.cshtml",
-              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Macalms\\Scholarship.cshtml",
-              "RelativeToolTip": "FraTool.Web\\Views\\Macalms\\Scholarship.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-08T05:33:10.905Z"
+              "Title": "SupplierProfile.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\Procurement\\Model\\SupplierProfile.cs",
+              "RelativeDocumentMoniker": "Procurement\\Model\\SupplierProfile.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\Procurement\\Model\\SupplierProfile.cs",
+              "RelativeToolTip": "Procurement\\Model\\SupplierProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T08:49:45.194Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 15,
               "Title": "ScholarshipBiz.cs",
               "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Biz\\ScholarshipBiz.cs",
               "RelativeDocumentMoniker": "Macalms\\Biz\\ScholarshipBiz.cs",
               "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Biz\\ScholarshipBiz.cs",
               "RelativeToolTip": "Macalms\\Biz\\ScholarshipBiz.cs",
-              "ViewState": "AgIAANUAAAAAAAAAAAAMwPwAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-08T06:43:21.608Z"
+              "WhenOpened": "2026-04-06T09:59:32.142Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MacalmsController.cs",
-              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Controllers\\MacalmsController.cs",
-              "RelativeDocumentMoniker": "FraTool.Web\\Controllers\\MacalmsController.cs",
-              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Controllers\\MacalmsController.cs",
-              "RelativeToolTip": "FraTool.Web\\Controllers\\MacalmsController.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAUwPsBAAAIAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\DuncanTool.Api\\Program.cs",
+              "RelativeDocumentMoniker": "DuncanTool.Api\\Program.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\DuncanTool.Api\\Program.cs",
+              "RelativeToolTip": "DuncanTool.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-08T06:40:22.715Z"
+              "WhenOpened": "2026-03-15T07:58:33.734Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "payment.js",
-              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\macalms\\payment.js",
-              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\js\\macalms\\payment.js",
-              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\macalms\\payment.js",
-              "RelativeToolTip": "FraTool.Web\\wwwroot\\js\\macalms\\payment.js",
-              "ViewState": "AgIAAJ0AAAAAAAAAAAAgwGcAAAAmAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "employee_profile.js",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\macalms\\employee_profile.js",
+              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\js\\macalms\\employee_profile.js",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\macalms\\employee_profile.js",
+              "RelativeToolTip": "FraTool.Web\\wwwroot\\js\\macalms\\employee_profile.js",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAAAJgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-02-08T05:32:50.636Z"
+              "WhenOpened": "2026-03-15T04:45:37.241Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Payment.cshtml",
-              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Macalms\\Payment.cshtml",
-              "RelativeDocumentMoniker": "FraTool.Web\\Views\\Macalms\\Payment.cshtml",
-              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Macalms\\Payment.cshtml",
-              "RelativeToolTip": "FraTool.Web\\Views\\Macalms\\Payment.cshtml",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEAAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-02-08T04:38:08.602Z"
+              "DocumentIndex": 20,
+              "Title": "weighbridge_scale_computer_setup_instructions.sql",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\DuncanTool.Api\\db\\weighbridge_scale_computer_setup_instructions.sql",
+              "RelativeDocumentMoniker": "DuncanTool.Api\\db\\weighbridge_scale_computer_setup_instructions.sql",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\DuncanTool.Api\\db\\weighbridge_scale_computer_setup_instructions.sql",
+              "RelativeToolTip": "DuncanTool.Api\\db\\weighbridge_scale_computer_setup_instructions.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-03-02T04:19:59.141Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Payment.cs",
-              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Model\\Payment.cs",
-              "RelativeDocumentMoniker": "Macalms\\Model\\Payment.cs",
-              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Model\\Payment.cs",
-              "RelativeToolTip": "Macalms\\Model\\Payment.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA5wBsAAAAgAAAAAAAAAA==",
+              "DocumentIndex": 18,
+              "Title": "AssessmentYearBiz.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Biz\\AssessmentYearBiz.cs",
+              "RelativeDocumentMoniker": "Macalms\\Biz\\AssessmentYearBiz.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\Macalms\\Biz\\AssessmentYearBiz.cs",
+              "RelativeToolTip": "Macalms\\Biz\\AssessmentYearBiz.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAuwDwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-15T05:07:19.309Z"
+              "WhenOpened": "2026-02-26T05:14:06.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ScaleDataBiz.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\dWeighbridge\\Biz\\ScaleDataBiz.cs",
+              "RelativeDocumentMoniker": "dWeighbridge\\Biz\\ScaleDataBiz.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\dWeighbridge\\Biz\\ScaleDataBiz.cs",
+              "RelativeToolTip": "dWeighbridge\\Biz\\ScaleDataBiz.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAhwBMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T05:13:49.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ScaleData.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\dWeighbridge\\Model\\ScaleData.cs",
+              "RelativeDocumentMoniker": "dWeighbridge\\Model\\ScaleData.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\dWeighbridge\\Model\\ScaleData.cs",
+              "RelativeToolTip": "dWeighbridge\\Model\\ScaleData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T05:10:04.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "weighbridge.sql",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\database\\weighbridge.sql",
+              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\database\\weighbridge.sql",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\database\\weighbridge.sql",
+              "RelativeToolTip": "FraTool.Web\\wwwroot\\database\\weighbridge.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-02-24T09:24:39.826Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "use master.sql",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\database\\use master.sql",
+              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\database\\use master.sql",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\database\\use master.sql",
+              "RelativeToolTip": "FraTool.Web\\wwwroot\\database\\use master.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-02-24T09:24:04.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "site.js",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\js\\site.js",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "FraTool.Web\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-02-24T09:08:24.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "weighbridge.js",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\weighbridge\\weighbridge.js",
+              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\js\\weighbridge\\weighbridge.js",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\weighbridge\\weighbridge.js",
+              "RelativeToolTip": "FraTool.Web\\wwwroot\\js\\weighbridge\\weighbridge.js",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAAACEAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-02-24T08:29:26.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Years.cshtml",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Epm\\Years.cshtml",
+              "RelativeDocumentMoniker": "FraTool.Web\\Views\\Epm\\Years.cshtml",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Epm\\Years.cshtml",
+              "RelativeToolTip": "FraTool.Web\\Views\\Epm\\Years.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-24T08:25:28.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Weighbridge\\Index.cshtml",
+              "RelativeDocumentMoniker": "FraTool.Web\\Views\\Weighbridge\\Index.cshtml",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Weighbridge\\Index.cshtml",
+              "RelativeToolTip": "FraTool.Web\\Views\\Weighbridge\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-24T08:24:16.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Company.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\dShared\\Model\\Company.cs",
+              "RelativeDocumentMoniker": "dShared\\Model\\Company.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\dShared\\Model\\Company.cs",
+              "RelativeToolTip": "dShared\\Model\\Company.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T08:11:05.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CompanyController.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Controllers\\CompanyController.cs",
+              "RelativeDocumentMoniker": "FraTool.Web\\Controllers\\CompanyController.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Controllers\\CompanyController.cs",
+              "RelativeToolTip": "FraTool.Web\\Controllers\\CompanyController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T08:10:57.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "WeighbridgeController.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Controllers\\WeighbridgeController.cs",
+              "RelativeDocumentMoniker": "FraTool.Web\\Controllers\\WeighbridgeController.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Controllers\\WeighbridgeController.cs",
+              "RelativeToolTip": "FraTool.Web\\Controllers\\WeighbridgeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T08:06:01.602Z"
             }
           ]
         }

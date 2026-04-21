@@ -168,5 +168,26 @@ namespace FraTool.Web.Controllers
                 throw;
             }
         }
+        [HttpGet]
+        public async Task<IActionResult> GetEstateCodeFromScale()
+        {
+            try
+            {
+                var companies = await biz.GetCompanies();
+                var data = from c in companies
+                        .Where(x => x.IsActive == true && x.EstateCodeForScale != "")
+                        .OrderBy(x => x.CompanyName)
+                           select new
+                           {
+                               c.EstateCodeForScale,
+                               c.CompanyName
+                           };
+                return Json(data: data);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
     }
 }
