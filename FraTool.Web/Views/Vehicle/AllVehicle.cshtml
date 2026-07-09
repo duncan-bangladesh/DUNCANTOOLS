@@ -1,0 +1,81 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    #vehicleDetailsTable th {
+        text-align: center;
+        vertical-align: middle;
+    }
+</style>
+
+<div class="row rowtop">
+    <div class="col-md-12">
+        <div class="card card-success card-outline">
+            <div class="card-header">
+                <h3 class="card-title">Vehicle List</h3>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover display dataTable" id="rTable">
+                        <thead>
+                            <tr class="bg-success">
+                                <th>Vehicle Name</th>
+                                @* <th>Registration Date</th> *@
+                                @* <th>License Plate</th> *@
+                                <th>BRTA Office</th>
+                                @* <th>Vehicle Type</th> *@
+                                <th>Owner</th>
+                                <th>Location</th>
+                                <th>User</th>
+                                @* <th>Driver</th> *@
+                                <th data-orderable="false">Remarks</th>
+                                @* <th>Status</th> *@
+                                <th data-orderable="false"></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-xl">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Vehicle Details</h4>
+                <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table id="vehicleDetailsTable" class="table table-bordered table-hover table-sm">
+                    <thead>
+                        <tr class="bg-success">
+                            <th>Vehicle Name</th>
+                            <th>Owner Name</th>
+                            <th>Registration Date</th>
+                            <th>License Plate</th>
+                            <th>Issue Location</th>
+                            <th>Issue To</th>
+                            <th>Vehicle Type</th>
+                            <th>BRTA Office</th>
+                            <th>Driver</th>
+                            <th>Seat Capacity With Driver</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script src="~/js/vehicle/allvehicle.js"></script>
+    <script></script>
+}

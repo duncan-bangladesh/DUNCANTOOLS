@@ -45,7 +45,7 @@ function my_datepicker(picker_id) {
         changeyear: true,
         showOtherMonths: true,
         selectOtherMonths: true,
-        maxDate: 0 
+        maxDate: 0
     });
     $(picker_id).datepicker('setDate', 'today');
 }
@@ -55,6 +55,18 @@ function init_datepicker(element) {
         todayHighlight: true,
         changeMonth: true,
         changeYear: true,
+        showOtherMonths: true,
+        selectOtherMonths: true,
+        maxDate: 0
+    });
+}
+function registrationDate_datepicker(element) {
+    $(element).datepicker({
+        dateFormat: "dd-mm-yy",
+        todayHighlight: true,
+        changeMonth: true,
+        changeYear: true,
+        //yearRange: "-10:+0",
         showOtherMonths: true,
         selectOtherMonths: true,
         maxDate: 0

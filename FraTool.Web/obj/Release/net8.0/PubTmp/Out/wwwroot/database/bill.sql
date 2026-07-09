@@ -1,5 +1,25 @@
 ﻿USE DBPROC
 GO
+
+--ALTER TABLE SupplierProfile ALTER COLUMN Country CHAR(50)
+--ALTER TABLE SUPPLIERPROFILE ALTER COLUMN [Bank] [nvarchar](150)
+
+ALTER TABLE SUPPLIERPROFILE ALTER COLUMN [Bank] [nvarchar](150)
+GO
+ALTER TABLE supplierprofile ALTER COLUMN City nvarchar(150)
+GO
+ALTER TABLE supplierprofile ALTER COLUMN Country nvarchar(150)
+GO
+ALTER TABLE supplierprofile ALTER COLUMN email nvarchar(80)
+GO
+ALTER TABLE supplierprofile ALTER COLUMN Company nvarchar(50)
+GO
+ALTER TABLE supplierprofile ALTER COLUMN AccountNo nvarchar(25)
+GO
+ALTER TABLE supplierprofile ALTER COLUMN RoutingNo nvarchar(25)
+GO
+ALTER TABLE supplierprofile ALTER COLUMN UpdateUser nvarchar(50)
+GO
 CREATE PROC sp_GetSupplierCodeBySupplierName
 (
 	@SupplierName NVARCHAR(255) = ''
@@ -60,9 +80,6 @@ BEGIN
 	END
 	SELECT @code AS SupplierCode
 END
-GO
---ALTER TABLE SupplierProfile ALTER COLUMN Country CHAR(50)
---ALTER TABLE SUPPLIERPROFILE ALTER COLUMN [Bank] [nvarchar](150)
 GO
 CREATE FUNCTION dbo.NormalizeSupplierName (@text NVARCHAR(255))
 RETURNS NVARCHAR(255)

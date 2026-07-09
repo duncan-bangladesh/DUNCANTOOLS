@@ -59,6 +59,7 @@
   <ItemGroup>
     <ProjectReference Include="..\dSecurity\dSecurity.csproj" />
     <ProjectReference Include="..\dShared\dShared.csproj" />
+    <ProjectReference Include="..\dVehicle\dVehicle.csproj" />
     <ProjectReference Include="..\dVoucher\dVoucher.csproj" />
     <ProjectReference Include="..\dWeighbridge\dWeighbridge.csproj" />
     <ProjectReference Include="..\Macalms\Macalms.csproj" />

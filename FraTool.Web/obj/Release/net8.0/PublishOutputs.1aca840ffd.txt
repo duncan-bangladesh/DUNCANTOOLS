@@ -34,6 +34,7 @@ D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Release\net8.0\PubTmp\Out\Mi
 D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Release\net8.0\PubTmp\Out\Microsoft.Extensions.DependencyModel.dll
 D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Release\net8.0\PubTmp\Out\Microsoft.Extensions.Logging.dll
 D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Release\net8.0\PubTmp\Out\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Release\net8.0\PubTmp\Out\Microsoft.Extensions.ObjectPool.dll
 D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Release\net8.0\PubTmp\Out\Microsoft.Extensions.Options.dll
 D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Release\net8.0\PubTmp\Out\Microsoft.NET.StringTools.dll
 D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Release\net8.0\PubTmp\Out\Microsoft.VisualStudio.Web.CodeGeneration.dll
@@ -225,12 +226,14 @@ D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Release\net8.0\PubTmp\Out\dC
 D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Release\net8.0\PubTmp\Out\dDataAccess.dll
 D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Release\net8.0\PubTmp\Out\dSecurity.dll
 D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Release\net8.0\PubTmp\Out\dShared.dll
+D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Release\net8.0\PubTmp\Out\dVehicle.dll
 D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Release\net8.0\PubTmp\Out\dVoucher.dll
 D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Release\net8.0\PubTmp\Out\dWeighbridge.dll
 D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Release\net8.0\PubTmp\Out\Macalms.dll
 D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Release\net8.0\PubTmp\Out\Procurement.dll
 D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Release\net8.0\PubTmp\Out\dSecurity.pdb
 D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Release\net8.0\PubTmp\Out\dShared.pdb
+D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Release\net8.0\PubTmp\Out\dVehicle.pdb
 D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Release\net8.0\PubTmp\Out\dVoucher.pdb
 D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Release\net8.0\PubTmp\Out\dWeighbridge.pdb
 D:\Source Control\BitBucket\FraTool\FraTool.Web\obj\Release\net8.0\PubTmp\Out\Macalms.pdb

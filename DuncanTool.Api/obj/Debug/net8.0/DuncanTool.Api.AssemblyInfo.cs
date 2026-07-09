@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DuncanTool.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+61f6f358f5d680882c426ceabd3b520383c9903a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6299ac8ae2e4d369f361c55d37cdd0d99ae9793")]
 [assembly: System.Reflection.AssemblyProductAttribute("DuncanTool.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DuncanTool.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

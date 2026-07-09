@@ -510,3 +510,6 @@ D:\Source Control\BitBucket\FraTool\FraTool.Web\bin\Release\net8.0\dWeighbridge.
 D:\Source Control\BitBucket\FraTool\FraTool.Web\bin\Release\net8.0\dWeighbridge.pdb
 D:\Source Control\BitBucket\FraTool\FraTool.Web\bin\Release\net8.0\Procurement.dll
 D:\Source Control\BitBucket\FraTool\FraTool.Web\bin\Release\net8.0\Procurement.pdb
+D:\Source Control\BitBucket\FraTool\FraTool.Web\bin\Release\net8.0\dVehicle.dll
+D:\Source Control\BitBucket\FraTool\FraTool.Web\bin\Release\net8.0\dVehicle.pdb
+D:\Source Control\BitBucket\FraTool\FraTool.Web\bin\Release\net8.0\Microsoft.Extensions.ObjectPool.dll

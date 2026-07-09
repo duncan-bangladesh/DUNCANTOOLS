@@ -1,15 +1,32 @@
 ﻿$(document).ready(function () {
-    $('input[type="number"].no-spinners').on('keypress', function (event) {
-        // Allow numbers, decimal point, and specific control keys
-        if (event.which != 8 && event.which != 0 && event.which != 46 && (event.which < 48 || event.which > 57)) {
-            event.preventDefault();
+    //$('input[type="number"].no-spinners').on('keypress', function (event) {
+    //    // Allow numbers, decimal point, and specific control keys
+    //    if (event.which != 8 && event.which != 0 && event.which != 46 && (event.which < 48 || event.which > 57)) {
+    //        event.preventDefault();
+    //    }
+    //    // Allow only one decimal point
+    //    if (event.which == 46 && $(this).val().indexOf('.') != -1) {
+    //        event.preventDefault();
+    //    }
+    //});
+    $.get("/Procurement/GetSupplierProfileList", function (data) { console.log(data); });
+    $('#BIN').on('keypress', function (event) {
+        var value = $(this).val();
+        // Allow control keys
+        if (event.which === 8 || event.which === 0) return;
+        // Allow digits
+        if (event.which >= 48 && event.which <= 57) return;
+        // Allow only one hyphen
+        if (event.which === 45) {
+            if (value.indexOf('-') !== -1) {
+                event.preventDefault();
+            }
+            return;
         }
-        // Allow only one decimal point
-        if (event.which == 46 && $(this).val().indexOf('.') != -1) {
-            event.preventDefault();
-        }
+        event.preventDefault();
     });
-    
+
+
     initDataTable();
     $('#SupplierName').on('change', function () {
         var supplierName = $(this).val();
@@ -149,28 +166,6 @@ function initDataTable() {
             dataSrc: ''
         },
         columns: [
-            //{ data: 'code' },
-            //{ data: 'description' },
-            //{ data: 'tin' },
-            //{ data: 'bin' },
-            //{ data: 'address' },
-            //{ data: 'city' },
-            //{ data: 'country' },
-            //{ data: 'bank' },
-            //{ data: 'accountNo' },
-            //{ data: 'routingNo' },
-            //{ data: 'taxgroup' },
-            //{ data: 'phone' },
-            //{ data: 'email' },
-            //{
-            //    data: 'slNo',
-            //    className: '',
-            //    render: function (value, type, row, meta) {
-            //        return `<button type="button" class="btn btn1 btn-edit" data-id="${row.slNo}"><i class="fas fa-edit"></i></button>`;
-            //    }
-            //}
-
-
             { data: 'code' },
             { data: 'description' },
             { data: 'taxgroup' },

@@ -1,0 +1,191 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    #vehicleDetailsTable th {
+        text-align: center;
+        vertical-align: middle;
+    }
+</style>
+<div class="row rowtop">
+    <div class="col-md-12">
+        <div class="card card-primary card-outline card-outline collapsed-card" id="entry-ui">
+            <div class="card-header">
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool text-bold" data-card-widget="collapse" id="btntool">
+                        <i class="fas fa-plus"></i>&nbsp;&nbsp; Add Vehicle
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <form class="form-horizontal" enctype="multipart/form-data">
+                    <input id="RecordId" value="0" hidden type="text" />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-right col-md-4">Vehicle Name <span class="text text-danger">*</span></label>
+                                <div class="col-md-8">
+                                    <input id="VehicleName" type="text"  autocomplete="off" class="form-control" placeholder="vehicle name" tabindex="1" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-right col-md-4">Owner <span class="text text-danger">*</span></label>
+                                <div class="col-md-8">
+                                    <select id="OwnerId" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="2" aria-hidden="true">
+                                        <option value="">--Select--</option>                                        
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-right col-md-4">Vehicle Type <span class="text text-danger">*</span></label>
+                                <div class="col-md-8">
+                                    <select id="VehicleTypeId" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="2" tabindex="3" aria-hidden="true">
+                                        <option value="0">--Select--</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-left col-md-4">Registration Date <span class="text text-danger">*</span></label>
+                                <div class="col-md-8">
+                                    <div class="input-group date">
+                                        <input type="text" id="RegistrationDate" autocomplete="off" placeholder="registration date" class="form-control" tabindex="4">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-right col-md-4">License Plate </label>
+                                <div class="col-md-8">
+                                    <input id="LicensePlate" autocomplete="off" class="form-control" placeholder="license plate no" tabindex="5" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-right col-md-4">Issue Location </label>
+                                <div class="col-md-8">
+                                    <select id="IssueLocationId" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="3" tabindex="6" aria-hidden="true">
+                                        <option value="0">--Select--</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-right col-md-4">Issue To </label>
+                                <div class="col-md-8">
+                                    <select id="IssueToId" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="4" tabindex="7" aria-hidden="true">
+                                        <option value="0">--Select--</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-right col-md-4">BRTA Office </label>
+                                <div class="col-md-8">
+                                    <select id="BRTAOfficeId" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="5" tabindex="8" aria-hidden="true">
+                                        <option value="0">--Select--</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-right col-md-4">Driver </label>
+                                <div class="col-md-8">
+                                    <select id="DriverId" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="6" tabindex="9" aria-hidden="true">
+                                        <option value="0">--Select--</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-right col-md-4">Seat Capacity</label>
+                                <div class="col-md-8">
+                                    <input id="SeatCapacityWithDriver" autocomplete="off" class="form-control" placeholder="seat capacity with driver" tabindex="10" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-right col-md-4">Remarks</label>
+                                <div class="col-md-8">
+                                    <textarea rows="2" id="Remarks" class="form-control" tabindex="11"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group row">
+                                <div class="offset-md-4">
+                                    <input type="button" id="btnSave" value="Save" style="margin-left: 8px;" class="btn btn-success" tabindex="12" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row rowtop">
+    <div class="col-md-12">
+        <div class="card card-success card-outline">
+            <div class="card-header">
+                <h3 class="card-title">Vehicle List</h3>                
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover display dataTable" id="rTable">
+                        <thead>
+                            <tr class="bg-success">
+                                <th>Vehicle Name</th>
+                                @* <th>Registration Date</th> *@
+                                @* <th>License Plate</th> *@
+                                <th>BRTA Office</th>
+                                @* <th>Vehicle Type</th> *@
+                                <th>Owner</th>
+                                <th>Location</th>
+                                <th>User</th>
+                                @* <th>Driver</th> *@
+                                <th data-orderable="false">Remarks</th>
+                                @* <th>Status</th> *@
+                                <th data-orderable="false"></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="modal-xl">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Vehicle Details</h4>
+                <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">                
+                <table id="vehicleDetailsTable" class="table table-bordered table-hover table-sm">
+                    <thead>
+                        <tr class="bg-success">
+                            <th>Vehicle Name</th>
+                            <th>Owner Name</th>
+                            <th>Registration Date</th>
+                            <th>License Plate</th>
+                            <th>Issue Location</th>
+                            <th>Issue To</th>
+                            <th>Vehicle Type</th>
+                            <th>BRTA Office</th>
+                            <th>Driver</th>
+                            <th>Seat Capacity With Driver</th>                            
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script src="~/js/vehicle/vehicles.js"></script>
+    <script></script>
+}

@@ -1,0 +1,144 @@
+﻿@{
+    ViewData["Title"] = "Documents";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .custom-file-upload {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .upload-btn {
+        margin: 0;
+        border: 1px solid;
+        padding: 5px 10px;
+        /* background: #fff;
+        color: #0b5ed7; */
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 350;
+        transition: all .2s ease;
+    }
+
+        .upload-btn:hover {
+            background: #0b5ed7;
+            color:#fff;
+        }
+
+    .file-name {
+        color: #6c757d;
+        font-size: 14px;
+    }
+</style>
+<div class="row rowtop">
+    <div class="col-md-12">
+        <div class="card card-primary card-outline card-outline collapsed-card" id="entry-ui">
+            <div class="card-header">
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool text-bold" data-card-widget="collapse" id="btntool">
+                        <i class="fas fa-plus"></i>&nbsp;&nbsp; Add Document
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                <form class="form-horizontal" enctype="multipart/form-data">
+                    <input id="RecordId" value="0" hidden type="text" />
+                    <div class="row">
+                        <div class="col-md-6">                            
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-right col-md-4">Document Type <span class="text text-danger">*</span></label>
+                                <div class="col-md-8">
+                                    <select id="DocumentTypeId" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" tabindex="1" aria-hidden="true">
+                                        <option value="">--Select--</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-right col-md-4">Vehicle <span class="text text-danger">*</span></label>
+                                <div class="col-md-8">
+                                    <select id="VehicleId" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="2" tabindex="2" aria-hidden="true">
+                                        <option value="0">--Select--</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-left col-md-4">Issue Date <span class="text text-danger">*</span></label>
+                                <div class="col-md-8">
+                                    <div class="input-group date">
+                                        <input type="text" id="IssueDate" autocomplete="off" placeholder="document issue date" class="form-control" tabindex="3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-left col-md-4">Expiry Date <span class="text text-danger">*</span></label>
+                                <div class="col-md-8">
+                                    <div class="input-group date">
+                                        <input type="text" id="ExpiredDate" autocomplete="off" placeholder="document expiry date" class="form-control" tabindex="4">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-right col-md-4">Attachment</label>
+                                <div class="col-md-8">
+                                    <div class="custom-file-upload">
+                                        <input type="file" id="DocumentAttachment" accept="image/*,.pdf" hidden>
+                                        <label for="DocumentAttachment" class="upload-btn">
+                                            <i class="fa fa-upload"></i> Upload..
+                                        </label>
+                                        <span id="fileName" class="file-name">
+                                            No file selected
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="control-label text-md-right text-sm-right col-md-4">Remarks</label>
+                                <div class="col-md-8">
+                                    <textarea rows="2" id="Remarks" class="form-control" tabindex="6"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="offset-md-4">
+                                    <input type="button" id="btnSave" value="Save" style="margin-left: 8px;" class="btn btn-success" />
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row rowtop">
+    <div class="col-md-12">
+        <div class="card card-success card-outline">
+            <div class="card-header">
+                <h3 class="card-title">Vehicle Documents</h3>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover display dataTable" id="rTable">
+                        <thead>
+                            <tr class="bg-success">
+                                <th>Vehicle Name</th>
+                                <th>Document Type</th>
+                                <th>IssueDate</th>
+                                <th>Expired Date</th>
+                                <th data-orderable="false">Attachments</th>
+                                <th data-orderable="false">Remarks</th>
+                                <th data-orderable="false"></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script src="~/js/vehicle/documents.js"></script>
+    <script></script>
+}

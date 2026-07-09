@@ -4,6 +4,7 @@ wwwroot\css\site.css
 wwwroot\database\bill.sql
 wwwroot\database\macalms_scripts.sql
 wwwroot\database\use master.sql
+wwwroot\database\vehicle.sql
 wwwroot\database\weighbridge.sql
 wwwroot\dist\css\adminlte.css
 wwwroot\dist\css\adminlte.css.map
@@ -101,6 +102,9 @@ wwwroot\js\security\rolewiseuser.js
 wwwroot\js\security\users.js
 wwwroot\js\shared\company.js
 wwwroot\js\site.js
+wwwroot\js\vehicle\allvehicle.js
+wwwroot\js\vehicle\documents.js
+wwwroot\js\vehicle\vehicles.js
 wwwroot\js\voucher\errorlog.js
 wwwroot\js\voucher\voucher.js
 wwwroot\js\weighbridge\weighbridge.js

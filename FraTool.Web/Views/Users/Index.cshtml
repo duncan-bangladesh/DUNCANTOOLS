@@ -52,14 +52,14 @@
                             <div class="form-group row" id="divU">
                                 <label asp-for="UserName" class="control-label text-md-right text-sm-left col-md-4"></label>
                                 <div class="col-md-8">
-                                    <input asp-for="UserName" autocomplete="off" class="form-control" placeholder="user name" />
+                                    <input asp-for="UserName" autocomplete="new-username" class="form-control" placeholder="user name" />
                                     <span asp-validation-for="UserName" class="text-danger"></span>
                                 </div>
                             </div>
                             <div class="form-group row" id="divP">
                                 <label asp-for="Password" class="control-label text-md-right text-sm-left col-md-4"></label>
                                 <div class="col-md-8">
-                                    <input asp-for="Password" class="form-control" min="8" placeholder="password" />
+                                    <input asp-for="Password" class="form-control" autocomplete="new-password" min="8" placeholder="password" />
                                     <span asp-validation-for="Password" class="text-danger"></span>
                                 </div>
                             </div>
