@@ -2802,6 +2802,20 @@
           "bin/placeholder/dDataAccess.dll": {}
         }
       },
+      "dFinance/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
+          "dDataAccess": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/dFinance.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/dFinance.dll": {}
+        }
+      },
       "dSecurity/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -8521,6 +8535,11 @@
       "path": "../dDataAccess/dDataAccess.csproj",
       "msbuildProject": "../dDataAccess/dDataAccess.csproj"
     },
+    "dFinance/1.0.0": {
+      "type": "project",
+      "path": "../dFinance/dFinance.csproj",
+      "msbuildProject": "../dFinance/dFinance.csproj"
+    },
     "dSecurity/1.0.0": {
       "type": "project",
       "path": "../dSecurity/dSecurity.csproj",
@@ -8565,6 +8584,7 @@
       "Procurement >= 1.0.0",
       "System.Drawing.Common >= 10.0.2",
       "System.Security.Permissions >= 10.0.2",
+      "dFinance >= 1.0.0",
       "dSecurity >= 1.0.0",
       "dShared >= 1.0.0",
       "dVehicle >= 1.0.0",
@@ -8605,6 +8625,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
+            "D:\\Source Control\\BitBucket\\FraTool\\dFinance\\dFinance.csproj": {
+              "projectPath": "D:\\Source Control\\BitBucket\\FraTool\\dFinance\\dFinance.csproj"
+            },
             "D:\\Source Control\\BitBucket\\FraTool\\dSecurity\\dSecurity.csproj": {
               "projectPath": "D:\\Source Control\\BitBucket\\FraTool\\dSecurity\\dSecurity.csproj"
             },
@@ -8681,7 +8704,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.315/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.317/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

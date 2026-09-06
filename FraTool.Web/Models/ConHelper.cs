@@ -20,5 +20,14 @@
             }
             return result;
         }
+        public string DlrConStrings(string? codeName)
+        {
+            string result = "";
+            if (codeName != null)
+            {
+                result = codeName + "_DLR";
+            }
+            return result;
+        }
     }
 }

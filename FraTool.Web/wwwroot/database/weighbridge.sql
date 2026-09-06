@@ -1,5 +1,6 @@
 ﻿USE DUNCAN_TOOLS
 GO
+--EXEC Scale.FilterScaleData NULL, '2026-07-01', '2026-07-31'
 CREATE PROC Scale.FilterScaleData
 ( 
 	@EstateCode NVARCHAR(20) = NULL, 

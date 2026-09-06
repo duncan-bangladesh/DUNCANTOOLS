@@ -3,80 +3,48 @@
   "WorkspaceRootPath": "D:\\Source Control\\BitBucket\\FraTool\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\views\\vehicle\\allvehicle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\views\\vehicle\\allvehicle.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\js\\vehicle\\allvehicle.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\js\\vehicle\\allvehicle.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\js\\finance\\wagesreport.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\js\\finance\\wagesreport.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\views\\vehicle\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\views\\vehicle\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\controllers\\soecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\controllers\\soecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\controllers\\vehiclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\controllers\\vehiclecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E53B73AC-8BC8-4631-8F83-C3E546AB2D0C}|dFinance\\dFinance.csproj|d:\\source control\\bitbucket\\fratool\\dfinance\\biz\\chartofaccountsbiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E53B73AC-8BC8-4631-8F83-C3E546AB2D0C}|dFinance\\dFinance.csproj|solutionrelative:dfinance\\biz\\chartofaccountsbiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\database\\vehicle.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\database\\vehicle.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+      "AbsoluteMoniker": "D:0:0:{E53B73AC-8BC8-4631-8F83-C3E546AB2D0C}|dFinance\\dFinance.csproj|d:\\source control\\bitbucket\\fratool\\dfinance\\biz\\wagesbiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E53B73AC-8BC8-4631-8F83-C3E546AB2D0C}|dFinance\\dFinance.csproj|solutionrelative:dfinance\\biz\\wagesbiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F28B7D9A-CA0A-463A-BC9B-E25757161C0F}|dVehicle\\dVehicle.csproj|d:\\source control\\bitbucket\\fratool\\dvehicle\\biz\\vehicledocumentbiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F28B7D9A-CA0A-463A-BC9B-E25757161C0F}|dVehicle\\dVehicle.csproj|solutionrelative:dvehicle\\biz\\vehicledocumentbiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E53B73AC-8BC8-4631-8F83-C3E546AB2D0C}|dFinance\\dFinance.csproj|d:\\source control\\bitbucket\\fratool\\dfinance\\model\\wagesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E53B73AC-8BC8-4631-8F83-C3E546AB2D0C}|dFinance\\dFinance.csproj|solutionrelative:dfinance\\model\\wagesmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F28B7D9A-CA0A-463A-BC9B-E25757161C0F}|dVehicle\\dVehicle.csproj|d:\\source control\\bitbucket\\fratool\\dvehicle\\model\\vehicledocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F28B7D9A-CA0A-463A-BC9B-E25757161C0F}|dVehicle\\dVehicle.csproj|solutionrelative:dvehicle\\model\\vehicledocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\views\\soe\\wagesreport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\views\\soe\\wagesreport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F28B7D9A-CA0A-463A-BC9B-E25757161C0F}|dVehicle\\dVehicle.csproj|d:\\source control\\bitbucket\\fratool\\dvehicle\\biz\\vehiclebiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F28B7D9A-CA0A-463A-BC9B-E25757161C0F}|dVehicle\\dVehicle.csproj|solutionrelative:dvehicle\\biz\\vehiclebiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F28B7D9A-CA0A-463A-BC9B-E25757161C0F}|dVehicle\\dVehicle.csproj|d:\\source control\\bitbucket\\fratool\\dvehicle\\model\\vehicles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F28B7D9A-CA0A-463A-BC9B-E25757161C0F}|dVehicle\\dVehicle.csproj|solutionrelative:dvehicle\\model\\vehicles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\database\\finance.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\database\\finance.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\js\\vehicle\\documents.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\js\\vehicle\\documents.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{E53B73AC-8BC8-4631-8F83-C3E546AB2D0C}|dFinance\\dFinance.csproj|d:\\source control\\bitbucket\\fratool\\dfinance\\model\\chartofaccounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E53B73AC-8BC8-4631-8F83-C3E546AB2D0C}|dFinance\\dFinance.csproj|solutionrelative:dfinance\\model\\chartofaccounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\views\\vehicle\\documents.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\views\\vehicle\\documents.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\js\\vehicle\\vehicles.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\js\\vehicle\\vehicles.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\js\\weighbridge\\weighbridge.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\js\\weighbridge\\weighbridge.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F28B7D9A-CA0A-463A-BC9B-E25757161C0F}|dVehicle\\dVehicle.csproj|d:\\source control\\bitbucket\\fratool\\dvehicle\\biz\\documenttypebiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F28B7D9A-CA0A-463A-BC9B-E25757161C0F}|dVehicle\\dVehicle.csproj|solutionrelative:dvehicle\\biz\\documenttypebiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F28B7D9A-CA0A-463A-BC9B-E25757161C0F}|dVehicle\\dVehicle.csproj|d:\\source control\\bitbucket\\fratool\\dvehicle\\biz\\ownersbiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F28B7D9A-CA0A-463A-BC9B-E25757161C0F}|dVehicle\\dVehicle.csproj|solutionrelative:dvehicle\\biz\\ownersbiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F28B7D9A-CA0A-463A-BC9B-E25757161C0F}|dVehicle\\dVehicle.csproj|d:\\source control\\bitbucket\\fratool\\dvehicle\\model\\documenttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F28B7D9A-CA0A-463A-BC9B-E25757161C0F}|dVehicle\\dVehicle.csproj|solutionrelative:dvehicle\\model\\documenttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\database\\vehicle.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\database\\vehicle.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+      "AbsoluteMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|d:\\source control\\bitbucket\\fratool\\fratool.web\\wwwroot\\database\\finance.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{F313C076-6112-42CF-ABCA-1DC225FDCAC8}|FraTool.Web\\FraTool.Web.csproj|solutionrelative:fratool.web\\wwwroot\\database\\finance.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,228 +66,130 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "allvehicle.js",
-              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\vehicle\\allvehicle.js",
-              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\js\\vehicle\\allvehicle.js",
-              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\vehicle\\allvehicle.js",
-              "RelativeToolTip": "FraTool.Web\\wwwroot\\js\\vehicle\\allvehicle.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-07-08T09:28:41.275Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AllVehicle.cshtml",
-              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Vehicle\\AllVehicle.cshtml",
-              "RelativeDocumentMoniker": "FraTool.Web\\Views\\Vehicle\\AllVehicle.cshtml",
-              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Vehicle\\AllVehicle.cshtml",
-              "RelativeToolTip": "FraTool.Web\\Views\\Vehicle\\AllVehicle.cshtml",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAAAEQAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-07-08T09:22:23.217Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Vehicle\\Index.cshtml",
-              "RelativeDocumentMoniker": "FraTool.Web\\Views\\Vehicle\\Index.cshtml",
-              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Vehicle\\Index.cshtml",
-              "RelativeToolTip": "FraTool.Web\\Views\\Vehicle\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAL4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-15T05:33:16.899Z",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Program.cs",
+              "RelativeDocumentMoniker": "FraTool.Web\\Program.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Program.cs",
+              "RelativeToolTip": "FraTool.Web\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAArwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-06T09:44:38.102Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Vehicles.cs",
-              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\dVehicle\\Model\\Vehicles.cs",
-              "RelativeDocumentMoniker": "dVehicle\\Model\\Vehicles.cs",
-              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\dVehicle\\Model\\Vehicles.cs",
-              "RelativeToolTip": "dVehicle\\Model\\Vehicles.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T08:50:54.113Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AccountsController.cs",
-              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Controllers\\AccountsController.cs",
-              "RelativeDocumentMoniker": "FraTool.Web\\Controllers\\AccountsController.cs",
-              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Controllers\\AccountsController.cs",
-              "RelativeToolTip": "FraTool.Web\\Controllers\\AccountsController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAADgAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-08T05:28:45.371Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "weighbridge.js",
-              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\weighbridge\\weighbridge.js",
-              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\js\\weighbridge\\weighbridge.js",
-              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\weighbridge\\weighbridge.js",
-              "RelativeToolTip": "FraTool.Web\\wwwroot\\js\\weighbridge\\weighbridge.js",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-07-06T09:18:54.03Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "vehicles.js",
-              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\vehicle\\vehicles.js",
-              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\js\\vehicle\\vehicles.js",
-              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\vehicle\\vehicles.js",
-              "RelativeToolTip": "FraTool.Web\\wwwroot\\js\\vehicle\\vehicles.js",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAALIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-07-06T08:59:51.34Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Documents.cshtml",
-              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Vehicle\\Documents.cshtml",
-              "RelativeDocumentMoniker": "FraTool.Web\\Views\\Vehicle\\Documents.cshtml",
-              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\Vehicle\\Documents.cshtml",
-              "RelativeToolTip": "FraTool.Web\\Views\\Vehicle\\Documents.cshtml",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAqwEQAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-23T09:52:25.023Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "VehicleDocumentBiz.cs",
-              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\dVehicle\\Biz\\VehicleDocumentBiz.cs",
-              "RelativeDocumentMoniker": "dVehicle\\Biz\\VehicleDocumentBiz.cs",
-              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\dVehicle\\Biz\\VehicleDocumentBiz.cs",
-              "RelativeToolTip": "dVehicle\\Biz\\VehicleDocumentBiz.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAIA4wCsAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-05T09:47:47.466Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\appsettings.json",
               "RelativeDocumentMoniker": "FraTool.Web\\appsettings.json",
               "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\appsettings.json",
               "RelativeToolTip": "FraTool.Web\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAB+AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAB/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-07-02T11:03:20.843Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "VehicleDocument.cs",
-              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\dVehicle\\Model\\VehicleDocument.cs",
-              "RelativeDocumentMoniker": "dVehicle\\Model\\VehicleDocument.cs",
-              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\dVehicle\\Model\\VehicleDocument.cs",
-              "RelativeToolTip": "dVehicle\\Model\\VehicleDocument.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-02T10:10:44.841Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DocumentTypeBiz.cs",
-              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\dVehicle\\Biz\\DocumentTypeBiz.cs",
-              "RelativeDocumentMoniker": "dVehicle\\Biz\\DocumentTypeBiz.cs",
-              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\dVehicle\\Biz\\DocumentTypeBiz.cs",
-              "RelativeToolTip": "dVehicle\\Biz\\DocumentTypeBiz.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAUwBYAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-24T11:41:48.579Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "DocumentType.cs",
-              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\dVehicle\\Model\\DocumentType.cs",
-              "RelativeDocumentMoniker": "dVehicle\\Model\\DocumentType.cs",
-              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\dVehicle\\Model\\DocumentType.cs",
-              "RelativeToolTip": "dVehicle\\Model\\DocumentType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-24T11:40:31.891Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "documents.js",
-              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\vehicle\\documents.js",
-              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\js\\vehicle\\documents.js",
-              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\vehicle\\documents.js",
-              "RelativeToolTip": "FraTool.Web\\wwwroot\\js\\vehicle\\documents.js",
-              "ViewState": "AgIAAO0AAAAAAAAAAAAuwPUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-06-24T09:29:00.564Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "OwnersBiz.cs",
-              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\dVehicle\\Biz\\OwnersBiz.cs",
-              "RelativeDocumentMoniker": "dVehicle\\Biz\\OwnersBiz.cs",
-              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\dVehicle\\Biz\\OwnersBiz.cs",
-              "RelativeToolTip": "dVehicle\\Biz\\OwnersBiz.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-18T05:24:28.896Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "VehicleBiz.cs",
-              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\dVehicle\\Biz\\VehicleBiz.cs",
-              "RelativeDocumentMoniker": "dVehicle\\Biz\\VehicleBiz.cs",
-              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\dVehicle\\Biz\\VehicleBiz.cs",
-              "RelativeToolTip": "dVehicle\\Biz\\VehicleBiz.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAUwFcAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T11:43:16.694Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "VehicleController.cs",
-              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Controllers\\VehicleController.cs",
-              "RelativeDocumentMoniker": "FraTool.Web\\Controllers\\VehicleController.cs",
-              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Controllers\\VehicleController.cs",
-              "RelativeToolTip": "FraTool.Web\\Controllers\\VehicleController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAUwCUAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-15T05:32:08.063Z",
+              "WhenOpened": "2026-09-02T06:44:30.538Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "vehicle.sql ",
-              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\database\\vehicle.sql",
-              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\database\\vehicle.sql",
-              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\database\\vehicle.sql",
-              "RelativeToolTip": "FraTool.Web\\wwwroot\\database\\vehicle.sql",
+              "Title": "WagesBiz.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\dFinance\\Biz\\WagesBiz.cs",
+              "RelativeDocumentMoniker": "dFinance\\Biz\\WagesBiz.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\dFinance\\Biz\\WagesBiz.cs",
+              "RelativeToolTip": "dFinance\\Biz\\WagesBiz.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAArwKQAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-27T09:32:24.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ChartOfAccounts.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\dFinance\\Model\\ChartOfAccounts.cs",
+              "RelativeDocumentMoniker": "dFinance\\Model\\ChartOfAccounts.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\dFinance\\Model\\ChartOfAccounts.cs",
+              "RelativeToolTip": "dFinance\\Model\\ChartOfAccounts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T10:38:00.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "finance.sql ",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\database\\finance.sql",
+              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\database\\finance.sql",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\database\\finance.sql",
+              "RelativeToolTip": "FraTool.Web\\wwwroot\\database\\finance.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-06-15T05:31:02.497Z",
+              "WhenOpened": "2026-08-31T05:42:54.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WagesReport.cshtml",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\SOE\\WagesReport.cshtml",
+              "RelativeDocumentMoniker": "FraTool.Web\\Views\\SOE\\WagesReport.cshtml",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Views\\SOE\\WagesReport.cshtml",
+              "RelativeToolTip": "FraTool.Web\\Views\\SOE\\WagesReport.cshtml",
+              "ViewState": "AgIAAA0BAAAAAAAAAAArwCUBAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-27T10:47:18.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SOEController.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Controllers\\SOEController.cs",
+              "RelativeDocumentMoniker": "FraTool.Web\\Controllers\\SOEController.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\Controllers\\SOEController.cs",
+              "RelativeToolTip": "FraTool.Web\\Controllers\\SOEController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwCAAAACBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-27T10:44:46.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WagesModel.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\dFinance\\Model\\WagesModel.cs",
+              "RelativeDocumentMoniker": "dFinance\\Model\\WagesModel.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\dFinance\\Model\\WagesModel.cs",
+              "RelativeToolTip": "dFinance\\Model\\WagesModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-27T09:29:13.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ChartOfAccountsBiz.cs",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\dFinance\\Biz\\ChartOfAccountsBiz.cs",
+              "RelativeDocumentMoniker": "dFinance\\Biz\\ChartOfAccountsBiz.cs",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\dFinance\\Biz\\ChartOfAccountsBiz.cs",
+              "RelativeToolTip": "dFinance\\Biz\\ChartOfAccountsBiz.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T10:42:57.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "wagesreport.js",
+              "DocumentMoniker": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\finance\\wagesreport.js",
+              "RelativeDocumentMoniker": "FraTool.Web\\wwwroot\\js\\finance\\wagesreport.js",
+              "ToolTip": "D:\\Source Control\\BitBucket\\FraTool\\FraTool.Web\\wwwroot\\js\\finance\\wagesreport.js",
+              "RelativeToolTip": "FraTool.Web\\wwwroot\\js\\finance\\wagesreport.js",
+              "ViewState": "AgIAADIAAAAAAAAAAAAhwEQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-08-27T10:50:25.632Z",
               "EditorCaption": ""
             }
           ]

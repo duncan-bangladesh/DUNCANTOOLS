@@ -169,6 +169,20 @@ namespace FraTool.Web.Controllers
             }
         }
         [HttpGet]
+        public async Task<IActionResult> GetTeaEstates()
+        {
+            try
+            {
+                var list = await biz.GetCompanies();
+                var data = list.Where(x => x.IsTeaEstate == 1).ToList(); ;
+                return Json(data: data);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        [HttpGet]
         public async Task<IActionResult> GetEstateCodeFromScale()
         {
             try

@@ -57,6 +57,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\dFinance\dFinance.csproj" />
     <ProjectReference Include="..\dSecurity\dSecurity.csproj" />
     <ProjectReference Include="..\dShared\dShared.csproj" />
     <ProjectReference Include="..\dVehicle\dVehicle.csproj" />

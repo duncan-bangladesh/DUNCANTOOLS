@@ -1,0 +1,387 @@
+﻿@{
+    ViewData["Title"] = "wages report";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .tea-report-table {
+        width: 100%;
+        table-layout: fixed;
+        border-collapse: collapse !important;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 8px;
+        color: #000;
+    }
+        .tea-report-table th,
+        .tea-report-table td {
+            border: 1px solid #000 !important;
+            padding: 2px 2px !important;
+            vertical-align: middle !important;
+        }
+
+        /* =========================
+       COLUMN WIDTHS
+       ========================= */
+
+        /* 14 numeric columns */
+        .tea-report-table .col-number {
+            width: 5.3%;
+        }
+
+        /* Account Code */
+        .tea-report-table .col-account {
+            width: 6.5%;
+        }
+
+        /* Description */
+        .tea-report-table .col-description {
+            width: 19.3%;
+        }
+
+
+        /* =========================
+       TEA TITLE
+       ========================= */
+
+        .tea-report-table .group-title {
+            text-align: left;
+            font-size: 9px;
+            font-weight: bold;
+            height: 18px;
+            padding-left: 3px !important;
+        }
+
+
+        /* =========================
+       MAIN HEADINGS
+       ========================= */
+
+        .tea-report-table .main-heading {
+            text-align: center;
+            font-size: 8px;
+            font-weight: bold;
+            height: 24px;
+            line-height: 1.1;
+        }
+
+
+        /* =========================
+       CURRENT MONTH
+       ========================= */
+
+        .tea-report-table .sub-heading {
+            text-align: center;
+            font-size: 8px;
+            font-weight: bold;
+            height: 20px;
+        }
+
+
+        /* =========================
+       COLUMN HEADINGS
+       ========================= */
+
+        .tea-report-table .column-heading th {
+            text-align: center;
+            font-size: 7px;
+            font-weight: bold;
+            line-height: 1.05;
+            height: 48px;
+            white-space: normal;
+            word-break: normal;
+        }
+
+
+        /* =========================
+       A B C D E F
+       ========================= */
+
+        .tea-report-table .code-heading th {
+            text-align: center;
+            font-size: 7px;
+            font-weight: bold;
+            height: 18px;
+            white-space: nowrap;
+        }
+
+
+        /* =========================
+       BODY
+       ========================= */
+
+        .tea-report-table tbody td {
+            text-align: right;
+            font-size: 8px;
+            white-space: nowrap;
+            height: 20px;
+        }
+
+            /* Account code */
+            .tea-report-table tbody td:nth-child(8) {
+                text-align: center;
+            }
+
+            /* Description */
+            .tea-report-table tbody td.description {
+                text-align: left;
+                white-space: normal;
+                word-wrap: break-word;
+            }
+
+
+        /* =========================
+       REMOVE BOOTSTRAP DEFAULT
+       ========================= */
+
+        .tea-report-table thead th {
+            background-color: #fff;
+        }
+
+        .tea-report-table tbody tr {
+            background-color: #fff;
+        }
+        /* Category heading */
+        .tea-report-table .category-row td {
+            font-weight: bold;
+            text-align: left !important;
+            font-size: 9px;
+            padding: 3px !important;
+        }
+
+
+        /* Sub Total */
+        .tea-report-table .subtotal-row td {
+            font-weight: bold;
+            border-top: 2px solid #000 !important;
+        }
+
+
+        /* Category Total */
+        .tea-report-table .category-total-row td {
+            font-weight: bold;
+            border-top: 2px solid #000 !important;
+            border-bottom: 2px solid #000 !important;
+        }
+
+
+        /* Sub Total / Total label */
+        .tea-report-table .total-label {
+            text-align: right !important;
+            padding-right: 5px !important;
+        }
+
+
+        /* Account code */
+        .tea-report-table .account-code {
+            text-align: center !important;
+        }
+</style>
+<div class="row rowtop">
+    <div class="col-md-12">
+        <div class="card card-info card-outline">
+            <div class="card-header">
+                <button type="button" class="btn card-title"> Wages Report</button>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label class="form-label" for="CompanyCode">Tea Estate</label>
+                                <select name="CompanyCode" id="CompanyCode" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" aria-hidden="true">
+                                    <option value="0">--Select--</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label for="FromDate" class="form-label">From Date </label>
+                                <input name="FromDate" type="text" id="FromDate" autocomplete="off" placeholder="from date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label for="ToDate" class="form-label">To Date</label>
+                                <input name="ToDate" type="text" id="ToDate" autocomplete="off" placeholder="to date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <label class="form-label" for="Category">Category</label>
+                                    <select name="Category" id="Category" class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="2" aria-hidden="true">
+                                        <option value="0">--Select--</option>
+                                        <option value="1">Tea</option>
+                                        <option value="2">Rubber</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <button type="button" id="btnSearch" name="btnSearch" class="btn btn-primary" style="margin-top: 32px !important;">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div id="vData">
+                    <hr />
+                    <table id="rTable" class="table table-bordered table-hover">
+                        <thead class="bg-success">
+                            <tr style="text-align:center;">
+                                <th colspan="4">Labour</th>
+                                <th rowspan="2">Accounts Code</th>
+                                <th rowspan="2">Description</th>
+                                <th colspan="4">Wages</th>
+                            </tr>
+                            <tr style="text-align: center;">
+                                <th>Permanent</th>
+                                <th>Temporary</th>
+                                <th>Double Hazira</th>
+                                <th>Total</th>
+
+                                <th>Permanent</th>
+                                <th>Temporary</th>
+                                <th>Double Hazira</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 col-lg-12">
+
+            <div class="card">
+                <div class="card-body p-0">
+
+                    <table id="teaReportTable"
+                           class="table table-bordered tea-report-table mb-0">
+
+                        <colgroup>
+                            <!-- Mandays -->
+                            <col class="col-number">
+                            <col class="col-number">
+                            <col class="col-number">
+                            <col class="col-number">
+                            <col class="col-number">
+                            <col class="col-number">
+                            <col class="col-number">
+
+                            <!-- Account -->
+                            <col class="col-account">
+
+                            <!-- Description -->
+                            <col class="col-description">
+
+                            <!-- Wages -->
+                            <col class="col-number">
+                            <col class="col-number">
+                            <col class="col-number">
+                            <col class="col-number">
+                            <col class="col-number">
+                            <col class="col-number">
+                            <col class="col-number">
+                        </colgroup>
+
+                        <thead>
+
+                            <!-- Category -->
+                            <!-- Main headings -->
+                            <tr>
+                                <th colspan="7" class="main-heading">
+                                    MANDAYS ACTUAL
+                                </th>
+
+                                <th rowspan="3" class="main-heading">
+                                    ACCOUNTS<br>CODE
+                                </th>
+
+                                <th rowspan="3" class="main-heading">
+                                    DESCRIPTION
+                                </th>
+
+                                <th colspan="7" class="main-heading">
+                                    LABOUR WAGES (ACTUAL) TAKA
+                                </th>
+                            </tr>
+
+                            <!-- Current Month -->
+                            <tr>
+                                <th colspan="7" class="sub-heading">
+                                    Current Month
+                                </th>
+
+                                <th colspan="7" class="sub-heading">
+                                    Current Month
+                                </th>
+                            </tr>
+
+                            <!-- Column names -->
+                            <tr class="column-heading">
+
+                                <th>PERMANENT<br>LABOUR</th>
+                                <th>TEMPORARY<br>LABOUR</th>
+                                <th>Other Category<br>Labour</th>
+                                <th>Total<br>Labour</th>
+                                <th>Up to<br>previous<br>months</th>
+                                <th>TO DATE<br>THIS YEAR</th>
+                                <th>TO DATE<br>LAST YEAR</th>
+
+                                <th>PERMANENT<br>LABOUR</th>
+                                <th>TEMPORARY<br>LABOUR</th>
+                                <th>Other Category<br>Labour</th>
+                                <th>Total<br>Labour</th>
+                                <th>Up to<br>previous<br>months</th>
+                                <th>TO DATE<br>THIS YEAR</th>
+                                <th>TO DATE<br>LAST YEAR</th>
+
+                            </tr>
+
+                            <!-- Codes -->
+                            <tr class="code-heading">
+
+                                <th>A</th>
+                                <th>B</th>
+                                <th>C</th>
+                                <th>D(A+B+C)</th>
+                                <th>E</th>
+                                <th>F(D+E)</th>
+                                <th></th>
+
+                                <th></th>
+                                <th></th>
+
+                                <th>A</th>
+                                <th>B</th>
+                                <th>C</th>
+                                <th>D(A+B+C)</th>
+                                <th>E</th>
+                                <th>F(D+E)</th>
+                                <th></th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody id="teaReportBody">
+                            <!-- jQuery will populate this -->
+                        </tbody>
+
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script src="~/js/finance/wagesreport.js"></script>
+    <script></script>
+}

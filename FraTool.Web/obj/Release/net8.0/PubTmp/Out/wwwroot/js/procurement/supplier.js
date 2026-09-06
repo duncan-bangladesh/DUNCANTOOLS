@@ -1,15 +1,5 @@
-﻿$(document).ready(function () {
-    //$('input[type="number"].no-spinners').on('keypress', function (event) {
-    //    // Allow numbers, decimal point, and specific control keys
-    //    if (event.which != 8 && event.which != 0 && event.which != 46 && (event.which < 48 || event.which > 57)) {
-    //        event.preventDefault();
-    //    }
-    //    // Allow only one decimal point
-    //    if (event.which == 46 && $(this).val().indexOf('.') != -1) {
-    //        event.preventDefault();
-    //    }
-    //});
-    $.get("/Procurement/GetSupplierProfileList", function (data) { console.log(data); });
+﻿var eTaxGroup = null;
+$(document).ready(function () {    
     $('#BIN').on('keypress', function (event) {
         var value = $(this).val();
         // Allow control keys
@@ -25,8 +15,26 @@
         }
         event.preventDefault();
     });
-
-
+    $('#Taxgroup').change(function () {
+        var selectedTaxGroup = $(this).val();
+        if (eTaxGroup !== null) {
+            if (selectedTaxGroup == eTaxGroup) {
+                $('#btnSave').prop('disabled', false);
+                $('#btnSave').fadeIn();  // Shows smoothly
+            }
+            else {
+                isServerCall = 'Yes';
+                var eSupplierName = $('#SupplierName').val();
+                $.get('/Procurement/IsBillExistForThisFinancialYear', { SupplierName: eSupplierName }, function (data) {
+                    if (data > 0) {
+                        toastr.error('You can not change TAX Group for this financial year, Supplier already in another TAX Group.');
+                        $('#btnSave').prop('disabled', true);
+                        $('#btnSave').fadeOut(); // Hides smoothly
+                    }
+                });
+            }
+        }
+    });
     initDataTable();
     $('#SupplierName').on('change', function () {
         var supplierName = $(this).val();
@@ -150,6 +158,7 @@
     });
     function resetForm() {
         // Clear all input, textarea, select
+        eTaxGroup = null;
         $('#SupplierCode, #SupplierName, #Address, #City, #Country, #Bank, #AccountNo, #RoutingNo, #Taxgroup, #TIN, #BIN, #Phone, #Email').val('');
         $('#SLNo').val('0');
         $('.input-error').removeClass('input-error');
@@ -194,6 +203,7 @@ function initDataTable() {
 }
 function fnEdit(recordId) {
     $.get('/Procurement/GetSupplierProfileBySlNo', { SlNo: recordId }, function (data) {
+        eTaxGroup = data[0].taxgroup;
         $("#entry-ui").removeClass('card card-info card-outline collapsed-card').addClass('card card-info card-outline');
         $('#SLNo').val(data[0].slNo);
         $('#SupplierCode').val(data[0].code);

@@ -205,3 +205,20 @@ BEGIN
 	END
 END
 GO
+CREATE PROC IsBillExistForThisFinancialYear
+(
+	@SupplierName NVARCHAR(255) = NULL
+)
+AS
+BEGIN
+	IF @SupplierName IS NOT NULL
+	BEGIN
+		DECLARE @Today DATE = GETDATE();
+		DECLARE @FinancialYearStart DATE = DATEFROMPARTS(CASE WHEN MONTH(@Today) >= 7 THEN YEAR(@Today) ELSE YEAR(@Today) - 1 END, 7, 1);
+		DECLARE @FinancialYearEnd DATE = DATEFROMPARTS(CASE WHEN MONTH(@Today) >= 7 THEN YEAR(@Today) + 1 ELSE YEAR(@Today) END, 6, 30);
+
+		SELECT COUNT(*) AS NoOfBills FROM [Bills-ID-Test2].dbo.tblBillHystory
+		WHERE BSupplier = @SupplierName AND BProcData BETWEEN @FinancialYearStart AND @FinancialYearEnd;
+	END
+END
+GO

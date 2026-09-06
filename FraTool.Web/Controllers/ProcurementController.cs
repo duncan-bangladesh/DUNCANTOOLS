@@ -46,6 +46,19 @@ namespace FraTool.Web.Controllers
             }
         }
         [HttpGet]
+        public async Task<IActionResult> IsBillExistForThisFinancialYear(string SupplierName)
+        {
+            try
+            {
+                var result = await supplierProfileBiz.IsBillExistForThisFinancialYear(SupplierName);
+                return Json(data: result);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+        [HttpGet]
         public async Task<IActionResult> GetSupplierProfileList()
         {
             try

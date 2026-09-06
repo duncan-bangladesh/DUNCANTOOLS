@@ -85,6 +85,41 @@ namespace Procurement.Biz
             }
             return await Task.Run(() => result);
         }
+        public async Task<int> IsBillExistForThisFinancialYear(string SupplierName)
+        {
+            int result = 0;
+            SqlConnection connection = access.GetConnection(connectionString);
+            SqlDataReader? reader = null;
+            try
+            {
+                if (connection.State == System.Data.ConnectionState.Open)
+                {
+                    SqlCommand command = new SqlCommand("IsBillExistForThisFinancialYear", connection);
+                    command.CommandType = System.Data.CommandType.StoredProcedure;
+                    command.Parameters.Clear();
+                    command.Parameters.AddWithValue("@SupplierName", SupplierName);
+                    reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        result = Convert.ToInt32(reader["NoOfBills"]);
+                    }
+                    connection.Close();
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                if (reader != null)
+                {
+                    reader.Close();
+                }
+                connection.Dispose();
+            }
+            return await Task.Run(() => result);
+        }
         public async Task<int> SaveSupplierProfile(SupplierProfile model)
         {
             int result = 0;

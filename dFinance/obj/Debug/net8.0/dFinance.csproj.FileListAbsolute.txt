@@ -1,0 +1,16 @@
+D:\Source Control\BitBucket\FraTool\dFinance\bin\Debug\net8.0\dFinance.deps.json
+D:\Source Control\BitBucket\FraTool\dFinance\bin\Debug\net8.0\dFinance.dll
+D:\Source Control\BitBucket\FraTool\dFinance\bin\Debug\net8.0\dFinance.pdb
+D:\Source Control\BitBucket\FraTool\dFinance\bin\Debug\net8.0\dDataAccess.dll
+D:\Source Control\BitBucket\FraTool\dFinance\bin\Debug\net8.0\dDataAccess.pdb
+D:\Source Control\BitBucket\FraTool\dFinance\obj\Debug\net8.0\dFinance.csproj.AssemblyReference.cache
+D:\Source Control\BitBucket\FraTool\dFinance\obj\Debug\net8.0\dFinance.GeneratedMSBuildEditorConfig.editorconfig
+D:\Source Control\BitBucket\FraTool\dFinance\obj\Debug\net8.0\dFinance.AssemblyInfoInputs.cache
+D:\Source Control\BitBucket\FraTool\dFinance\obj\Debug\net8.0\dFinance.AssemblyInfo.cs
+D:\Source Control\BitBucket\FraTool\dFinance\obj\Debug\net8.0\dFinance.csproj.CoreCompileInputs.cache
+D:\Source Control\BitBucket\FraTool\dFinance\obj\Debug\net8.0\dFinance.sourcelink.json
+D:\Source Control\BitBucket\FraTool\dFinance\obj\Debug\net8.0\dFinance.csproj.Up2Date
+D:\Source Control\BitBucket\FraTool\dFinance\obj\Debug\net8.0\dFinance.dll
+D:\Source Control\BitBucket\FraTool\dFinance\obj\Debug\net8.0\refint\dFinance.dll
+D:\Source Control\BitBucket\FraTool\dFinance\obj\Debug\net8.0\dFinance.pdb
+D:\Source Control\BitBucket\FraTool\dFinance\obj\Debug\net8.0\ref\dFinance.dll
