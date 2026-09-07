@@ -1,0 +1,265 @@
+# =============================================================================
+# .gitignore for .NET 8.0 / ASP.NET Core solution
+# Project: FraTool.sln (FraTool.Web, DuncanTool.Api, 11 class libraries)
+# =============================================================================
+# Framework: .NET 8.0
+# IDE: Visual Studio 2022
+# OS: Windows
+# Front-end: Bootstrap, jQuery, Select2, Summernote, SweetAlert2, etc. (wwwroot)
+# Back-end: SQL Server (connection strings in appsettings.json)
+# APIs: Swashbuckle (Swagger), AspNetCore.Reporting, System.Drawing.Common
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# IMPORTANT - Sensitive configuration files detected in this project:
+# -----------------------------------------------------------------------------
+# The following source-controlled files contain SQL Server credentials (usernames
+# and passwords in plaintext) and should be sanitized before committing:
+#   - FraTool.Web/appsettings.json
+#   - DuncanTool.Api/appsettings.json
+#   - FraTool.Web/Properties/launchSettings.json
+#   - DuncanTool.Api/Properties/launchSettings.json
+#
+# Recommended: Replace real credentials with placeholders and use .NET user-secrets
+#   or environment variables for local development:
+#     dotnet user-secrets init
+#     dotnet user-secrets set "ConnectionStrings:DefaultConnection" "..."
+# -----------------------------------------------------------------------------
+
+# =============================================================================
+# .NET / C# Build Artifacts
+# =============================================================================
+
+# Build output directories
+bin/
+obj/
+
+# Build output files
+*.exe
+*.exe.config
+*.dll
+*.pdb
+*.cache
+
+# .NET runtime-specific intermediates
+*.deps.json
+*.runtimeconfig
+*.runtimeconfig.json
+*.runtimeconfig.dev.json
+*.runsettings
+
+# Project build configurations
+[Aa]rtifacts/
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+[Ww]ork/
+x64/
+x86/
+bld/
+logs/
+
+# Publish output
+publish/
+*.publish/
+
+# NuGet pack output
+*.nupkg
+*.snupkg
+
+# NuGet tool restore
+.project.dotnet/
+
+# =============================================================================
+# NuGet
+# =============================================================================
+
+# Packages directory (PackageReference uses global cache, but legacy projects)
+packages/
+
+# NuGet restore output
+.nuget/packages/
+.nuget/NuGet.exe
+.nuget/NuGet.Config
+.nuget/NuGetSHA256.exe
+.nuget/NuGet.ContainerVerification.xml
+
+# NuGet global-local cache (user profile level)
+~/.nuget/packages/
+
+# NuGet HTTP cache
+%LocalAppData%\NuGet\Cache
+%LocalAppData%\NuGet\Ephemeral
+%LocalAppData%\NuGet\http-cache
+%LocalAppData%\NuGet\TransitivePackages
+%LocalAppData%\Microsoft\NuGet
+%LocalAppData%\Microsoft\NuGet\Cache
+
+# =============================================================================
+# Visual Studio / IDE
+# =============================================================================
+
+# Visual Studio user-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.DotSettings.user
+
+# Visual Studio IDE
+.vs/
+*.vsconfig
+
+# Visual Studio temporary files
+*.tmp
+*.temp
+*.chk
+*.err
+
+# Resharper / Rider
+*.DotCover
+*.DotTrace
+*.DotMemory
+*.DotPeek
+*.runprofileset
+.ReSharper**
+*.ReSharper**
+*.R#
+_resharper*
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Rider
+.idea/
+.idea/*
+!.idea/codeStyles/
+
+# Visual Studio for Mac
+*.xge
+
+# Build logs
+*.buildlog
+*.buildproj
+
+# =============================================================================
+# ASP.NET Core / Web-specific
+# =============================================================================
+
+# Environment-specific configuration files (may contain secrets)
+appsettings.Development.json
+appsettings.Staging.json
+appsettings.Production.json
+appsettings.QA.json
+appsettings.Local.json
+appsettings.*.json
+
+# Launch settings (contains dev server ports, env vars; may contain secrets)
+**/launchSettings.json
+
+# Web publish profiles (may contain deployment credentials)
+*.azure_pubxml
+*.pubxml
+*.publishsettings
+*.pfx.user
+
+# Certificates, keys, and secrets
+*.pfx
+*.key
+*.pvk
+*.snk
+*.p12
+*.pem
+*.asc
+
+# ASP.NET Core generated temporary files
+wwwroot/_wkhtmltopdf/
+
+# Temporary ASP.NET
+Temporary ASP.NET Files/
+App_Data/
+wwwroot/aspnet/
+
+# IIS Express
+iisexpress/
+
+# =============================================================================
+# OS-Generated Files
+# =============================================================================
+
+# Windows
+Desktop.ini
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+*.lnk
+*.cab
+*.msi
+*.msu
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Linux
+*~
+
+# =============================================================================
+# Logs and Test Results
+# =============================================================================
+
+# Log files
+*.log
+*.log.*
+
+# Test results
+TestResults/
+test*/[Tt]est/*/out
+*.testresult
+
+# BenchmarkDotNet
+BenchmarkDotNet.Artifacts/
+
+# =============================================================================
+# Database Files
+# =============================================================================
+
+# SQL Server files
+*.mdf
+*.ldf
+*.ndf
+*.bak
+*.trn
+
+# =============================================================================
+# Miscellaneous
+# =============================================================================
+
+# Secret / environment files
+.env
+*.env
+*.env.*
+secrets.json
+*.secret
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# Hash / checksum files
+*.md5
+*.sha1
+*.sha256
+
+# Swagger (runtime-generated)
+swagger/
+swagger-ui/
+
+# History
+.history/
